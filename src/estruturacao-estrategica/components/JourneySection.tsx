@@ -1,8 +1,8 @@
 import React from 'react';
+import { cn } from '../lib/utils';
 import { useReveal } from '../hooks/useReveal';
 import { Timeline, TimelineItem } from './Timeline';
 import { Button } from './Button';
-import { ShineBorder } from './ui/ShineBorder';
 import { Calendar, Check, Clock, MessageSquare, Shield, Zap, Search } from 'lucide-react';
 
 export const JourneySection: React.FC = () => {
@@ -12,45 +12,87 @@ export const JourneySection: React.FC = () => {
         {
             id: "1",
             title: "Diagnóstico do Escritório",
-            description: "Briefing 360º do escritório e análise de posicionamento digital.",
+            description: "Realizamos um briefing 360º para entender sua estrutura atual, volume de demandas e metas de faturamento. Analisamos seu posicionamento digital para identificar gargalos que impedem o crescimento escalável.",
             icon: <span className="font-bold">1</span>,
         },
         {
             id: "2",
             title: "Diagnóstico Comercial",
-            description: "Instalação do motor comercial e definição de plano de ação",
+            description: "Implementamos o \"motor comercial\" do escritório. Definimos scripts de atendimento, protocolos de follow-up e um plano de ação claro para transformar consultas em contratos assinados de forma previsível.",
             icon: <span className="font-bold">2</span>,
         },
         {
             id: "3",
             title: "Diagnóstico de Marketing",
-            description: "Análise competitiva e aprovação do material para produção",
+            description: "Conduzimos uma análise competitiva profunda e definimos a narrativa de autoridade. Produzimos e aprovamos os materiais estratégicos e criativos que servirão como radar para atrair o público qualificado.",
             icon: <span className="font-bold">3</span>,
         },
         {
             id: "4",
-            title: "Entregáveis",
-            description: "Entrega de página de vendas pronta para conversão e criativos editados",
+            title: "Entregáveis & Onboarding",
+            description: "Entrega da sua nova Vitrine de Autoridade configurada, criativos validados e treinamento da equipe para operar os novos sistemas. Você sai com a estrutura pronta para rodar e captar imediatamente.",
             icon: <span className="font-bold">4</span>,
         },
     ];
 
+    const [isHovered, setIsHovered] = React.useState(false);
+
     // Note: The user asked to keep the header from the original Section 2
     return (
-        <section ref={sectionRef} className="py-16 md:py-32 px-6 bg-bg-page relative overflow-hidden">
-            {/* Blueprint Grid Overlay (Same as ProblemSection) */}
+        <section
+            ref={sectionRef}
+            className="py-16 md:py-32 px-6 bg-bg-page relative overflow-hidden group/journey"
+            onMouseMove={(e) => {
+                const rect = e.currentTarget.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                (e.currentTarget as HTMLElement).style.setProperty('--mouse-x', `${x}px`);
+                (e.currentTarget as HTMLElement).style.setProperty('--mouse-y', `${y}px`);
+            }}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+        >
+            {/* Side Glows - Vertical atmosphere on the edges */}
+            <div className="absolute top-0 left-0 w-[500px] h-full bg-brand-primary/12 blur-[130px] rounded-full -translate-x-3/4 pointer-events-none opacity-60" />
+            <div className="absolute top-0 right-0 w-[500px] h-full bg-brand-glow/12 blur-[130px] rounded-full translate-x-3/4 pointer-events-none opacity-60" />
+
+            {/* Base Grid Overlay (Subtle & Faded for Transitions) */}
             <div
-                className="absolute inset-x-0 top-0 bottom-0 opacity-[0.07] pointer-events-none"
+                className="absolute inset-0 opacity-[0.07] pointer-events-none"
                 style={{
-                    backgroundImage: `linear-gradient(to right, #ffffff 1px, transparent 1px), linear-gradient(to bottom, #ffffff 1px, transparent 1px)`,
+                    backgroundImage: `linear-gradient(to right, rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.1) 1px, transparent 1px)`,
                     backgroundSize: '32px 32px',
                     maskImage: 'linear-gradient(to bottom, transparent, black 15%, black 85%, transparent)',
                     WebkitMaskImage: 'linear-gradient(to bottom, transparent, black 15%, black 85%, transparent)'
                 }}
             />
 
-            {/* Background Glow - Purple/Brand color since it's after SolutionSection */}
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-brand-primary/10 blur-[100px] rounded-full pointer-events-none -z-10"></div>
+            {/* Subtle Magnifier: 1.25x Zoom, smaller radius for a 'clean' look */}
+            <div
+                className={cn(
+                    "absolute inset-0 pointer-events-none transition-opacity duration-500",
+                    isHovered ? "opacity-100" : "opacity-0"
+                )}
+                style={{
+                    backgroundImage: `linear-gradient(to right, rgba(255,255,255,0.2) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.2) 1px, transparent 1px)`,
+                    backgroundSize: '40px 40px', // Subtler 1.25x Zoom
+                    backgroundPosition: 'calc(var(--mouse-x) * -0.25) calc(var(--mouse-y) * -0.25)',
+                    maskImage: 'radial-gradient(circle 120px at var(--mouse-x, -500px) var(--mouse-y, -500px), black 0%, transparent 100%)',
+                    WebkitMaskImage: 'radial-gradient(circle 120px at var(--mouse-x, -500px) var(--mouse-y, -500px), black 0%, transparent 100%)'
+                }}
+            />
+
+            {/* Very subtle highlight to indicate focus area without physical rim */}
+            <div
+                className={cn(
+                    "absolute inset-0 pointer-events-none transition-opacity duration-500",
+                    isHovered ? "opacity-100" : "opacity-0"
+                )}
+                style={{
+                    background: 'radial-gradient(circle 120px at var(--mouse-x, -500px) var(--mouse-y, -500px), rgba(139, 92, 246, 0.08) 0%, transparent 100%)',
+                }}
+            />
+
 
             <div className="max-w-screen-2xl mx-auto relative z-10">
                 <div className="text-center mb-16 px-4 max-w-[960px] mx-auto reveal-hidden">
@@ -62,12 +104,8 @@ export const JourneySection: React.FC = () => {
                     </p>
                 </div>
 
-                <div className="max-w-4xl mx-auto reveal-hidden shadow-[0_30px_80px_-15px_rgba(139,92,246,0.3)]">
-                    <ShineBorder borderRadius={24} borderWidth={2} duration={8} className="bg-brand-card/80 border border-white/5">
-                        <div className="p-8 md:p-16 w-full">
-                            <Timeline items={items} />
-                        </div>
-                    </ShineBorder>
+                <div className="max-w-4xl mx-auto reveal-hidden">
+                    <Timeline items={items} />
                 </div>
 
                 <div className="mt-16 text-center flex flex-col items-center gap-8 px-4 reveal-hidden">

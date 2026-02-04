@@ -26,18 +26,6 @@ export function Timeline({
         <div className={cn("relative flex flex-col items-center gap-0 w-full select-none cursor-default", className)} {...props}>
             {items.map((item, index) => (
                 <div key={item.id} className="relative flex flex-col items-center w-full group">
-                    {/* Content Block Above Sphere */}
-                    <div className="flex flex-col gap-4 max-w-2xl text-center pt-8 pb-10 transform transition-all duration-500 group-hover:-translate-y-2">
-                        <h3 className="type-h3 leading-tight text-text-primary group-hover:text-brand-glow transition-colors duration-300">
-                            {item.title}
-                        </h3>
-                        {item.description && (
-                            <p className="type-body text-text-secondary leading-relaxed opacity-70 group-hover:opacity-100">
-                                {item.description}
-                            </p>
-                        )}
-                    </div>
-
                     {/* Point (Numeric Sphere) */}
                     <div className="relative z-10">
                         <div
@@ -53,9 +41,21 @@ export function Timeline({
                         </div>
                     </div>
 
+                    {/* Content Block */}
+                    <div className="flex flex-col gap-2 max-w-2xl text-center mt-4 mb-4 transform transition-all duration-500 group-hover:translate-y-1">
+                        <h3 className="type-h3 leading-tight text-text-primary group-hover:text-brand-glow transition-colors duration-300">
+                            {item.title}
+                        </h3>
+                        {item.description && (
+                            <p className="type-body text-text-secondary leading-relaxed opacity-70 group-hover:opacity-100">
+                                {item.description}
+                            </p>
+                        )}
+                    </div>
+
                     {/* Connector Line (Vertical) */}
                     {showConnectors && index < items.length - 1 && (
-                        <div className="w-px h-20 md:h-28 bg-gradient-to-b from-brand-primary/40 to-white/5 my-2" />
+                        <div className="w-px h-16 md:h-20 bg-gradient-to-b from-brand-primary/40 to-white/5 mb-6" />
                     )}
                 </div>
             ))}
