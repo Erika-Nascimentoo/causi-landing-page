@@ -33,7 +33,7 @@ export const QualificationSection: React.FC = () => {
                 <div className="relative w-full h-[40vh] lg:h-auto lg:w-[40%] flex-none overflow-hidden">
                     <div
                         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-                        style={{ backgroundImage: "url('/foto-gemini.png')" }}
+                        style={{ backgroundImage: "url('/luan-mari.webp')" }}
                         role="img"
                         aria-label="Escritório de advocacia moderno e escalável"
                     >

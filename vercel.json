@@ -1,0 +1,8 @@
+{
+    "rewrites": [
+        {
+            "source": "/api/webhook",
+            "destination": "https://n8n.aceleracaojuridica.com.br/webhook-test/b08bb74b-0502-4e53-854f-7fedca4fa300"
+        }
+    ]
+}

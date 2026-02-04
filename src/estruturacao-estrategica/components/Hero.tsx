@@ -33,7 +33,7 @@ export const Hero: React.FC = () => {
         <div className="relative w-full h-[50vh] lg:h-auto lg:w-[40%] flex-none overflow-hidden">
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: "url('/foto-gemini.png')" }}
+            style={{ backgroundImage: "url('/hero-solo.webp')" }}
           >
             {/* Overlay gradient to blend with background */}
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-bg-page lg:bg-gradient-to-r lg:from-bg-page lg:via-transparent lg:to-bg-page"></div>

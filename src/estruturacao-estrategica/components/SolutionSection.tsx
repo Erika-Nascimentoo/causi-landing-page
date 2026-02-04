@@ -49,7 +49,7 @@ export const SolutionSection: React.FC = () => {
               </div>
             </div>
             <div className="relative h-64 md:h-auto order-1 md:order-2 hidden md:block">
-              <img src="/mask-group.png" alt="Demonstração da Vitrine de Autoridade digital para advogados" className="absolute inset-0 w-full h-full object-cover transition-all duration-500 opacity-80 group-hover:opacity-100" loading="lazy" />
+              <img src="/mockup-celular.webp" alt="Demonstração da Vitrine de Autoridade digital para advogados" className="absolute inset-0 w-full h-full object-cover transition-all duration-500 opacity-80 group-hover:opacity-100" loading="lazy" />
               <div className="absolute inset-0 bg-gradient-to-t from-brand-card via-transparent to-transparent md:hidden" />
               <div className="absolute inset-0 bg-gradient-to-r from-brand-card via-transparent to-transparent hidden md:block" />
             </div>
@@ -118,7 +118,7 @@ export const SolutionSection: React.FC = () => {
               </div>
             </div>
             <div className="relative h-64 md:h-auto order-1 md:order-2 hidden md:block">
-              <img src="/mask-group.png" alt="Interface do Painel de Indicadores e métricas jurídicas" className="absolute inset-0 w-full h-full object-cover transition-all duration-500 opacity-80 group-hover:opacity-100" loading="lazy" />
+              <img src="/mockup-indicadores.webp" alt="Interface do Painel de Indicadores e métricas jurídicas" className="absolute inset-0 w-full h-full object-cover transition-all duration-500 opacity-80 group-hover:opacity-100" loading="lazy" />
               <div className="absolute inset-0 bg-gradient-to-t from-brand-card via-transparent to-transparent md:hidden" />
               <div className="absolute inset-0 bg-gradient-to-r from-brand-card via-transparent to-transparent hidden md:block" />
             </div>
