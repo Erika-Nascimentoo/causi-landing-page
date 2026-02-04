@@ -1,0 +1,159 @@
+@import "tailwindcss";
+
+@theme {
+    /* --- Typography System --- */
+    --font-sans: 'Inter', system-ui, sans-serif;
+
+    /* --- Color System (Obsidian - Pure Black & Sharp Contrast) --- */
+    /* Backgrounds */
+    --color-bg-page: #020202;
+    /* Obsidian Black */
+    --color-bg-card: #0A0A0A;
+    --color-brand-card: #0A0A0A;
+    /* Polished Stone */
+    --color-bg-surface: #111111;
+    /* Graph Node Surface */
+    --color-bg-input: #18181B;
+    /* Zinc 900 */
+
+    /* Brand Colors */
+    --color-brand-primary: #8B5CF6;
+    /* Electric Purple */
+    --color-brand-glow: #A78BFA;
+    /* Amethyst Glow */
+    --color-brand-accent: #38BDF8;
+    /* Data Cyan */
+
+    /* Text Colors */
+    --color-text-primary: #FFFFFF;
+    /* Sharp White */
+    --color-text-secondary: #A1A1AA;
+    /* Zinc 400 */
+    --color-text-tertiary: #71717A;
+    /* Zinc 500 */
+
+    /* Borders */
+    --color-border-subtle: #27272A;
+    /* Zinc 800 */
+    --color-border-strong: #3F3F46;
+    /* Zinc 700 */
+
+    /* Effects */
+    --image-glow-gradient: radial-gradient(circle at center, rgba(139, 92, 246, 0.08) 0%, rgba(2, 2, 2, 0) 70%);
+    --animate-spin-slow: spin 8s linear infinite;
+    --animate-shimmer: shimmer 2.5s infinite linear;
+
+    @keyframes shimmer {
+        from {
+            transform: translateX(-100%);
+        }
+
+        to {
+            transform: translateX(100%);
+        }
+    }
+
+    /* --- Font Sizes & Hierarchy --- */
+    --text-display: 4.5rem;
+    --text-display--line-height: 1.1;
+    --text-display--tracking: -0.025em;
+
+    --text-h1: 3.75rem;
+    --text-h1--line-height: 1.1;
+    --text-h1--tracking: -0.02em;
+
+    --text-h2: 3rem;
+    --text-h2--line-height: 1.2;
+    --text-h2--tracking: -0.01em;
+
+    --text-h3: 2rem;
+    --text-h3--line-height: 1.3;
+    --text-h3--tracking: -0.01em;
+
+    --text-body-lg: 1.25rem;
+    --text-body-lg--line-height: 1.6;
+
+    --text-body: 1rem;
+    --text-body--line-height: 1.6;
+
+    --text-small: 0.875rem;
+    --text-small--line-height: 1.5;
+}
+
+@layer base {
+    body {
+        @apply bg-bg-page text-text-primary antialiased font-sans selection:bg-brand-primary selection:text-white;
+        /* Improved text rendering for dark mode */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Utility Classes for Typography Hierarchy */
+    .type-display {
+        @apply text-4xl md:text-6xl font-black tracking-tighter leading-[1.1] text-text-primary;
+    }
+
+    .type-h1 {
+        @apply text-4xl md:text-6xl font-bold tracking-tight leading-tight text-text-primary;
+    }
+
+    .type-h2 {
+        @apply text-3xl md:text-5xl font-bold tracking-tight leading-snug text-text-primary;
+    }
+
+    .type-h3 {
+        @apply text-2xl md:text-3xl font-bold tracking-tight text-text-primary;
+    }
+
+    .type-h4 {
+        @apply text-xl font-bold tracking-tight text-text-primary;
+    }
+
+    .type-body-lg {
+        @apply text-lg md:text-xl font-normal leading-[1.7] tracking-normal text-text-secondary;
+    }
+
+    .type-cta {
+        @apply text-xl md:text-2xl font-medium leading-relaxed text-text-primary;
+    }
+
+    .type-body {
+        @apply text-lg font-normal leading-[1.7] tracking-normal text-text-secondary;
+    }
+
+    .type-label {
+        @apply text-xs font-bold uppercase tracking-[0.2em] text-text-tertiary;
+    }
+
+    .type-small {
+        @apply text-sm font-normal leading-relaxed text-text-tertiary;
+    }
+
+    .inner-glow {
+        box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.05);
+    }
+
+    /* Smooth Scrolling */
+    html {
+        scroll-behavior: smooth;
+    }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: var(--color-bg-page);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: var(--color-border-subtle);
+        border-radius: 99px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: var(--color-brand-primary);
+    }
+}
