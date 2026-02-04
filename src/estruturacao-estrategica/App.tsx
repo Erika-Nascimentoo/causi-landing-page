@@ -5,6 +5,7 @@ import { SolutionSection } from './components/SolutionSection';
 import { ComparisonSection } from './components/ComparisonSection';
 import { QualificationSection } from './components/QualificationSection';
 import { FaqFooter } from './components/FaqFooter';
+import { JourneySection } from './components/JourneySection';
 
 const App: React.FC = () => {
   return (
@@ -12,6 +13,7 @@ const App: React.FC = () => {
       <Hero />
       <ProblemSection />
       <SolutionSection />
+      <JourneySection />
       <ComparisonSection />
       <QualificationSection />
       <FaqFooter />
