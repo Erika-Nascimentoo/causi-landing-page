@@ -30,9 +30,9 @@ export const QualificationSection: React.FC = () => {
                 </div>
 
                 {/* Right Side: Image */}
-                <div className="relative w-full h-[40vh] lg:h-auto lg:w-[40%] flex-none overflow-hidden">
+                <div className="relative w-full h-[55vh] lg:h-auto lg:w-[40%] flex-none overflow-hidden">
                     <div
-                        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+                        className="absolute inset-0 bg-cover bg-top bg-no-repeat"
                         style={{ backgroundImage: "url('compress-luan-mari.webp')" }}
                         role="img"
                         aria-label="Escritório de advocacia moderno e escalável"

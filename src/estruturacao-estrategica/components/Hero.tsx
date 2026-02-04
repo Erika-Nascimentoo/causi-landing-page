@@ -30,9 +30,9 @@ export const Hero: React.FC = () => {
         </div>
 
         {/* Right Side: Image */}
-        <div className="relative w-full h-[50vh] lg:h-auto lg:w-[40%] flex-none overflow-hidden">
+        <div className="relative w-full h-[65vh] lg:h-auto lg:w-[40%] flex-none overflow-hidden">
           <div
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            className="absolute inset-0 bg-cover bg-top bg-no-repeat"
             style={{ backgroundImage: "url('hero-solo.webp')" }}
           >
             {/* Overlay gradient to blend with background */}
