@@ -7,12 +7,12 @@ export const Hero: React.FC = () => {
     <section className="relative min-h-screen w-full bg-bg-page">
       <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row min-h-screen relative">
         {/* Left Side: Text Content */}
-        <div className="w-full lg:w-[60%] flex flex-col justify-center px-6 md:px-12 lg:px-20 pt-12 lg:pt-0 pb-20 z-10 relative">
+        <div className="w-full lg:w-[60%] flex flex-col justify-center px-6 md:px-12 lg:px-20 pt-10 md:pt-20 pb-10 md:pb-20 z-10 relative">
           <div className="flex flex-col items-center lg:items-start gap-6 w-full">
             {/* Brand Header */}
             <div className="flex items-center gap-2 select-none">
               <span className="type-label text-white">SOLUÇÕES</span>
-              <img src="/logo.svg" alt="Logo Causi - Consultoria em Alta Performance Jurídica" className="h-10 md:h-12 w-auto" />
+              <img src="logo.svg" alt="Logo Causi - Consultoria em Alta Performance Jurídica" className="h-10 md:h-12 w-auto" />
             </div>
 
             <h1 className="type-display text-center lg:text-left">
@@ -33,7 +33,7 @@ export const Hero: React.FC = () => {
         <div className="relative w-full h-[50vh] lg:h-auto lg:w-[40%] flex-none overflow-hidden">
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: "url('/hero-solo.webp')" }}
+            style={{ backgroundImage: "url('hero-solo.webp')" }}
           >
             {/* Overlay gradient to blend with background */}
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-bg-page lg:bg-gradient-to-r lg:from-bg-page lg:via-transparent lg:to-bg-page"></div>

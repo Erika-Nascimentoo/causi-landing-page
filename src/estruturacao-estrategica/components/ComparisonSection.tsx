@@ -7,7 +7,7 @@ export const ComparisonSection: React.FC = () => {
     const sectionRef = useReveal();
 
     return (
-        <section ref={sectionRef} className="py-32 px-6 bg-bg-page relative overflow-hidden">
+        <section ref={sectionRef} className="py-16 md:py-32 px-6 bg-bg-page relative overflow-hidden">
             {/* Blueprint Grid Overlay */}
             <div
                 className="absolute inset-x-0 top-0 bottom-0 opacity-[0.07] pointer-events-none"

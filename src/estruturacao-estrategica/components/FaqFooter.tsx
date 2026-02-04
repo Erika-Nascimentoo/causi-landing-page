@@ -28,7 +28,7 @@ export const FaqFooter: React.FC = () => {
             <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[1200px] h-[600px] bg-brand-primary/5 blur-[120px] rounded-full pointer-events-none" />
 
             {/* FAQ Section */}
-            <section ref={sectionRef} className="py-32 px-6 max-w-4xl mx-auto relative z-10">
+            <section ref={sectionRef} className="py-16 md:py-32 px-6 max-w-4xl mx-auto relative z-10">
                 <div className="text-center mb-20 px-4 max-w-[960px] mx-auto reveal-hidden">
                     <h2 className="type-h2 text-center text-text-primary mb-6">
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-glow">Perguntas</span> Frequentes
