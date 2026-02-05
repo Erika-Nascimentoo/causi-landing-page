@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig(({ mode }) => {
   return {
-    base: '/advogado/solucoes/',
+    base: '/advogado/solucoes/estruturacao-estrategica/',
     server: {
       port: 3000,
       host: '0.0.0.0',
