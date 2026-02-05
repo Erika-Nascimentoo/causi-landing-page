@@ -12,7 +12,7 @@ export const Hero: React.FC = () => {
             {/* Brand Header */}
             <div className="flex items-center gap-2 select-none">
               <span className="type-label text-white">SOLUÇÕES</span>
-              <img src="/logo.svg" alt="Logo Causi - Consultoria em Alta Performance Jurídica" className="h-10 md:h-12 w-auto" />
+              <img src="logo.svg" alt="Logo Causi - Consultoria em Alta Performance Jurídica" className="h-10 md:h-12 w-auto" />
             </div>
 
             <h1 className="type-display text-center lg:text-left">
