@@ -3,7 +3,7 @@ import { cn } from '../lib/utils';
 import { useReveal } from '../hooks/useReveal';
 import { Timeline, TimelineItem } from './Timeline';
 import { Button } from './Button';
-import { Calendar, Check, Clock, MessageSquare, Shield, Zap, Search } from 'lucide-react';
+import { ShineBorder } from './ui/ShineBorder';
 
 export const JourneySection: React.FC = () => {
     const sectionRef = useReveal();
@@ -35,67 +35,57 @@ export const JourneySection: React.FC = () => {
         },
     ];
 
-    const [isHovered, setIsHovered] = React.useState(false);
-
-    // Note: The user asked to keep the header from the original Section 2
     return (
         <section
             ref={sectionRef}
-            className="py-16 md:py-32 px-6 bg-bg-page relative overflow-hidden group/journey"
-            onMouseMove={(e) => {
-                const rect = e.currentTarget.getBoundingClientRect();
-                const x = e.clientX - rect.left;
-                const y = e.clientY - rect.top;
-                (e.currentTarget as HTMLElement).style.setProperty('--mouse-x', `${x}px`);
-                (e.currentTarget as HTMLElement).style.setProperty('--mouse-y', `${y}px`);
-            }}
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
+            className="py-16 md:py-32 px-6 bg-transparent relative overflow-hidden group/journey"
+            id="estruturacao"
         >
-            {/* Side Glows - Vertical atmosphere on the edges */}
-            <div className="absolute top-0 left-0 w-[500px] h-full bg-brand-primary/12 blur-[130px] rounded-full -translate-x-3/4 pointer-events-none opacity-60" />
-            <div className="absolute top-0 right-0 w-[500px] h-full bg-brand-glow/12 blur-[130px] rounded-full translate-x-3/4 pointer-events-none opacity-60" />
-
-            {/* Base Grid Overlay (Subtle & Faded for Transitions) */}
+            {/* --- BACKGROUND ELEMENTS (Smoke / Nebula) --- */}
+            {/* Top Left Smoke Element (z-index: 1) */}
             <div
-                className="absolute inset-0 opacity-[0.07] pointer-events-none"
+                className="absolute top-[-20%] left-[-20%] w-[60%] h-[60%] z-[1] opacity-70 blur-[100px] animate-smoke-pulse-15 pointer-events-none"
+                style={{
+                    background: 'radial-gradient(circle, rgba(99, 102, 241, 0.4) 0%, rgba(0, 0, 0, 0) 70%)'
+                }}
+            />
+
+            {/* Bottom Right Smoke Element (z-index: 1) */}
+            <div
+                className="absolute bottom-[-20%] right-[-20%] w-[70%] h-[70%] z-[1] opacity-70 blur-[100px] animate-smoke-pulse-20 pointer-events-none"
+                style={{
+                    background: 'radial-gradient(circle, rgba(168, 85, 247, 0.3) 0%, rgba(0, 0, 0, 0) 70%)'
+                }}
+            />
+
+            {/* --- EDGE FEATHERING (Soft Borders) (z-index: 3) --- */}
+            <div
+                className="absolute top-0 left-0 w-full h-[150px] z-[3] pointer-events-none"
+                style={{
+                    background: 'linear-gradient(to bottom, #020202 10%, transparent 100%)'
+                }}
+            />
+            <div
+                className="absolute bottom-0 left-0 w-full h-[150px] z-[3] pointer-events-none"
+                style={{
+                    background: 'linear-gradient(to top, #020202 10%, transparent 100%)'
+                }}
+            />
+
+            {/* Static Grid Overlay for texture (z-index: 1) */}
+            <div
+                className="absolute inset-0 z-[1] opacity-[0.1] pointer-events-none"
                 style={{
                     backgroundImage: `linear-gradient(to right, rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.1) 1px, transparent 1px)`,
-                    backgroundSize: '32px 32px',
-                    maskImage: 'linear-gradient(to bottom, transparent, black 15%, black 85%, transparent)',
-                    WebkitMaskImage: 'linear-gradient(to bottom, transparent, black 15%, black 85%, transparent)'
+                    backgroundSize: '40px 40px',
+                    maskImage: 'radial-gradient(circle at center, black, transparent 80%)',
+                    WebkitMaskImage: 'radial-gradient(circle at center, black, transparent 80%)'
                 }}
             />
 
-            {/* Subtle Magnifier: 1.25x Zoom, smaller radius for a 'clean' look */}
-            <div
-                className={cn(
-                    "absolute inset-0 pointer-events-none transition-opacity duration-500",
-                    isHovered ? "opacity-100" : "opacity-0"
-                )}
-                style={{
-                    backgroundImage: `linear-gradient(to right, rgba(255,255,255,0.2) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.2) 1px, transparent 1px)`,
-                    backgroundSize: '40px 40px', // Subtler 1.25x Zoom
-                    backgroundPosition: 'calc(var(--mouse-x) * -0.25) calc(var(--mouse-y) * -0.25)',
-                    maskImage: 'radial-gradient(circle 120px at var(--mouse-x, -500px) var(--mouse-y, -500px), black 0%, transparent 100%)',
-                    WebkitMaskImage: 'radial-gradient(circle 120px at var(--mouse-x, -500px) var(--mouse-y, -500px), black 0%, transparent 100%)'
-                }}
-            />
-
-            {/* Very subtle highlight to indicate focus area without physical rim */}
-            <div
-                className={cn(
-                    "absolute inset-0 pointer-events-none transition-opacity duration-500",
-                    isHovered ? "opacity-100" : "opacity-0"
-                )}
-                style={{
-                    background: 'radial-gradient(circle 120px at var(--mouse-x, -500px) var(--mouse-y, -500px), rgba(139, 92, 246, 0.08) 0%, transparent 100%)',
-                }}
-            />
-
-
-            <div className="max-w-screen-2xl mx-auto relative z-10">
-                <div className="text-center mb-16 px-4 max-w-[960px] mx-auto reveal-hidden">
+            {/* --- CONTENT LAYER --- */}
+            <div className="max-w-screen-2xl mx-auto relative lg:z-[2] z-auto">
+                <div className="text-center mb-16 px-4 max-w-[960px] mx-auto reveal-hidden relative z-[10] lg:z-auto">
                     <h2 className="type-h2 text-center text-text-primary mb-6">
                         Como será a <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-glow">estruturação?</span>
                     </h2>
@@ -104,12 +94,12 @@ export const JourneySection: React.FC = () => {
                     </p>
                 </div>
 
-                <div className="max-w-4xl mx-auto reveal-hidden">
+                <div className="max-w-4xl mx-auto reveal-hidden relative z-[2] lg:z-auto">
                     <Timeline items={items} />
                 </div>
 
-                <div className="mt-16 text-center flex flex-col items-center gap-8 px-4 reveal-hidden">
-                    <Button>AGENDAR MINHA ESTRUTURAÇÃO</Button>
+                <div className="mt-16 text-center flex flex-col items-center gap-8 px-4 reveal-hidden relative z-[10]">
+                    <Button>INICIAR DIAGNÓSTICO AGORA</Button>
                 </div>
             </div>
         </section>

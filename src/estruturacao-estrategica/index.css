@@ -170,6 +170,27 @@
     ::-webkit-scrollbar-thumb:hover {
         background: var(--color-brand-primary);
     }
+
+    /* Timeline Specific Utilities */
+    .timeline-glow {
+        box-shadow: 0 0 30px rgba(139, 92, 246, 0.4);
+    }
+
+    .timeline-bullet-active {
+        @apply ring-4 ring-brand-primary/50 scale-110 border-brand-primary text-white bg-gradient-to-br from-brand-primary/20 to-brand-glow/20;
+    }
+
+    /* Force visibility and static state on mobile (<1024px) */
+    @media (max-width: 1023px) {
+
+        .timeline-bullet,
+        .timeline-content {
+            opacity: 1 !important;
+            transform: none !important;
+            scale: 1 !important;
+            filter: none !important;
+        }
+    }
 }
 
 @layer utilities {
@@ -194,4 +215,75 @@
         mask-composite: exclude;
         animation: shine-pulse var(--shine-pulse-duration) infinite linear;
     }
+}
+
+/* Organic Background Movement */
+@keyframes organic-move-1 {
+    0% {
+        transform: translate(-10%, -10%) scale(1);
+    }
+
+    33% {
+        transform: translate(15%, 8%) scale(1.1);
+    }
+
+    66% {
+        transform: translate(-5%, 20%) scale(0.9);
+    }
+
+    100% {
+        transform: translate(-10%, -10%) scale(1);
+    }
+}
+
+@keyframes organic-move-2 {
+    0% {
+        transform: translate(10%, 15%) scale(1.1);
+    }
+
+    33% {
+        transform: translate(-12%, -5%) scale(0.9);
+    }
+
+    66% {
+        transform: translate(20%, 12%) scale(1);
+    }
+
+    100% {
+        transform: translate(10%, 15%) scale(1.1);
+    }
+}
+
+.animate-organic-1 {
+    animation: organic-move-1 25s infinite alternate ease-in-out;
+}
+
+.animate-organic-2 {
+    animation: organic-move-2 20s infinite alternate ease-in-out;
+}
+
+/* Smoke/Nebula Effect Animations */
+@keyframes smoke-pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+}
+
+.animate-smoke-pulse-15 {
+    animation: smoke-pulse 15s infinite ease-in-out;
+}
+
+.animate-smoke-pulse-20 {
+    animation: smoke-pulse 20s infinite ease-in-out;
 }
