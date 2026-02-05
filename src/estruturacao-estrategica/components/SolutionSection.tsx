@@ -43,8 +43,8 @@ export const SolutionSection: React.FC = () => {
                   <Shield className="w-7 h-7 text-brand-glow" />
                 </div>
                 <div className="flex flex-col gap-4">
-                  <h3 className="type-h3 leading-tight tracking-tight text-text-primary">Vitrine de Autoridade</h3>
-                  <p className="type-body">Ambiente digital desenhado para gerar confiança imediata. O cliente decide contratar antes do primeiro contacto, eliminando as barreiras de preço.</p>
+                  <h3 className="type-h3 leading-tight tracking-tight text-text-primary">Autoridade Digital</h3>
+                  <p className="type-body">Ambiente digital alinhado com a estratégia do escritório. O cliente vai explorar você na internet e se deparar com autoridade e profissionalismo.</p>
                 </div>
               </div>
             </div>
@@ -69,8 +69,8 @@ export const SolutionSection: React.FC = () => {
                 <Search className="w-7 h-7 text-brand-glow" />
               </div>
               <div className="flex flex-col gap-4">
-                <h3 className="type-h3 leading-tight tracking-tight text-text-primary">Radar de Captação</h3>
-                <p className="type-body">Mecanismo que atrai quem tem problemas urgentes agora. Saia da instabilidade das indicações para um fluxo diário de clientes qualificados.</p>
+                <h3 className="type-h3 leading-tight tracking-tight text-text-primary">Máquina de Contratos</h3>
+                <p className="type-body">Seu escritório terá previsibilidade no fechamento de contratos através de métodos e processos validados por milhares de advogados.</p>
               </div>
             </div>
           </div>

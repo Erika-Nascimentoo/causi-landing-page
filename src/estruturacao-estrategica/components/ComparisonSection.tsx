@@ -70,7 +70,7 @@ export const ComparisonSection: React.FC = () => {
                             </div>
                             <div className="space-y-6">
                                 {[
-                                    { title: "Fluxo Previsível", desc: "Um sistema ativo trabalhando 24h para atrair contatos qualificados de forma constante e organizada." },
+                                    { title: "Fluxo Previsível", desc: "Um processo modelado para você atrair oportunidades qualificadas de forma previsível e estratégica na sua advocacia." },
                                     { title: "Posicionamento de Valor", desc: "Sua autoridade é estabelecida previamente, retirando o preço da mesa e focando na solução do problema." },
                                     { title: "Eficiência em Vendas", desc: "Protocolos claros de fechamento que garantem o máximo de aproveitamento de cada oportunidade que chega." },
                                     { title: "Visão de Estrategista", desc: "Você assume o controle do negócio, com processos rodando e dados claros para decidir onde investir e crescer." },
