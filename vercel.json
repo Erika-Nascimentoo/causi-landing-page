@@ -1,4 +1,14 @@
 {
     "cleanUrls": true,
-    "framework": "vite"
+    "framework": "vite",
+    "rewrites": [
+        {
+            "source": "/estruturacao-estrategica/(.*)",
+            "destination": "/estruturacao-estrategica/index.html"
+        },
+        {
+            "source": "/estruturacao-estrategica",
+            "destination": "/estruturacao-estrategica/index.html"
+        }
+    ]
 }
