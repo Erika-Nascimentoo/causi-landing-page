@@ -24,7 +24,7 @@ export const Hero: React.FC = () => {
             </p>
 
             <div className="flex flex-col gap-4 w-full sm:w-auto">
-              <Button>INICIAR DIAGNÓSTICO AGORA</Button>
+              <Button onClick={() => document.getElementById('proximos-passos')?.scrollIntoView({ behavior: 'smooth' })}>INICIAR DIAGNÓSTICO AGORA</Button>
             </div>
           </div>
         </div>

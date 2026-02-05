@@ -92,7 +92,7 @@ export const ComparisonSection: React.FC = () => {
 
                 <div className="mt-24 text-center flex flex-col items-center gap-8 px-4 reveal-hidden">
                     <p className="type-cta max-w-3xl">Pronto para abandonar o manual e abraçar o estratégico?</p>
-                    <Button>INICIAR DIAGNÓSTICO AGORA</Button>
+                    <Button onClick={() => document.getElementById('proximos-passos')?.scrollIntoView({ behavior: 'smooth' })}>INICIAR DIAGNÓSTICO AGORA</Button>
                 </div>
             </div>
         </section>

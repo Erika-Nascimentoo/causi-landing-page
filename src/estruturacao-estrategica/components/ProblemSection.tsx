@@ -81,7 +81,7 @@ export const ProblemSection: React.FC = () => {
           <p className="type-cta max-w-3xl">
             O problema não é sua competência técnica, é o seu modelo de entrega. Vamos trocar o esforço físico por <span className="text-brand-primary">protocolos replicáveis</span>.
           </p>
-          <Button>INICIAR DIAGNÓSTICO AGORA</Button>
+          <Button onClick={() => document.getElementById('proximos-passos')?.scrollIntoView({ behavior: 'smooth' })}>INICIAR DIAGNÓSTICO AGORA</Button>
         </div>
       </div>
     </section>

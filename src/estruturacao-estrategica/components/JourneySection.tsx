@@ -99,7 +99,7 @@ export const JourneySection: React.FC = () => {
                 </div>
 
                 <div className="mt-16 text-center flex flex-col items-center gap-8 px-4 reveal-hidden relative z-[10]">
-                    <Button>INICIAR DIAGNÓSTICO AGORA</Button>
+                    <Button onClick={() => document.getElementById('proximos-passos')?.scrollIntoView({ behavior: 'smooth' })}>INICIAR DIAGNÓSTICO AGORA</Button>
                 </div>
             </div>
         </section>

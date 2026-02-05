@@ -18,14 +18,20 @@ export const QualificationSection: React.FC = () => {
             <div className="max-w-[1080px] mx-auto flex flex-col-reverse lg:flex-row min-h-[60vh] relative">
                 {/* Left Side: Text Content */}
                 <div className="w-full lg:w-[60%] flex flex-col justify-center px-6 md:px-12 lg:px-20 py-20 lg:py-12 z-10 relative">
-                    <div className="flex flex-col items-center lg:items-start gap-8 w-full border border-brand-primary/30 rounded-2xl p-8 md:p-10">
+                    <div id="proximos-passos" className="flex flex-col items-center lg:items-start gap-8 w-full border border-brand-primary/30 rounded-2xl p-8 md:p-10">
                         <h2 className="type-h2 text-center lg:text-left">
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-glow">Pronto para escalar seu escritório?</span>
                         </h2>
                         <p className="type-body-lg text-white text-center lg:text-left max-w-xl">
                             O primeiro passo é um diagnóstico da sua operação atual. Leva 2 minutos e você recebe um plano de ação personalizado.
                         </p>
-                        <Button fullWidth aria-label="Iniciar diagnóstico de operação jurídica agora">INICIAR DIAGNÓSTICO AGORA</Button>
+                        <Button
+                            fullWidth
+                            aria-label="Iniciar diagnóstico de operação jurídica agora"
+                            onClick={() => window.location.href = 'https://www.causi.com.br/advogado/triagem/servico'}
+                        >
+                            INICIAR DIAGNÓSTICO AGORA
+                        </Button>
                     </div>
                 </div>
 
