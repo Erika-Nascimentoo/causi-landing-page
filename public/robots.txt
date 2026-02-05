@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://causi.com.br/sitemap.xml
+Sitemap: https://www.causi.com.br/advogado/solucoes/estruturacao-estrategica/sitemap.xml
