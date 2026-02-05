@@ -33,7 +33,7 @@ export const QualificationSection: React.FC = () => {
                 <div className="relative w-full h-[55vh] lg:h-auto lg:w-[40%] flex-none overflow-hidden">
                     <div
                         className="absolute inset-0 bg-cover bg-top bg-no-repeat"
-                        style={{ backgroundImage: "url('/compress-luan-mari.webp')" }}
+                        style={{ backgroundImage: `url('${import.meta.env.BASE_URL}compress-luan-mari.webp')` }}
                         role="img"
                         aria-label="Escritório de advocacia moderno e escalável"
                     >

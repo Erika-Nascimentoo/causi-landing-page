@@ -12,7 +12,7 @@ export const Hero: React.FC = () => {
             {/* Brand Header */}
             <div className="flex items-center gap-2 select-none">
               <span className="type-label text-white">SOLUÇÕES</span>
-              <img src="logo.svg" alt="Logo Causi - Consultoria em Alta Performance Jurídica" className="h-10 md:h-12 w-auto" />
+              <img src={`${import.meta.env.BASE_URL}logo.svg`} alt="Logo Causi - Consultoria em Alta Performance Jurídica" className="h-10 md:h-12 w-auto" />
             </div>
 
             <h1 className="type-display text-center lg:text-left">
@@ -33,7 +33,7 @@ export const Hero: React.FC = () => {
         <div className="relative w-full h-[55vh] lg:h-auto lg:w-[40%] flex-none overflow-hidden">
           <div
             className="absolute inset-0 bg-cover bg-top bg-no-repeat"
-            style={{ backgroundImage: "url('/hero-solo.webp')" }}
+            style={{ backgroundImage: `url('${import.meta.env.BASE_URL}hero-solo.webp')` }}
           >
             {/* Overlay gradient to blend with background */}
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-bg-page lg:bg-gradient-to-r lg:from-bg-page lg:via-transparent lg:to-bg-page"></div>
