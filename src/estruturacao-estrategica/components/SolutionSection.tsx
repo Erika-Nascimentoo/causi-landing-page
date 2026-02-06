@@ -7,7 +7,7 @@ export const SolutionSection: React.FC = () => {
   const sectionRef = useReveal();
 
   return (
-    <section ref={sectionRef} className="py-16 md:py-32 px-6 bg-bg-page relative overflow-hidden">
+    <section ref={sectionRef} className="py-12 md:py-24 px-6 bg-bg-page relative overflow-hidden">
       {/* Purple Smoke Effect - Full Section Coverage */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[1200px] h-full bg-brand-primary/15 blur-[120px] rounded-full pointer-events-none" />
       <div className="absolute top-1/4 left-1/4 w-[700px] h-[700px] bg-brand-glow/10 blur-[140px] rounded-full pointer-events-none animate-pulse" style={{ animationDuration: '8s' }} />
@@ -19,11 +19,11 @@ export const SolutionSection: React.FC = () => {
       <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-bg-page to-transparent pointer-events-none z-[1]" />
 
       <div className="max-w-7xl mx-auto relative z-10">
-        <div className="text-center mb-20 px-4 max-w-[960px] mx-auto reveal-hidden">
+        <header className="text-center mb-20 px-4 max-w-[960px] mx-auto reveal-hidden">
           <h2 className="type-h2 text-center text-text-primary mb-6">
             A <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-glow">Estruturação Estratégica</span> que instalamos na sua operação
           </h2>
-        </div>
+        </header>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Card 1: Wide - Vitrine de Autoridade */}
@@ -125,12 +125,12 @@ export const SolutionSection: React.FC = () => {
           </div>
         </div>
 
-        <div className="mt-24 text-center flex flex-col items-center gap-8 px-4 reveal-hidden">
+        <footer className="mt-20 text-center flex flex-col items-center gap-8 px-4 reveal-hidden">
           <p className="type-cta max-w-3xl">
-            O problema não é sua competência técnica, é o seu modelo de entrega. Vamos trocar o esforço físico por <span className="text-brand-primary">protocolos replicáveis</span>.
+            Vamos trocar o esforço físico por <span className="text-brand-primary">protocolos replicáveis</span>.
           </p>
           <Button onClick={() => document.getElementById('proximos-passos')?.scrollIntoView({ behavior: 'smooth' })}>INICIAR DIAGNÓSTICO AGORA</Button>
-        </div>
+        </footer>
       </div>
     </section>
   );

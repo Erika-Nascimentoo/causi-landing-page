@@ -46,7 +46,7 @@ export const ProblemSection: React.FC = () => {
   ];
 
   return (
-    <section ref={sectionRef} className="py-16 md:py-32 px-6 bg-bg-page relative overflow-hidden">
+    <section ref={sectionRef} className="py-12 md:py-24 px-6 bg-bg-page relative overflow-hidden">
       {/* Blueprint Grid Overlay */}
       <div
         className="absolute inset-x-0 top-0 bottom-0 opacity-[0.07] pointer-events-none"
@@ -62,14 +62,14 @@ export const ProblemSection: React.FC = () => {
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-red-500/5 blur-[100px] rounded-full pointer-events-none -z-10"></div>
 
       <div className="max-w-screen-2xl mx-auto">
-        <div className="text-center mb-16 px-4 max-w-[960px] mx-auto reveal-hidden">
+        <header className="text-center mb-20 px-4 max-w-[960px] mx-auto reveal-hidden">
           <h2 className="type-h2 text-center text-text-primary mb-6">
             Você atingiu o teto da <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-rose-500">Advocacia</span>
           </h2>
           <p className="type-body-lg text-center max-w-3xl mx-auto px-4">
             O seu esforço tem um limite físico. Se você sente que seu faturamento estagnou mesmo trabalhando mais horas, o problema não é sua competência técnica, mas o modelo de trabalho que você ainda utiliza.
           </p>
-        </div>
+        </header>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {problems.map((prob, idx) => (
@@ -77,12 +77,12 @@ export const ProblemSection: React.FC = () => {
           ))}
         </div>
 
-        <div className="mt-24 text-center flex flex-col items-center gap-8 px-4 reveal-hidden">
+        <footer className="mt-20 text-center flex flex-col items-center gap-8 px-4 reveal-hidden">
           <p className="type-cta max-w-3xl">
-            O problema não é sua competência técnica, é o seu modelo de entrega. Vamos trocar o esforço físico por <span className="text-brand-primary">protocolos replicáveis</span>.
+            Vamos trocar o esforço físico por <span className="text-brand-primary">protocolos replicáveis</span>.
           </p>
           <Button onClick={() => document.getElementById('proximos-passos')?.scrollIntoView({ behavior: 'smooth' })}>INICIAR DIAGNÓSTICO AGORA</Button>
-        </div>
+        </footer>
       </div>
     </section>
   );

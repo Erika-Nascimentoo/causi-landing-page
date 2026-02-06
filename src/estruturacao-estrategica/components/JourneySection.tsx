@@ -38,7 +38,7 @@ export const JourneySection: React.FC = () => {
     return (
         <section
             ref={sectionRef}
-            className="py-16 md:py-32 px-6 bg-transparent relative overflow-hidden group/journey"
+            className="py-12 md:py-24 px-6 bg-transparent relative overflow-hidden group/journey"
             id="estruturacao"
         >
             {/* --- BACKGROUND ELEMENTS (Smoke / Nebula) --- */}
@@ -85,22 +85,34 @@ export const JourneySection: React.FC = () => {
 
             {/* --- CONTENT LAYER --- */}
             <div className="max-w-screen-2xl mx-auto relative lg:z-[2] z-auto">
-                <div className="text-center mb-16 px-4 max-w-[960px] mx-auto reveal-hidden relative z-[10] lg:z-auto">
+                <header className="text-center mb-20 px-4 max-w-[960px] mx-auto reveal-hidden relative z-[10] lg:z-auto">
                     <h2 className="type-h2 text-center text-text-primary mb-6">
                         Como será a <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-glow">estruturação?</span>
                     </h2>
                     <p className="type-body-lg text-center max-w-3xl mx-auto px-4">
                         Serão 4 encontros estratégicos, seguindo uma progressão acompanhada por especialistas dedicados no seu caso.
                     </p>
-                </div>
+                </header>
 
                 <div className="max-w-4xl mx-auto reveal-hidden relative z-[2] lg:z-auto">
                     <Timeline items={items} />
                 </div>
 
-                <div className="mt-16 text-center flex flex-col items-center gap-8 px-4 reveal-hidden relative z-[10]">
-                    <Button onClick={() => document.getElementById('proximos-passos')?.scrollIntoView({ behavior: 'smooth' })}>INICIAR DIAGNÓSTICO AGORA</Button>
-                </div>
+                <footer className="mt-20 text-center flex flex-col items-center gap-8 px-4 reveal-hidden relative z-[10]">
+                    <p className="type-cta max-w-3xl">
+                        Vamos trocar o esforço físico por <span className="text-brand-primary">protocolos replicáveis</span>.
+                    </p>
+                    <button 
+                        className="group relative cursor-pointer px-8 py-4 rounded-xl font-bold text-sm md:text-base transition-all duration-300 transform hover:scale-[1.02] active:scale-[0.98] focus:outline-none overflow-hidden bg-brand-primary text-white shadow-[0_0_20px_rgba(139,92,246,0.3)] hover:shadow-[0_0_40px_rgba(139,92,246,0.5)] border border-white/10 flex items-center justify-center gap-3"
+                        onClick={() => document.getElementById('proximos-passos')?.scrollIntoView({ behavior: 'smooth' })}
+                    >
+                        <div className="absolute inset-0 w-full h-full pointer-events-none overflow-hidden">
+                            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full animate-shimmer"></div>
+                        </div>
+                        <span className="relative z-10 uppercase tracking-[0.1em] font-black">INICIAR DIAGNÓSTICO AGORA</span>
+                        <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
+                    </button>
+                </footer>
             </div>
         </section>
     );

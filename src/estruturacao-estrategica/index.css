@@ -128,7 +128,7 @@
     }
 
     .type-cta {
-        @apply text-xl md:text-2xl font-medium leading-relaxed text-text-primary;
+        @apply text-xl md:text-2xl font-semibold leading-relaxed text-text-primary;
     }
 
     .type-body {

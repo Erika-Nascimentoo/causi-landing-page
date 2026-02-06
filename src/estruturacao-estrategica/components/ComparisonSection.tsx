@@ -7,7 +7,7 @@ export const ComparisonSection: React.FC = () => {
     const sectionRef = useReveal();
 
     return (
-        <section ref={sectionRef} className="py-16 md:py-32 px-6 bg-bg-page relative overflow-hidden">
+        <section ref={sectionRef} className="py-12 md:py-24 px-6 bg-bg-page relative overflow-hidden">
             {/* Blueprint Grid Overlay */}
             <div
                 className="absolute inset-x-0 top-0 bottom-0 opacity-[0.07] pointer-events-none"
@@ -23,15 +23,17 @@ export const ComparisonSection: React.FC = () => {
             <div className="absolute top-0 right-0 w-full max-w-[800px] h-[400px] bg-brand-primary/5 blur-[100px] rounded-full pointer-events-none" />
 
             <div className="max-w-screen-2xl mx-auto relative z-10">
-                <div className="text-center mb-16 px-4 max-w-[960px] mx-auto reveal-hidden">
+                <header className="text-center mb-20 px-4 max-w-[960px] mx-auto reveal-hidden">
                     <h2 className="type-h2 text-center text-text-primary mb-6">
                         Veja onde seu escritório está e <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-glow">onde ele pode chegar</span>
                     </h2>
-                </div>
+                </header>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
                     {/* Old Way - Artesanal */}
-                    <div className="group relative bg-brand-card rounded-2xl border border-white/10 overflow-hidden hover:border-red-500/50 transition-all duration-300 hover:-translate-y-2 inner-glow reveal-hidden">
+                    <div className="group relative bg-gradient-to-br from-red-500/[0.07] via-bg-card to-bg-card rounded-2xl border border-red-500/20 overflow-hidden hover:border-red-500/50 transition-all duration-300 hover:-translate-y-2 inner-glow reveal-hidden">
+                        {/* Static Subtle Glow */}
+                        <div className="absolute inset-0 bg-red-500/[0.03] pointer-events-none"></div>
                         {/* Hover Glow Effect - Neon Splash */}
                         <div className="absolute -inset-[2px] bg-red-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10 blur-xl rounded-2xl"></div>
 
@@ -60,7 +62,9 @@ export const ComparisonSection: React.FC = () => {
                     </div>
 
                     {/* New Way - Causi Estratégico */}
-                    <div className="group relative bg-brand-card rounded-2xl border border-brand-primary/20 shadow-[inset_0_0_60px_rgba(139,92,246,0.1)] overflow-hidden hover:border-brand-primary/50 transition-all duration-300 hover:-translate-y-2 inner-glow reveal-hidden">
+                    <div className="group relative bg-gradient-to-br from-brand-primary/[0.12] via-bg-card to-bg-card rounded-2xl border border-brand-primary/30 shadow-[inset_0_0_60px_rgba(139,92,246,0.15)] overflow-hidden hover:border-brand-primary/50 transition-all duration-300 hover:-translate-y-2 inner-glow reveal-hidden">
+                        {/* Static Subtle Glow */}
+                        <div className="absolute inset-0 bg-brand-primary/[0.05] pointer-events-none"></div>
                         {/* Hover Glow Effect - Neon Splash */}
                         <div className="absolute -inset-[2px] bg-brand-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10 blur-xl rounded-2xl"></div>
 
@@ -90,10 +94,10 @@ export const ComparisonSection: React.FC = () => {
                 </div>
 
 
-                <div className="mt-24 text-center flex flex-col items-center gap-8 px-4 reveal-hidden">
-                    <p className="type-cta max-w-3xl">Pronto para abandonar o manual e abraçar o estratégico?</p>
+                <footer className="mt-20 text-center flex flex-col items-center gap-8 px-4 reveal-hidden">
+                    <p className="type-cta max-w-3xl">Pronto para abandonar o manual e abraçar o <span className="text-brand-primary">estratégico</span>?</p>
                     <Button onClick={() => document.getElementById('proximos-passos')?.scrollIntoView({ behavior: 'smooth' })}>INICIAR DIAGNÓSTICO AGORA</Button>
-                </div>
+                </footer>
             </div>
         </section>
     );

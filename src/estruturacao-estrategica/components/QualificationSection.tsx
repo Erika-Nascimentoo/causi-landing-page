@@ -6,7 +6,7 @@ export const QualificationSection: React.FC = () => {
     const sectionRef = useReveal();
 
     return (
-        <section ref={sectionRef} className="relative py-16 md:py-32 w-full bg-bg-page overflow-hidden">
+        <section ref={sectionRef} className="relative py-12 md:py-24 w-full bg-bg-page overflow-hidden">
             {/* Purple Smoke Effect - Left Side */}
             <div className="absolute bottom-0 left-0 w-[600px] h-[400px] bg-brand-primary/15 blur-[120px] rounded-full pointer-events-none" />
             <div className="absolute bottom-20 left-20 w-[400px] h-[300px] bg-brand-glow/10 blur-[100px] rounded-full pointer-events-none animate-pulse" style={{ animationDuration: '8s' }} />
@@ -23,7 +23,7 @@ export const QualificationSection: React.FC = () => {
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-glow">Pronto para escalar seu escritório?</span>
                         </h2>
                         <p className="type-body-lg text-white text-center lg:text-left max-w-xl">
-                            O primeiro passo é um diagnóstico da sua operação atual. Leva 2 minutos e você recebe um plano de ação personalizado.
+                            O primeiro passo é um diagnóstico da sua operação atual, e leva 2 minutos, assim poderemos te direcionar para um plano de ação personalizado.
                         </p>
                         <Button
                             fullWidth
