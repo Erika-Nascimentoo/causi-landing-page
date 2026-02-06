@@ -36,7 +36,7 @@ export function ShineBorder({
                 } as React.CSSProperties
             }
             className={cn(
-                "relative grid min-h-[60px] w-full place-items-center rounded-[--border-radius] bg-bg-card/50 text-text-primary backdrop-blur-sm",
+                "relative grid min-h-[60px] w-full place-items-center rounded-[--border-radius] bg-brand-card/50 text-text-primary backdrop-blur-sm",
                 className,
             )}
         >

@@ -8,7 +8,6 @@
     /* Backgrounds */
     --color-bg-page: #020202;
     /* Obsidian Black */
-    --color-bg-card: #0A0A0A;
     --color-brand-card: #0A0A0A;
     /* Polished Stone */
     --color-bg-surface: #111111;
@@ -163,7 +162,7 @@
     }
 
     ::-webkit-scrollbar-thumb {
-        background: var(--color-border-subtle);
+        background: #2D1B4E;
         border-radius: 99px;
     }
 

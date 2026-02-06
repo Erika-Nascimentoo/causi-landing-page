@@ -31,7 +31,7 @@ export const ComparisonSection: React.FC = () => {
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
                     {/* Old Way - Artesanal */}
-                    <div className="group relative bg-gradient-to-br from-red-500/[0.07] via-bg-card to-bg-card rounded-2xl border border-red-500/20 overflow-hidden hover:border-red-500/50 transition-all duration-300 hover:-translate-y-2 inner-glow reveal-hidden">
+                    <div className="group relative bg-gradient-to-br from-red-500/[0.07] via-brand-card to-brand-card rounded-2xl border border-red-500/20 overflow-hidden hover:border-red-500/50 transition-all duration-300 hover:-translate-y-2 inner-glow reveal-hidden">
                         {/* Static Subtle Glow */}
                         <div className="absolute inset-0 bg-red-500/[0.03] pointer-events-none"></div>
                         {/* Hover Glow Effect - Neon Splash */}
@@ -62,7 +62,7 @@ export const ComparisonSection: React.FC = () => {
                     </div>
 
                     {/* New Way - Causi Estratégico */}
-                    <div className="group relative bg-gradient-to-br from-brand-primary/[0.12] via-bg-card to-bg-card rounded-2xl border border-brand-primary/30 shadow-[inset_0_0_60px_rgba(139,92,246,0.15)] overflow-hidden hover:border-brand-primary/50 transition-all duration-300 hover:-translate-y-2 inner-glow reveal-hidden">
+                    <div className="group relative bg-gradient-to-br from-brand-primary/[0.12] via-brand-card to-brand-card rounded-2xl border border-brand-primary/30 shadow-[inset_0_0_60px_rgba(139,92,246,0.15)] overflow-hidden hover:border-brand-primary/50 transition-all duration-300 hover:-translate-y-2 inner-glow reveal-hidden">
                         {/* Static Subtle Glow */}
                         <div className="absolute inset-0 bg-brand-primary/[0.05] pointer-events-none"></div>
                         {/* Hover Glow Effect - Neon Splash */}
