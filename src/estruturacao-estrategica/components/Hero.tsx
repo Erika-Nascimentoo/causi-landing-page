@@ -16,7 +16,7 @@ export const Hero: React.FC = () => {
             </div>
 
             <h1 className="type-display text-center lg:text-left">
-              Saia da <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-glow">Advocacia Artesanal</span> e instale um <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-glow">Sistema de Receita Previsível</span> no seu escritório.
+              Saia da <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-glow">Advocacia Artesanal</span> e instale um <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-glow">Sistema de Receita Previsível</span> no seu escritório
             </h1>
 
             <p className="type-body-lg max-w-lg text-center lg:text-left">
