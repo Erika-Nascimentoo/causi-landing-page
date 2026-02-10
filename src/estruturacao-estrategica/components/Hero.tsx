@@ -15,16 +15,19 @@ export const Hero: React.FC = () => {
               <img src={`${import.meta.env.BASE_URL}logo.svg`} alt="Logo Causi - Consultoria em Alta Performance Jurídica" className="h-10 md:h-12 w-auto" />
             </div>
 
-            <h1 className="type-display text-center lg:text-left">
-              Saia da <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-glow">Advocacia Artesanal</span> e instale um <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-glow">Sistema de Receita Previsível</span> no seu escritório
+            <h1 className="type-display text-center lg:text-left font-medium">
+              Transforme seu escritório em uma <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-glow font-black">Máquina de Fechar Contratos</span> em apenas <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-glow font-black">30 dias</span>
             </h1>
 
             <p className="type-body-lg max-w-lg text-center lg:text-left">
-              Transforme sua prática jurídica com inteligência de dados. Alcance crescimento escalável e liberdade operacional sem depender do acaso.
+              Mais do que marketing jurídico, instalamos um ecossistema completo de aquisição e conversão que funciona com ou sem a sua presença física na operação.
             </p>
 
             <div className="flex flex-col gap-4 w-full sm:w-auto">
-              <Button onClick={() => document.getElementById('proximos-passos')?.scrollIntoView({ behavior: 'smooth' })}>INICIAR DIAGNÓSTICO AGORA</Button>
+              <Button onClick={() => document.getElementById('proximos-passos')?.scrollIntoView({ behavior: 'smooth' })}>
+                <span className="font-normal text-white/90">QUERO CRIAR </span>
+                <span className="font-black">MINHA MÁQUINA</span>
+              </Button>
             </div>
           </div>
         </div>

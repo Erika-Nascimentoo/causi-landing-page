@@ -13,12 +13,24 @@ export const FaqFooter: React.FC = () => {
             answer: "Não. Nós instalamos a estrutura e os processos. Você pode gerir internamente ou delegar seguindo nossos protocolos replicáveis."
         },
         {
+            question: "Vou precisar gravar vídeos ou aparecer todo dia?",
+            answer: "Não. A estrutura foca em ativos que trabalham sozinhos. Se você quiser aparecer, potencializa o resultado, mas a máquina é desenhada para converter através de autoridade e processos comerciais."
+        },
+        {
+            question: "Já contratei agências e não tive retorno. Por que seria diferente?",
+            answer: "Agências focam apenas em tráfego (cliques). Nós focamos em Estruturação. Além de atrair o lead, preparamos seu Google, sua Landing Page e seus Scripts de Vendas para garantir o fechamento do contrato."
+        },
+        {
+            question: "Vou precisar contratar algum software caro?",
+            answer: "Não. Utilizamos as ferramentas que você já tem ou opções gratuitas e acessíveis. O foco é na inteligência do processo jurídico-comercial e não em pendurar mais uma mensalidade de software."
+        },
+        {
             question: "Quanto tempo leva para ver resultados?",
-            answer: "A Estruturação Estratégica acontece em poucos dias. O fluxo de clientes qualificados costuma estabilizar entre 30 a 60 dias após a implementação completa."
+            answer: "A implementação acontece em poucos dias. O fluxo de clientes qualificados costuma estabilizar entre 30 a 60 dias após a instalação completa da estrutura."
         },
         {
             question: "Isso funciona para qualquer área do Direito?",
-            answer: "Funciona para áreas que lidam com problemas de alta urgência ou alto ticket, onde o cliente busca especialista (Ex: Civil, Família, Tributário, Previdenciário, Trabalhista, etc)."
+            answer: "Funciona para áreas que lidam com problemas de alta urgência ou alto ticket, onde o cliente busca ativamente por um especialista (Ex: Civil, Família, Tributário, Previdenciário, Trabalhista, etc)."
         }
     ];
 
@@ -35,10 +47,10 @@ export const FaqFooter: React.FC = () => {
                     </h2>
                 </header>
 
-                <div className="space-y-4 reveal-hidden">
+                <div className="flex flex-col gap-4 reveal-hidden">
                     {faqs.map((faq, idx) => (
-                        <div key={idx} className="bg-brand-card border border-white/10 rounded-xl p-6 hover:border-brand-primary/30 transition-all duration-300">
-                            <h3 className="type-h4 mb-3 text-text-primary">{faq.question}</h3>
+                        <div key={idx} className="bg-brand-card border border-white/10 rounded-xl p-6 hover:border-brand-primary/30 transition-all duration-300 flex flex-col gap-3">
+                            <h3 className="type-h4 text-text-primary">{faq.question}</h3>
                             <p className="type-body text-text-secondary">{faq.answer}</p>
                         </div>
                     ))}

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Eye, Ghost, Lock } from 'lucide-react';
+import { Wind, Filter, Skull } from 'lucide-react';
 import { FeatureCardProps } from '../types';
 import { Button } from './Button';
 import { useReveal } from '../hooks/useReveal';
@@ -29,19 +29,19 @@ export const ProblemSection: React.FC = () => {
   const sectionRef = useReveal();
   const problems = [
     {
-      icon: Eye,
-      title: "Barreira da Percepção",
-      description: "Sua competência é invisível para o mercado. Sem uma vitrine de autoridade, você continuará a perder contratos de alto ticket para colegas menos preparados que comunicam melhor."
+      icon: Wind,
+      title: "Marketing de Esperança",
+      description: "Depender de indicações é viver sob um teto de vidro. Sem um radar de captação ativo, você não tem controle sobre quantos novos clientes chegam amanhã. Você não cresce, você apenas sobrevive ao próximo mês."
     },
     {
-      icon: Ghost,
-      title: "Autoridade Invisível",
-      description: "Frustração de ter anos de estrada e ser superado por quem domina o digital. Eles não são melhores advogados, apenas demonstram autoridade antes de você abrir a boca."
+      icon: Filter,
+      title: "Curiosos vs. Clientes",
+      description: "Seu marketing atrai pessoas, mas você perde tempo filtrando quem não pode pagar. Sem protocolos de qualificação, leads desqualificados consomem sua energia e os clientes de alto ticket escapam pela falta de processos."
     },
     {
-      icon: Lock,
-      title: "Prisão Operacional",
-      description: "Se você parar hoje, o seu lucro para? Se sim, você é escravo da própria estrutura. Você tornou-se o motor de tudo e perdeu a liberdade que a advocacia prometeu."
+      icon: Skull,
+      title: "O Cemitério de Leads",
+      description: "O maior prejuízo está nos contatos que não viraram contrato por falta de follow-up. Sem um ecossistema de conversão, você joga dinheiro no lixo a cada oportunidade que esfria por falta de estrutura em vendas."
     }
   ];
 
@@ -64,10 +64,10 @@ export const ProblemSection: React.FC = () => {
       <div className="max-w-screen-2xl mx-auto">
         <header className="text-center mb-20 px-4 max-w-[960px] mx-auto reveal-hidden">
           <h2 className="type-h2 text-center text-text-primary mb-6">
-            Você atingiu o teto da <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-rose-500">Advocacia</span>
+            Por que seu escritório ainda não é uma <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-rose-500">Máquina de Fechar Contratos?</span>
           </h2>
           <p className="type-body-lg text-center max-w-3xl mx-auto px-4">
-            O seu esforço tem um limite físico. Se você sente que seu faturamento estagnou mesmo trabalhando mais horas, o problema não é sua competência técnica, mas o modelo de trabalho que você ainda utiliza.
+            O problema não é sua competência técnica, mas a falta de um motor previsível de novos negócios. Sem processos de marketing e vendas, você não tem um escritório, tem um "artesanato de sorte".
           </p>
         </header>
 
@@ -79,9 +79,12 @@ export const ProblemSection: React.FC = () => {
 
         <footer className="mt-20 text-center flex flex-col items-center gap-8 px-4 reveal-hidden">
           <p className="type-cta max-w-3xl">
-            Vamos trocar o esforço físico por <span className="text-brand-primary">protocolos replicáveis</span>.
+            Pare de jogar oportunidades no lixo e comece a <span className="text-brand-primary">escalar seu faturamento</span>.
           </p>
-          <Button onClick={() => document.getElementById('proximos-passos')?.scrollIntoView({ behavior: 'smooth' })}>INICIAR DIAGNÓSTICO AGORA</Button>
+          <Button onClick={() => document.getElementById('proximos-passos')?.scrollIntoView({ behavior: 'smooth' })}>
+            <span className="font-normal text-white/90">QUERO CRIAR </span>
+            <span className="font-black">MINHA MÁQUINA</span>
+          </Button>
         </footer>
       </div>
     </section>

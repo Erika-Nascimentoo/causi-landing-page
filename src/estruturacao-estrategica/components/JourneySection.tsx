@@ -11,26 +11,26 @@ export const JourneySection: React.FC = () => {
     const items: TimelineItem[] = [
         {
             id: "1",
-            title: "Diagnóstico do Escritório",
-            description: "Realizamos um briefing 360º para entender sua estrutura atual, volume de demandas e metas de faturamento. Analisamos seu posicionamento digital para identificar gargalos que impedem o crescimento escalável.",
+            title: "Semana 1: Setup e Posicionamento",
+            description: "Configuramos seus radares e vitrine. Definimos a narrativa que irá atrair seu cliente ideal e eliminamos o amadorismo do seu perfil digital, preparando a base para a escala.",
             icon: <span className="font-bold">1</span>,
         },
         {
             id: "2",
-            title: "Diagnóstico Comercial",
-            description: "Implementamos o \"motor comercial\" do escritório. Definimos scripts de atendimento, protocolos de follow-up e um plano de ação claro para transformar consultas em contratos assinados de forma previsível.",
+            title: "Semana 2: Engenharia de Conversão",
+            description: "Instalamos seus novos scripts de vendas e protocolos de triagem. Treinamos seu time no \"Filtro de Elite\" para garantir que você só foque em quem realmente assina o contrato.",
             icon: <span className="font-bold">2</span>,
         },
         {
             id: "3",
-            title: "Diagnóstico de Marketing",
-            description: "Conduzimos uma análise competitiva profunda e definimos a narrativa de autoridade. Produzimos e aprovamos os materiais estratégicos e criativos que servirão como radar para atrair o público qualificado.",
+            title: "Semana 3: Escala e Ajustes Finos",
+            description: "Abrimos as comportas de captação sob nossa supervisão. Analisamos os primeiros dados reais e otimizamos o funil para garantir o máximo de eficiência e ROI comercial.",
             icon: <span className="font-bold">3</span>,
         },
         {
             id: "4",
-            title: "Entregáveis & Onboarding",
-            description: "Entrega da sua nova Vitrine de Autoridade configurada, criativos validados e treinamento da equipe para operar os novos sistemas. Você sai com a estrutura pronta para rodar e captar imediatamente.",
+            title: "Semana 4: Entrega da Máquina",
+            description: "Sua operação comercial está rodando. Entregamos seu Dashboard de Indicadores e finalizamos o onboarding para que você assuma o controle total do seu crescimento.",
             icon: <span className="font-bold">4</span>,
         },
     ];
@@ -84,34 +84,28 @@ export const JourneySection: React.FC = () => {
             />
 
             {/* --- CONTENT LAYER --- */}
-            <div className="max-w-screen-2xl mx-auto relative lg:z-[2] z-auto">
-                <header className="text-center mb-20 px-4 max-w-[960px] mx-auto reveal-hidden relative z-[10] lg:z-auto">
+            <div className="max-w-screen-2xl mx-auto relative z-10">
+                <header className="text-center mb-20 px-4 max-w-[960px] mx-auto reveal-hidden">
                     <h2 className="type-h2 text-center text-text-primary mb-6">
-                        Como será a <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-glow">estruturação?</span>
+                        A Jornada dos <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-glow">30 dias</span>
                     </h2>
                     <p className="type-body-lg text-center max-w-3xl mx-auto px-4">
-                        Serão 4 encontros estratégicos, seguindo uma progressão acompanhada por especialistas dedicados no seu caso.
+                        Um cronograma agressivo focado em tirar sua máquina do papel e colocá-la para gerar receita real.
                     </p>
                 </header>
 
-                <div className="max-w-4xl mx-auto reveal-hidden relative z-[2] lg:z-auto">
+                <div className="max-w-4xl mx-auto reveal-hidden">
                     <Timeline items={items} />
                 </div>
 
-                <footer className="mt-20 text-center flex flex-col items-center gap-8 px-4 reveal-hidden relative z-[10]">
+                <footer className="mt-20 text-center flex flex-col items-center gap-8 px-4 reveal-hidden">
                     <p className="type-cta max-w-3xl">
-                        Vamos trocar o esforço físico por <span className="text-brand-primary">protocolos replicáveis</span>.
+                        Pare de jogar oportunidades no lixo e comece a <span className="text-brand-primary">escalar seu faturamento</span>.
                     </p>
-                    <button 
-                        className="group relative cursor-pointer px-8 py-4 rounded-xl font-bold text-sm md:text-base transition-all duration-300 transform hover:scale-[1.02] active:scale-[0.98] focus:outline-none overflow-hidden bg-brand-primary text-white shadow-[0_0_20px_rgba(139,92,246,0.3)] hover:shadow-[0_0_40px_rgba(139,92,246,0.5)] border border-white/10 flex items-center justify-center gap-3"
-                        onClick={() => document.getElementById('proximos-passos')?.scrollIntoView({ behavior: 'smooth' })}
-                    >
-                        <div className="absolute inset-0 w-full h-full pointer-events-none overflow-hidden">
-                            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full animate-shimmer"></div>
-                        </div>
-                        <span className="relative z-10 uppercase tracking-[0.1em] font-black">INICIAR DIAGNÓSTICO AGORA</span>
-                        <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
-                    </button>
+                    <Button onClick={() => document.getElementById('proximos-passos')?.scrollIntoView({ behavior: 'smooth' })}>
+                        <span className="font-normal text-white/90">QUERO CRIAR </span>
+                        <span className="font-black">MINHA MÁQUINA</span>
+                    </Button>
                 </footer>
             </div>
         </section>

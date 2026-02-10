@@ -28,12 +28,7 @@ export const Button: React.FC<ButtonProps> = ({
       className={`${baseStyles} ${variants[variant]} ${fullWidth ? 'w-full' : ''} ${className} flex items-center justify-center gap-3`}
       {...props}
     >
-      {/* Shimmer Effect */}
-      {variant === 'primary' && (
-        <div className="absolute inset-0 w-full h-full pointer-events-none overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full animate-shimmer" />
-        </div>
-      )}
+
 
       {/* Button Content */}
       <span className="relative z-10 uppercase tracking-[0.1em] font-black">{children}</span>
