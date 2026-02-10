@@ -20,7 +20,7 @@ export const Hero: React.FC = () => {
             </h1>
 
             <p className="type-body-lg max-w-lg text-center lg:text-left">
-              Mais do que marketing jurídico, instalamos um ecossistema completo de aquisição e conversão que funciona com ou sem a sua presença física na operação.
+              Mais do que marketing jurídico, instalamos um ecossistema completo de aquisição e conversão de novos clientes.
             </p>
 
             <div className="flex flex-col gap-4 w-full sm:w-auto">
