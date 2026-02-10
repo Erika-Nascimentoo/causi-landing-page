@@ -5,7 +5,7 @@ export const FaqFooter: React.FC = () => {
     const sectionRef = useReveal();
     const faqs = [
         {
-            question: "A Causi está em conformidade com a OAB?",
+            question: "O Causi está em conformidade com a OAB?",
             answer: "Sim, 100%. Nossas estratégias são baseadas em provimento de autoridade e conteúdo informativo, respeitando integralmente o Código de Ética e Disciplina da OAB."
         },
         {

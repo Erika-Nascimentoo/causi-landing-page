@@ -92,6 +92,10 @@ export const ComparisonSection: React.FC = () => {
 
                 <footer className="mt-20 text-center flex flex-col items-center gap-8 px-4 reveal-hidden">
                     <p className="type-cta max-w-3xl">Pronto para parar de desperdiçar dinheiro e <span className="text-brand-primary">profissionalizar</span> sua advocacia?</p>
+                    <Button onClick={() => document.getElementById('proximos-passos')?.scrollIntoView({ behavior: 'smooth' })}>
+                        <span className="font-normal text-white/90">QUERO CRIAR </span>
+                        <span className="font-black">MINHA MÁQUINA</span>
+                    </Button>
                 </footer>
             </div>
         </section>
