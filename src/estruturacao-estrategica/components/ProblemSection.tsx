@@ -67,7 +67,7 @@ export const ProblemSection: React.FC = () => {
             Por que seu escritório ainda não é uma <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-rose-500">Máquina de Fechar Contratos?</span>
           </h2>
           <p className="type-body-lg text-center max-w-3xl mx-auto px-4">
-            O problema não é sua competência técnica, mas a falta de um motor previsível de novos negócios. Sem processos de marketing e vendas, você não tem um escritório, tem um "artesanato de sorte".
+            O problema não é sua competência técnica, mas a falta de um motor previsível de novos negócios.
           </p>
         </header>
 
