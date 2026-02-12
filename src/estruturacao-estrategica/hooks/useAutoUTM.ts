@@ -3,30 +3,45 @@ import { useEffect } from 'react';
 export const useAutoUTM = () => {
     useEffect(() => {
         const params = new URLSearchParams(window.location.search);
-        const STORAGE_KEY = 'causi_utm_data';
+        const COOKIE_NAME = 'causi_utm_data';
 
-        // Função para salvar no localStorage
+        // Função para salvar nos cookies (compartilhado entre subdomínios)
         const saveToStorage = (data: { source: string, medium: string, campaign: string }) => {
-            localStorage.setItem(STORAGE_KEY, JSON.stringify({
+            const value = JSON.stringify({
                 ...data,
                 timestamp: Date.now()
-            }));
+            });
+            
+            // Define o domínio base para .causi.com.br se estiver em produção
+            let domain = "";
+            const host = window.location.hostname;
+            if (host.includes("causi.com.br")) {
+                domain = "; domain=.causi.com.br";
+            }
+
+            const expires = new Date();
+            expires.setTime(expires.getTime() + (30 * 24 * 60 * 60 * 1000));
+            
+            document.cookie = `${COOKIE_NAME}=${encodeURIComponent(value)}; expires=${expires.toUTCString()}${domain}; path=/; SameSite=Lax`;
         };
 
-        // Função para recuperar do localStorage
+        // Função para recuperar dos cookies
         const getFromStorage = () => {
-            const stored = localStorage.getItem(STORAGE_KEY);
-            if (!stored) return null;
-            try {
-                const data = JSON.parse(stored);
-                if (Date.now() - data.timestamp > 30 * 24 * 60 * 60 * 1000) {
-                    localStorage.removeItem(STORAGE_KEY);
-                    return null;
+            const nameEQ = COOKIE_NAME + "=";
+            const ca = document.cookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) === 0) {
+                    try {
+                        const value = decodeURIComponent(c.substring(nameEQ.length, c.length));
+                        return JSON.parse(value);
+                    } catch (e) {
+                        return null;
+                    }
                 }
-                return data;
-            } catch (e) {
-                return null;
             }
+            return null;
         };
 
         // --- ESTRATÉGIA 1: ATALHO DE PERFIL (?p=nome) ---
@@ -55,8 +70,9 @@ export const useAutoUTM = () => {
         }
 
         // --- ESTRATÉGIA 2: RECUPERAÇÃO DE MEMÓRIA (PERSISTÊNCIA) ---
+        const storedData = getFromStorage();
+
         if (!params.has('utm_source')) {
-            const storedData = getFromStorage();
             if (storedData) {
                 const newUrl = new URL(window.location.href);
                 newUrl.searchParams.set('utm_source', storedData.source);
@@ -75,6 +91,9 @@ export const useAutoUTM = () => {
         }
 
         // --- ESTRATÉGIA 3: DETECÇÃO DE REFERRER (FALLBACK FINAL) ---
+        // SÓ executa se não houver NADA na URL e NADA no Cookie
+        if (storedData) return;
+
         const referrer = document.referrer;
         if (!referrer) return;
 
@@ -99,6 +118,15 @@ export const useAutoUTM = () => {
         } else if (referrer.includes('google.com')) {
             source = 'google';
             medium = 'organic';
+        } else {
+            try {
+                const url = new URL(referrer);
+                // Ignora se for qualquer subdomínio da causi
+                if (url.hostname.includes('causi.com.br')) return;
+                source = url.hostname.replace('www.', '').split('.')[0];
+            } catch (e) {
+                return;
+            }
         }
 
         if (source) {
