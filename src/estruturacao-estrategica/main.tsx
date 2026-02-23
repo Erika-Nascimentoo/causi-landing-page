@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './estruturacao-estrategica/App';
-import './estruturacao-estrategica/index.css';
-import { useAutoUTM } from './estruturacao-estrategica/hooks/useAutoUTM';
+import App from './App';
+import './index.css';
+import { useAutoUTM } from './hooks/useAutoUTM';
 
 // Wrapper component to use the hook
 const Root = () => {

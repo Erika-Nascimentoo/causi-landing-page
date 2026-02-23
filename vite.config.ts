@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig(({ mode }) => {
   return {
-    base: '/advogado/solucoes/estruturacao-estrategica/',
+    base: '/',
     server: {
       port: 3000,
       host: '0.0.0.0',
@@ -13,6 +13,14 @@ export default defineConfig(({ mode }) => {
     resolve: {
       alias: {
         '@': path.resolve(__dirname, '.'),
+      }
+    },
+    build: {
+      rollupOptions: {
+        input: {
+          main: path.resolve(__dirname, 'index.html'),
+          aceleracao: path.resolve(__dirname, 'programa-de-aceleracao-juridica/index.html'),
+        }
       }
     }
   };

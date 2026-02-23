@@ -3,6 +3,14 @@
     "framework": "vite",
     "rewrites": [
         {
+            "source": "/programa-de-aceleracao-juridica",
+            "destination": "/programa-de-aceleracao-juridica/index.html"
+        },
+        {
+            "source": "/programa-de-aceleracao-juridica/(.*)",
+            "destination": "/programa-de-aceleracao-juridica/index.html"
+        },
+        {
             "source": "/(.*)",
             "destination": "/index.html"
         }
