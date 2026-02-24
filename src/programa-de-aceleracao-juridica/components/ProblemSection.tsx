@@ -1,5 +1,5 @@
 import React from 'react';
-import { Wind, Filter, Skull } from 'lucide-react';
+import { Layout, UserX, FileWarning, Bot } from 'lucide-react';
 import { FeatureCardProps } from '../types';
 import { Button } from './Button';
 import { useReveal } from '../hooks/useReveal';
@@ -29,19 +29,24 @@ export const ProblemSection: React.FC = () => {
   const sectionRef = useReveal();
   const problems = [
     {
-      icon: Wind,
-      title: "Marketing de Esperança",
-      description: "Depender de indicações é viver sob um teto de vidro. Sem um radar de captação ativo, você não tem controle sobre quantos novos clientes chegam amanhã. Você não cresce, você apenas sobrevive ao próximo mês."
+      icon: Layout,
+      title: "A Agência de Posts",
+      description: "Você pagou por posts bonitinhos e feed harmônico, mas descobriu que curtida não gera honorário e não paga o boleto do seu escritório."
     },
     {
-      icon: Filter,
-      title: "Curiosos vs. Clientes",
-      description: "Seu marketing atrai pessoas, mas você perde tempo filtrando quem não pode pagar. Sem protocolos de qualificação, leads desqualificados consomem sua energia e os clientes de alto ticket escapam pela falta de processos."
+      icon: UserX,
+      title: "O Gestor de Contatinhos",
+      description: "Você recebeu dezenas de curiosos que só roubaram seu tempo, sem fechar um único contrato real por falta de filtro."
     },
     {
-      icon: Skull,
-      title: "O Cemitério de Leads",
-      description: "O maior prejuízo está nos contatos que não viraram contrato por falta de follow-up. Sem um ecossistema de conversão, você joga dinheiro no lixo a cada oportunidade que esfria por falta de estrutura em vendas."
+      icon: FileWarning,
+      title: "O Guru dos Milagres",
+      description: "Você comprou cursos, PDFs ou planilhas que prometiam lucro fácil, mas percebeu que material teórico não substitui um sistema de trabalho real."
+    },
+    {
+      icon: Bot,
+      title: "A IA do Piloto Automático",
+      description: "Você instalou robôs que prometiam fechar contratos sozinhos, mas descobriu que tecnologia sem processo comercial só serve para perder clientes de forma automática."
     }
   ];
 
@@ -64,28 +69,22 @@ export const ProblemSection: React.FC = () => {
       <div className="max-w-screen-2xl mx-auto">
         <header className="text-center mb-20 px-4 max-w-[960px] mx-auto reveal-hidden">
           <h2 className="type-h2 text-center text-text-primary mb-6">
-            Por que seu escritório ainda não é uma <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-rose-500">Máquina de Fechar Contratos?</span>
+            Você já tentou as <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-rose-500">saídas fáceis</span>, mas elas só serviram para aumentar o seu cansaço
           </h2>
-          <p className="type-body-lg text-center max-w-3xl mx-auto px-4">
-            O problema não é sua competência técnica, mas a falta de um motor previsível de novos negócios.
-          </p>
         </header>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {problems.map((prob, idx) => (
             <ProblemCard key={idx} {...prob} />
           ))}
         </div>
 
-        <footer className="mt-20 text-center flex flex-col items-center gap-8 px-4 reveal-hidden">
-          <p className="type-cta max-w-3xl">
-            Pare de jogar oportunidades no lixo e comece a <span className="text-brand-primary">escalar seu faturamento</span>.
+        <div className="mt-16 text-center reveal-hidden max-w-5xl mx-auto px-4">
+          <p className="text-2xl md:text-4xl font-medium text-text-primary leading-tight">
+            <span className="text-red-500 font-bold">O erro é simples:</span> Você está tentando encher um balde furado. Não adianta trazer mais gente se você não tem um método para atender, filtrar e cobrar o valor justo...
           </p>
-          <Button onClick={() => document.getElementById('proximos-passos')?.scrollIntoView({ behavior: 'smooth' })}>
-            <span className="font-normal text-white/90">QUERO CRIAR </span>
-            <span className="font-black">MINHA MÁQUINA</span>
-          </Button>
-        </footer>
+        </div>
+
       </div>
     </section>
   );

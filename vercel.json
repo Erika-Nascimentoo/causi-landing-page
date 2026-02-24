@@ -3,16 +3,16 @@
     "framework": "vite",
     "rewrites": [
         {
-            "source": "/programa-de-aceleracao-juridica",
-            "destination": "/programa-de-aceleracao-juridica/index.html"
+            "source": "/(.*)/assets/(.*)",
+            "destination": "/assets/$2"
+        },
+        {
+            "source": "/estruturacao-estrategica/(.*)",
+            "destination": "/estruturacao-estrategica/index.html"
         },
         {
             "source": "/programa-de-aceleracao-juridica/(.*)",
             "destination": "/programa-de-aceleracao-juridica/index.html"
-        },
-        {
-            "source": "/(.*)",
-            "destination": "/index.html"
         }
     ]
 }

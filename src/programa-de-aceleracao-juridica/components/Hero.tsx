@@ -15,12 +15,12 @@ export const Hero: React.FC = () => {
               <img src={`${import.meta.env.BASE_URL}logo.svg`} alt="Logo Causi - Consultoria em Alta Performance Jurídica" className="h-10 md:h-12 w-auto" />
             </div>
 
-            <h1 className="type-display text-center lg:text-left font-medium">
-              Transforme seu escritório em uma <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-glow font-black">Máquina de Fechar Contratos</span> em apenas <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-glow font-black">30 dias</span>
+            <h1 className="type-display text-center lg:text-left font-medium leading-[1.1]">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-glow font-black">Advogado</span>, saia do improviso e transforme interessados em <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-glow font-black">contratos fechados todos os dias</span>
             </h1>
 
-            <p className="type-body-lg max-w-lg text-center lg:text-left">
-              Mais do que marketing jurídico, instalamos um ecossistema completo de aquisição e conversão de novos clientes.
+            <p className="type-body-lg max-w-xl text-center lg:text-left text-white/80">
+              Implemente o sistema que organiza sua advocacia para acabar com a dependência de indicações, parar de ser escravo do WhatsApp e finalmente recuperar a sua paz de agenda.
             </p>
 
             <div className="flex flex-col gap-4 w-full sm:w-auto">

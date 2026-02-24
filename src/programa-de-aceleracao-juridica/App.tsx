@@ -1,5 +1,6 @@
 import React from 'react';
 import { Hero } from './components/Hero';
+import { RoutineProblemSection } from './components/RoutineProblemSection';
 import { ProblemSection } from './components/ProblemSection';
 import { ClaritySection } from './components/ClaritySection';
 
@@ -12,6 +13,7 @@ const App: React.FC = () => {
   return (
     <main className="w-full min-h-screen">
       <Hero />
+      <RoutineProblemSection />
       <ProblemSection />
       <ClaritySection />
       <ComparisonSection />
