@@ -104,6 +104,13 @@ export const ClaritySection: React.FC = () => {
       </div>
 
       <div className="max-w-7xl mx-auto relative z-10">
+        {/* Insight Transition - Balde Furado */}
+        <div className="mb-20 text-center reveal-hidden max-w-5xl mx-auto px-4">
+          <p className="text-2xl md:text-4xl font-medium text-text-primary leading-tight">
+            <span className="text-red-500 font-bold">O erro é simples:</span> Você está tentando encher um balde furado. Não adianta trazer mais gente se você não tem um método para atender, filtrar e cobrar o valor justo...
+          </p>
+        </div>
+
         {/* Header - Centered */}
         <header className="flex flex-col gap-6 mb-16 reveal-hidden text-center max-w-5xl mx-auto px-4">
           <h2 className="text-2xl md:text-4xl font-medium text-text-primary leading-tight">
