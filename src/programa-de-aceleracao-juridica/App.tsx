@@ -2,10 +2,11 @@ import React from 'react';
 import { Hero } from './components/Hero';
 import { RoutineProblemSection } from './components/RoutineProblemSection';
 import { ProblemSection } from './components/ProblemSection';
-import { ClaritySection } from './components/ClaritySection';
+import { ClaritySectionCopy } from './components/ClaritySectionCopy';
 
 import { ComparisonSection } from './components/ComparisonSection';
-import { QualificationSection } from './components/QualificationSection';
+import { ImplementationArsenalSection } from './components/ImplementationArsenalSection';
+import { SorSystemSection } from './components/SorSystemSection';
 import { FaqFooter } from './components/FaqFooter';
 
 
@@ -15,9 +16,10 @@ const App: React.FC = () => {
       <Hero />
       <RoutineProblemSection />
       <ProblemSection />
-      <ClaritySection />
+      <ClaritySectionCopy />
       <ComparisonSection />
-      <QualificationSection />
+      <ImplementationArsenalSection />
+      <SorSystemSection />
       <FaqFooter />
     </main>
   );

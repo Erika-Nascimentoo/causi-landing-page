@@ -1,7 +1,23 @@
 import React from 'react';
-import { Check, X } from 'lucide-react';
+import { Check, X, Target, UserCheck, Infinity } from 'lucide-react';
 import { Button } from './Button';
 import { useReveal } from '../hooks/useReveal';
+
+const PillarCard: React.FC<{ icon: any; title: string; description: string }> = ({ icon: Icon, title, description }) => (
+  <div className="group relative bg-brand-card border border-white/10 rounded-2xl p-8 hover:border-brand-primary/50 transition-all duration-300 hover:-translate-y-2 inner-glow flex flex-col gap-6 reveal-hidden">
+    <div className="absolute inset-0 bg-gradient-to-b from-brand-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>
+    <div className="absolute -inset-[2px] bg-brand-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10 blur-xl rounded-2xl"></div>
+    
+    <div className="w-14 h-14 bg-brand-primary/10 rounded-xl flex items-center justify-center border border-brand-primary/20 group-hover:bg-brand-primary/20 transition-all shadow-[0_0_20px_-5px_rgba(139,92,246,0.3)] shrink-0">
+      <Icon className="w-7 h-7 text-brand-primary" />
+    </div>
+    
+    <div className="flex flex-col gap-3">
+      <h3 className="type-h3 text-text-primary group-hover:text-brand-primary transition-colors">{title}</h3>
+      <p className="text-text-secondary leading-relaxed leading-relaxed">{description}</p>
+    </div>
+  </div>
+);
 
 export const ComparisonSection: React.FC = () => {
     const sectionRef = useReveal();
@@ -25,78 +41,40 @@ export const ComparisonSection: React.FC = () => {
             <div className="max-w-screen-2xl mx-auto relative z-10">
                 <header className="text-center mb-20 px-4 max-w-[960px] mx-auto reveal-hidden">
                     <h2 className="type-h2 text-center text-text-primary mb-6">
-                        Por que a <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-glow">Programa de Aceleração Jurídica</span> é o único caminho seguro?
+                        O que você vai construir dentro do <span className="text-brand-primary font-bold">Programa de Aceleração Jurídica</span>: O seu <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-glow">Sistema Operacional de Receita</span>
                     </h2>
+                    <p className="type-body-lg text-center text-text-secondary max-w-4xl mx-auto">
+                        Nós unimos as práticas mais avançadas de <strong className="text-text-primary">Captação de Clientes, Processos de Venda e Gestão de Faturamento</strong> e as transformamos em uma engenharia feita sob medida para a realidade fática do advogado no Brasil.
+                    </p>
                 </header>
 
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
-                    {/* Market Failures */}
-                    <div className="group relative bg-gradient-to-br from-red-500/[0.07] via-brand-card to-brand-card rounded-2xl border border-red-500/20 overflow-hidden hover:border-red-500/50 transition-all duration-300 hover:-translate-y-2 inner-glow reveal-hidden">
-                        <div className="absolute inset-0 bg-red-500/[0.03] pointer-events-none"></div>
-                        <div className="absolute -inset-[2px] bg-red-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10 blur-xl rounded-2xl"></div>
-
-                        <div className="p-8 relative z-10">
-                            <div className="mb-6">
-                                <h3 className="type-h3 text-red-500">Onde o Mercado Falha</h3>
-                            </div>
-                            <div className="space-y-6">
-                                {[
-                                    { title: "Cursos de Marketing", desc: "Vendem teoria e geram ansiedade. No final, você tem muito conhecimento, mas continua sem nada pronto para rodar." },
-                                    { title: "Agências de Tráfego", desc: "Focam em cliques e métricas de vaidade. Elas ignoram se o seu atendimento é ruim e se você está perdendo dinheiro no fechamento." },
-                                    { title: "Consultorias Complexas", desc: "Exigem softwares caros e processos burocráticos. Elas esquecem que você precisa de caixa rápido, não de mais planilhas difíceis." },
-                                    { title: "Escravidão do Conteúdo", desc: "Muitos cursos te obrigam a virar um \"blogueiro\" e postar todo dia para ter atenção. Se você para de postar, sua captação morre." },
-                                ].map((item, i) => (
-                                    <div key={i} className="flex gap-4">
-                                        <div className="w-6 h-6 rounded-full bg-red-500/10 border border-red-500/20 flex items-center justify-center shrink-0 mt-0.5 shadow-lg shadow-red-500/10">
-                                            <X className="w-3.5 h-3.5 text-red-500" />
-                                        </div>
-                                        <p className="type-body text-text-primary">
-                                            <strong className="text-red-500/90">{item.title}:</strong> {item.desc}
-                                        </p>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Causi Advantage */}
-                    <div className="group relative bg-gradient-to-br from-brand-primary/[0.12] via-brand-card to-brand-card rounded-2xl border border-brand-primary/30 shadow-[inset_0_0_60px_rgba(139,92,246,0.15)] overflow-hidden hover:border-brand-primary/50 transition-all duration-300 hover:-translate-y-2 inner-glow reveal-hidden">
-                        <div className="absolute inset-0 bg-brand-primary/[0.05] pointer-events-none"></div>
-                        <div className="absolute -inset-[2px] bg-brand-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10 blur-xl rounded-2xl"></div>
-
-                        <div className="p-8 relative z-10">
-                            <div className="mb-6">
-                                <h3 className="type-h3 text-brand-primary">A Vitória da Estruturação</h3>
-                            </div>
-                            <div className="space-y-6">
-                                {[
-                                    { title: "Velocidade Real", desc: "Você não estuda para fazer; nós entregamos sua Landing Page e seus Vídeos prontos. Você pula a teoria e vai direto para a captação." },
-                                    { title: "Seguro de Investimento", desc: "Blindamos seu Google Meu Negócio e seus Scripts de Vendas antes de você investir 1 real. Garantimos que nenhum lead seja desperdiçado." },
-                                    { title: "Foco no Lucro Líquido", desc: "Sem burocracia. Instalamos apenas o essencial para você ter processos comerciais claros, previsibilidade de caixa e escala real." },
-                                    { title: "Captação Invisível e Ativa", desc: "Sua máquina trabalha 24h atraindo clientes de alto nível sem que você precise postar todo dia ou expor sua vida pessoal para vender." },
-                                ].map((item, i) => (
-                                    <div key={i} className="flex gap-4">
-                                        <div className="w-6 h-6 rounded-full bg-brand-primary/10 border border-brand-primary/20 flex items-center justify-center shrink-0 mt-0.5 shadow-lg shadow-brand-primary/10">
-                                            <Check className="w-3.5 h-3.5 text-brand-primary" />
-                                        </div>
-                                        <p className="type-body text-text-primary">
-                                            <strong className="text-brand-primary/90">{item.title}:</strong> {item.desc}
-                                        </p>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                    </div>
+                {/* SOR Pillars Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-24 max-w-7xl mx-auto">
+                    {[
+                        {
+                            icon: Target,
+                            title: "Engenharia de Atração",
+                            description: "O método que substitui a sorte pela precisão, criando um fluxo constante de novos interessados no seu trabalho."
+                        },
+                        {
+                            icon: UserCheck,
+                            title: "Protocolo de Admissão",
+                            description: "A estratégia que filtra o curioso, educa o interessado e prepara o fechamento do contrato antes mesmo da reunião."
+                        },
+                        {
+                            icon: Infinity,
+                            title: "Gestão de Perpetuidade",
+                            description: "A inteligência que impede você de descartar seus clientes e transforma sua base atual em uma fonte de receita recorrente."
+                        }
+                    ].map((pillar, idx) => (
+                        <PillarCard key={idx} {...pillar} />
+                    ))}
                 </div>
 
 
-                <footer className="mt-20 text-center flex flex-col items-center gap-8 px-4 reveal-hidden">
-                    <p className="type-cta max-w-3xl">Pronto para parar de desperdiçar dinheiro e <span className="text-brand-primary">profissionalizar</span> sua advocacia?</p>
-                    <Button onClick={() => document.getElementById('proximos-passos')?.scrollIntoView({ behavior: 'smooth' })}>
-                        <span className="font-normal text-white/90">QUERO CRIAR </span>
-                        <span className="font-black">MINHA MÁQUINA</span>
-                    </Button>
-                </footer>
+
+
+
             </div>
         </section>
     );

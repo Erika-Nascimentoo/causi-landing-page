@@ -5,32 +5,28 @@ export const FaqFooter: React.FC = () => {
     const sectionRef = useReveal();
     const faqs = [
         {
-            question: "O Causi está em conformidade com a OAB?",
-            answer: "Sim, 100%. Nossas estratégias são baseadas em provimento de autoridade e conteúdo informativo, respeitando integralmente o Código de Ética e Disciplina da OAB."
+            question: "1. Isso é permitido pela OAB?",
+            answer: "Sim. Nosso sistema foca em gestão, faturamento e profissionalização. Nós não usamos estratégias de \"venda agressiva\" ou mercantilização. O Sistema Operacional de Receita é a forma mais ética e segura de crescer hoje no Brasil."
         },
         {
-            question: "Preciso ter uma equipe de marketing?",
-            answer: "Não. Nós instalamos a estrutura e os processos. Você pode gerir internamente ou delegar seguindo nossos protocolos replicáveis."
+            question: "2. Eu não entendo nada de tecnologia, vou conseguir usar?",
+            answer: "Com certeza. O sistema foi desenhado para ser simples e direto. Além disso, você recebe o acesso à ferramenta pronta e o passo a passo na imersão com os especialistas da Causi."
         },
         {
-            question: "Vou precisar gravar vídeos ou aparecer todo dia?",
-            answer: "Não. A estrutura foca em ativos que trabalham sozinhos. Se você quiser aparecer, potencializa o resultado, mas a máquina é desenhada para converter através de autoridade e processos comerciais."
+            question: "3. Isso funciona para o meu nicho?",
+            answer: "Sim. Toda advocacia precisa de Atração, Conversão e Perpetuidade. O sistema é a base de qualquer escritório, não importa a área do Direito."
         },
         {
-            question: "Já contratei agências e não tive retorno. Por que seria diferente?",
-            answer: "Agências focam apenas em tráfego (cliques). Nós focamos em Estruturação. Além de atrair o lead, preparamos seu Google, sua Landing Page e seus Scripts de Vendas para garantir o fechamento do contrato."
+            question: "4. Quanto tempo eu preciso dedicar para ver resultados?",
+            answer: "O objetivo do sistema é justamente te devolver tempo. Logo na primeira semana, com a Auditoria e os 30 dias de plataforma, você já começa a organizar a casa e estancar as perdas."
         },
         {
-            question: "Vou precisar contratar algum software caro?",
-            answer: "Não. Utilizamos as ferramentas que você já tem ou opções gratuitas e acessíveis. O foco é na inteligência do processo jurídico-comercial e não em pendurar mais uma mensalidade de software."
+            question: "5. E se eu não puder participar da Imersão ao vivo?",
+            answer: "Não se preocupe. O seu ingresso dá direito à participação na próxima data disponível. Você sempre terá uma vaga garantida no próximo encontro com a equipe."
         },
         {
-            question: "Quanto tempo leva para ver resultados?",
-            answer: "A implementação acontece em poucos dias. O fluxo de clientes qualificados costuma estabilizar entre 30 a 60 dias após a instalação completa da estrutura."
-        },
-        {
-            question: "Isso funciona para qualquer área do Direito?",
-            answer: "Funciona para áreas que lidam com problemas de alta urgência ou alto ticket, onde o cliente busca ativamente por um especialista (Ex: Civil, Família, Tributário, Previdenciário, Trabalhista, etc)."
+            question: "6. Como funciona o bônus de 30 dias do Plano Profissional?",
+            answer: "Assim que você entrar no grupo, nossa equipe liberará o seu acesso total à plataforma para você já começar a usar o método na prática."
         }
     ];
 
