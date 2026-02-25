@@ -20,10 +20,10 @@ export const QualificationSection: React.FC = () => {
                 <div className="w-full lg:w-[60%] flex flex-col justify-center px-6 md:px-12 lg:px-20 py-20 lg:py-12 z-10 relative">
                     <div id="proximos-passos" className="flex flex-col items-center lg:items-start gap-8 w-full border border-brand-primary/30 rounded-2xl p-8 md:p-10 bg-brand-card/50 backdrop-blur-sm shadow-[0_0_50px_-12px_rgba(139,92,246,0.3)]">
                         <h2 className="type-h2 text-center lg:text-left">
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-glow">Sua Máquina de Fechar Contratos</span> <span className="text-white">está a um passo</span>
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-glow font-black">Sua Máquina de Fechar Contratos</span> <span className="text-white">está a um passo</span>
                         </h2>
                         <p className="type-body-lg text-white text-center lg:text-left max-w-xl">
-                            Não trabalhamos com quem busca "milagres". A <strong className="text-brand-primary">Programa de Aceleração Jurídica</strong> é para advogados que decidiram profissionalizar sua captação e querem nossa equipe instalando ativos de escala nos próximos 30 dias.
+                            Não trabalhamos com quem busca "milagres". O <strong className="text-brand-primary">Programa de Aceleração Jurídica do Causi</strong> é para advogados que decidiram profissionalizar sua captação e querem nossa equipe instalando ativos de escala nos próximos 30 dias.
                         </p>
                         <Button
                             fullWidth

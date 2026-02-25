@@ -12,7 +12,7 @@ const OfferListItem: React.FC<{ title: string; description: string; isBonus?: bo
       <span className="font-bold">{title}:</span>{' '}
       <span className="text-text-secondary">{description}</span>
       {isBonus && (
-        <span className="ml-3 text-[10px] font-bold uppercase tracking-wider bg-brand-primary text-white px-2 py-0.5 rounded-full inline-block align-middle">
+        <span className="ml-3 text-[10px] font-bold uppercase bg-brand-primary text-white px-2 py-0.5 rounded-full inline-block align-middle">
           BÔNUS
         </span>
       )}
@@ -24,7 +24,7 @@ export const SorSystemSection: React.FC = () => {
     const sectionRef = useReveal();
 
     return (
-        <section ref={sectionRef} className="py-12 md:py-24 px-6 bg-bg-page relative overflow-hidden">
+        <section id="offer" ref={sectionRef} className="py-20 md:py-32 px-6 bg-bg-page relative overflow-hidden">
             {/* Blueprint Grid Overlay */}
             <div
                 className="absolute inset-x-0 top-0 bottom-0 opacity-[0.07] pointer-events-none"
@@ -39,7 +39,7 @@ export const SorSystemSection: React.FC = () => {
             <div className="max-w-2xl mx-auto relative z-10">
                 <header className="text-center mb-16 px-4 max-w-[960px] mx-auto reveal-hidden">
                     <h2 className="type-h2 text-center text-text-primary mb-6">
-                        O <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-glow">Programa de Aceleração Jurídica do Causi</span> não é um curso teórico e nem mesmo um PDF ou planilha. 
+                        O <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-glow box-decoration-clone font-black">Programa de Aceleração Jurídica</span> do <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-glow box-decoration-clone font-black">Causi</span> não é um curso teórico e nem mesmo um PDF ou planilha. 
                     </h2>
                     <p className="type-body-lg text-center text-text-secondary max-w-4xl mx-auto">
                         Ele foi desenhado para você abandonar o improviso e assumir o comando do seu <strong className="text-text-primary">Sistema Operacional de Receita</strong>.
@@ -88,11 +88,11 @@ export const SorSystemSection: React.FC = () => {
 
                         {/* Pricing and Button - NOW AT THE BOTTOM */}
                         <div className="w-full flex flex-col items-center mt-12">
-                            <p className="text-lg font-bold text-brand-primary uppercase tracking-widest mb-4">Investimento Único</p>
+                            <p className="text-lg font-bold text-brand-primary uppercase mb-4">Investimento Único</p>
                             
                             <div className="flex items-baseline gap-2 mb-2">
                                 <span className="text-2xl font-medium text-text-secondary">R$</span>
-                                <span className="text-7xl md:text-8xl font-black text-text-primary tracking-tight">47,90</span>
+                                <span className="text-7xl md:text-8xl font-black text-text-primary">47,90</span>
                             </div>
                             <p className="text-text-secondary mb-8 font-medium italic">Pagamento único. Sem mensalidades ocultas.</p>
                             

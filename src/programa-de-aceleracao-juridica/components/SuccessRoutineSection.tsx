@@ -1,0 +1,162 @@
+import React, { useEffect, useRef } from 'react';
+import { CheckCircle2 } from 'lucide-react';
+import { useReveal } from '../hooks/useReveal';
+import { Button } from './Button';
+
+export const SuccessRoutineSection: React.FC = () => {
+  const sectionRef = useReveal();
+  const timelineRef = useRef<HTMLDivElement>(null);
+  const progressLineRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    let ticking = false;
+
+    const handleScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          if (timelineRef.current && progressLineRef.current) {
+            const rect = timelineRef.current.getBoundingClientRect();
+            const viewportCenter = window.innerHeight / 2;
+            
+            // Calcula quanto já passamos do centro da tela em relação ao topo da timeline
+            const scrolledPast = viewportCenter - rect.top;
+            let progress = scrolledPast / rect.height;
+            
+            // Limita o progresso entre 0 e 100%
+            progress = Math.max(0, Math.min(1, progress));
+            
+            progressLineRef.current.style.height = `${progress * 100}%`;
+          }
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll(); // Checagem inicial
+    
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const steps = [
+    {
+      step: "01",
+      title: "Pagamento e Boas-vindas",
+      description: "Garanta sua vaga e receba acesso imediato à página com todas as instruções. É o momento de abandonar a dúvida e assinar o compromisso com um novo faturamento."
+    },
+    {
+      step: "02",
+      title: "Auditoria e Diagnóstico de IA",
+      description: "Preencha nosso formulário inteligente para receber um laudo pericial criado por nossa inteligência artificial. Chega de trabalhar no escuro: descubra exatamente onde o seu dinheiro está vazando."
+    },
+    {
+      step: "03",
+      title: "Grupo de Networking no WhatsApp",
+      description: "Entre para a nossa comunidade exclusiva e receba as datas da próxima imersão e dos encontros mensais. Deixe de ser um profissional solitário e passe a fazer parte de um time de estrategistas."
+    },
+    {
+      step: "04",
+      title: "Imersão e Mentorias Mensais",
+      description: "Participe dos encontros ao vivo com nossos especialistas para desenhar o seu novo sistema. Pare de tentar resolver tudo sozinho e instale a metodologia que governa o seu lucro."
+    },
+    {
+      step: "05",
+      title: "Onboarding e Bônus de 30 Dias",
+      description: "Aprenda com nossa equipe a usar a plataforma e libere sua IA de Atendimento gratuita por 30 dias. Conquiste sua liberdade operacional: o sistema atende e filtra enquanto você foca no Direito."
+    }
+  ];
+
+  return (
+    <section id="outcome" ref={sectionRef} className="relative bg-white">
+      
+      {/* Sticky Background Image - Occupying 50% of the section width on the left */}
+      <div className="absolute top-0 left-0 bottom-0 w-full lg:w-1/2 z-0 hidden lg:block pointer-events-none">
+        <div className="sticky top-0 h-[100vh] w-full flex items-center">
+          <div className="w-full h-full relative">
+            <div 
+              className="w-full h-full bg-cover bg-center bg-no-repeat"
+              style={{ 
+                backgroundImage: `url('${import.meta.env.BASE_URL}feliz-atendendo.webp')`
+              }}
+            />
+            {/* Fades to blend with the white bg */}
+            <div className="absolute inset-0 bg-gradient-to-l from-white via-transparent to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent"></div>
+          </div>
+        </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto relative z-10 w-full py-20 md:py-32 px-6">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          
+          {/* Empty spacer for the image side on desktop (6 cols = 50%) */}
+          <div className="lg:col-span-6 hidden lg:block" />
+
+          {/* Right Side: Content - Occupying 50% (6 cols) */}
+          <div className="lg:col-span-6 flex flex-col gap-12">
+            <div className="reveal-hidden">
+              <span className="inline-flex items-center gap-4 text-slate-600 uppercase tracking-[0.2em] font-bold text-[10px] md:text-xs px-4 py-1.5 border border-slate-200 rounded-full mb-6">
+                <span className="w-2 h-2 rounded-full bg-brand-primary animate-pulse shadow-[0_0_8px_rgba(139,92,246,0.8)] ml-1" />
+                A JORNADA
+              </span>
+              <h2 className="type-h2 mb-4 leading-tight text-left text-slate-900">
+                Como sua <span className="text-brand-primary font-black">jornada</span> começa no <span className="text-brand-primary font-black">Programa de Aceleração Jurídica</span> do <span className="text-brand-primary font-black">Causi</span>
+              </h2>
+            </div>
+
+            {/* Vertical Timeline */}
+            <div ref={timelineRef} className="relative flex flex-col gap-0">
+              {/* Central Line (Base) */}
+              <div className="absolute left-3 md:left-4 top-4 bottom-4 w-px bg-slate-200 -translate-x-1/2" />
+              
+              {/* Central Line (Progress) - Preenche com scroll */}
+              <div 
+                ref={progressLineRef}
+                className="absolute left-3 md:left-4 top-4 w-[2px] bg-brand-primary -translate-x-1/2 shadow-[0_0_8px_rgba(139,92,246,0.5)] transition-all duration-75 ease-out" 
+                style={{ 
+                  height: '0%', 
+                  maxHeight: 'calc(100% - 32px)',
+                  maskImage: 'linear-gradient(to bottom, black 85%, transparent 100%)',
+                  WebkitMaskImage: 'linear-gradient(to bottom, black 85%, transparent 100%)'
+                }}
+              />
+
+              {steps.map((item, idx) => (
+                <div key={idx} className="relative flex items-start gap-8 pb-10 last:pb-0 group reveal-hidden">
+                  {/* Point */}
+                  <div className="relative shrink-0 w-6 h-6 md:w-8 md:h-8 flex items-center justify-center z-10 transition-transform duration-300 group-hover:scale-125">
+                    <div className="w-3 h-3 md:w-4 md:h-4 rounded-full bg-brand-primary shadow-[0_0_12px_rgba(139,92,246,0.5)]" />
+                  </div>
+
+                  {/* Text Content */}
+                  <div className="flex-1 pt-0.5">
+                    <div className="flex flex-col gap-2">
+                      <span className="text-xs font-black text-brand-primary tracking-widest uppercase">
+                        Passo {item.step}
+                      </span>
+                      <h4 className="text-xl md:text-2xl font-bold text-slate-900 group-hover:text-brand-primary transition-colors duration-300">
+                        {item.title}
+                      </h4>
+                      <p className="text-base md:text-lg text-slate-600 leading-relaxed">
+                        {item.description}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="reveal-hidden mt-6">
+              <Button 
+                onClick={() => document.getElementById('offer')?.scrollIntoView({ behavior: 'smooth' })}
+              >
+                Garantir meu acesso ao Programa
+              </Button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};

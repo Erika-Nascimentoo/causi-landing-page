@@ -1,51 +1,72 @@
 import React from 'react';
 import { XCircle } from 'lucide-react';
 import { useReveal } from '../hooks/useReveal';
+import { Button } from './Button';
 
 export const RoutineProblemSection: React.FC = () => {
   const sectionRef = useReveal();
 
   const points = [
-    "Você atende pessoas no WhatsApp sábado à noite e elas nem te respondem depois.",
-    "Você envia o valor do seu trabalho e a pessoa simplesmente some.",
-    "Você depende da sorte para saber se vai ter cliente novo no mês que vem."
+    <> <strong className="text-white">O plantão gratuito:</strong> Seu celular apita no sábado à noite com pessoas querendo "tirar uma dúvida rapidinho" de graça, roubando o tempo da sua família.</>,
+    <> <strong className="text-white">A humilhação do vácuo:</strong> Você gasta energia explicando o caso, envia o valor dos seus honorários e recebe um frio "vou pensar e te aviso" (e a pessoa nunca mais responde).</>,
+    <> <strong className="text-white">A roleta russa financeira:</strong> Você olha para a agenda do mês que vem e sente um frio na barriga porque não faz ideia de onde virão os próximos clientes pagantes.</>
   ];
 
   return (
-    <section ref={sectionRef} className="py-24 px-6 bg-bg-page relative overflow-hidden">
-      {/* Background Decorative Element */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-red-500/5 blur-[120px] rounded-full pointer-events-none"></div>
+    <section id="routine" ref={sectionRef} className="relative py-20 md:py-32 px-6 bg-bg-page overflow-hidden min-h-[800px] flex items-center">
+      
+      {/* Background Image - Occupying 50% of the section width on the right */}
+      <div className="absolute top-0 right-0 w-full lg:w-1/2 h-full z-0 overflow-hidden hidden lg:block">
+        <div 
+          className="w-full h-full bg-cover bg-center bg-no-repeat grayscale"
+          style={{ backgroundImage: `url('${import.meta.env.BASE_URL}advogado-cansado.webp')` }}
+        />
+        {/* Fades to blend with the dark page bg */}
+        <div className="absolute inset-0 bg-gradient-to-r from-bg-page via-transparent to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-bg-page via-transparent to-bg-page"></div>
+      </div>
 
-      <div className="max-w-7xl mx-auto relative z-10">
-        <div className="max-w-4xl mx-auto text-center mb-16 reveal-hidden">
-          <h2 className="type-h2 mb-8 leading-tight">
-            Você estudou muito para ser um <span className="text-white">advogado respeitado</span>, mas a sua rotina hoje parece a de uma <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-rose-500">secretária:</span>
-          </h2>
-        </div>
-
-        <div className="max-w-3xl mx-auto flex flex-col gap-6">
-          {points.map((text, idx) => (
-            <div key={idx} className="relative flex items-center gap-6 p-6 md:p-8 bg-[#0A0A0B] border border-white/5 rounded-2xl reveal-hidden">
-              {/* Icon */}
-              <div className="shrink-0">
-                <XCircle className="w-8 h-8 text-red-500/80" />
-              </div>
-
-              {/* Text Content */}
-              <div className="flex flex-col">
-                <p className="type-body-lg text-text-primary leading-relaxed">
-                  {text}
-                </p>
-              </div>
+      <div className="max-w-7xl mx-auto relative z-10 w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          
+          {/* Left Side: Content - Occupying the left half */}
+          <div className="lg:col-span-6 flex flex-col gap-10">
+            <div className="reveal-hidden">
+              <span className="inline-flex items-center gap-4 text-white uppercase tracking-[0.2em] font-bold text-[10px] md:text-xs px-4 py-1.5 border border-white/20 rounded-full mb-6">
+                <span className="w-2 h-2 rounded-full bg-red-600 animate-pulse shadow-[0_0_8px_rgba(220,38,38,0.8)] ml-1" />
+                OS BASTIDORES DA SUA ADVOCACIA
+              </span>
+              <h2 className="type-h2 mb-4 leading-tight text-left">
+                Você estudou muito para ser um <span className="text-white">advogado respeitado</span>, mas a sua rotina hoje parece a de uma <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-rose-500 font-black">secretária:</span>
+              </h2>
             </div>
-          ))}
 
-          {/* Closing Statement Card */}
-          <div className="group relative bg-gradient-to-br from-red-500/[0.07] via-[#0A0A0B] to-[#0A0A0B] rounded-2xl border border-red-500/20 p-6 md:p-8 reveal-hidden transition-all duration-500">
-            <div className="absolute inset-0 bg-red-500/[0.03] pointer-events-none"></div>
-            <p className="relative z-10 type-body-lg text-center text-text-primary">
-              Isso não é um escritório. É apenas um <span className="text-red-500 font-bold">autoemprego que te escraviza.</span>
-            </p>
+            <div className="flex flex-col gap-5">
+              {points.map((text, idx) => (
+                <div key={idx} className="relative flex items-start gap-4 reveal-hidden">
+                  {/* Icon */}
+                  <div className="shrink-0 mt-1">
+                    <XCircle className="w-6 h-6 text-red-500" />
+                  </div>
+
+                  {/* Text Content */}
+                  <p className="text-lg md:text-xl text-text-secondary leading-relaxed">
+                    {text}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            <div className="reveal-hidden mt-4">
+              <Button 
+                variant="danger"
+                onClick={() => document.getElementById('problems')?.scrollIntoView({ behavior: 'smooth' })}
+              >
+                Mas eu já tentei resolver isso
+              </Button>
+            </div>
+
+
           </div>
         </div>
       </div>

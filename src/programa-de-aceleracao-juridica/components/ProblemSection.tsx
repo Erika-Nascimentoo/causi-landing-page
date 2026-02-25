@@ -18,7 +18,7 @@ const ProblemCard: React.FC<FeatureCardProps> = ({ icon: Icon, title, descriptio
         </div>
       )}
       <div className="flex flex-col gap-4">
-        <h3 className="type-h3 leading-tight text-text-primary tracking-tight">{title}</h3>
+        <h3 className="type-h3 leading-tight text-text-primary">{title}</h3>
         <p className="type-body">{description}</p>
       </div>
     </div>
@@ -30,28 +30,28 @@ export const ProblemSection: React.FC = () => {
   const problems = [
     {
       icon: Layout,
-      title: "A Agência de Posts",
-      description: "Você pagou por posts bonitinhos e feed harmônico, mas descobriu que curtida não gera honorário e não paga o boleto do seu escritório."
+      title: <>A Agência <br /> de Posts</>,
+      description: "Você pagou caro para ter um \"feed harmônico\" e artes bonitinhas no Instagram, mas descobriu da pior forma que curtida não paga aluguel e elogio não vira contrato assinado."
     },
     {
       icon: UserX,
-      title: "O Gestor de Contatinhos",
-      description: "Você recebeu dezenas de curiosos que só roubaram seu tempo, sem fechar um único contrato real por falta de filtro."
+      title: <>O Gestor de <br /> Contatinhos</>,
+      description: "Eles prometeram \"chover clientes\", mas só encheram seu WhatsApp de curiosos pedindo orçamento. Você passou o dia respondendo mensagem de graça e não fechou um único honorário."
     },
     {
       icon: FileWarning,
-      title: "O Guru dos Milagres",
-      description: "Você comprou cursos, PDFs ou planilhas que prometiam lucro fácil, mas percebeu que material teórico não substitui um sistema de trabalho real."
+      title: <>A Planilha <br /> Mágica</>,
+      description: "Você comprou o cursinho ou a planilha mágica de algum \"especialista\", tentou aplicar sozinho depois de um dia exaustivo no fórum, e as pastas continuam pegando poeira no seu computador."
     },
     {
       icon: Bot,
-      title: "A IA do Piloto Automático",
-      description: "Você instalou robôs que prometiam fechar contratos sozinhos, mas descobriu que tecnologia sem processo comercial só serve para perder clientes de forma automática."
+      title: <>O Robô Burro de <br /> Atendimento</>,
+      description: "Você instalou um robô de atendimento esperando paz, mas ele só irritou seus contatos. Sem um processo humano por trás, a tecnologia não fechou vendas, apenas automatizou a perda de clientes."
     }
   ];
 
   return (
-    <section ref={sectionRef} className="py-12 md:py-24 px-6 bg-bg-page relative overflow-hidden">
+    <section id="problems" ref={sectionRef} className="py-20 md:py-32 px-6 bg-bg-page relative overflow-hidden">
       {/* Blueprint Grid Overlay */}
       <div
         className="absolute inset-x-0 top-0 bottom-0 opacity-[0.07] pointer-events-none"
@@ -68,8 +68,12 @@ export const ProblemSection: React.FC = () => {
 
       <div className="max-w-screen-2xl mx-auto">
         <header className="text-center mb-20 px-4 max-w-[960px] mx-auto reveal-hidden">
+          <span className="inline-flex items-center gap-4 text-white uppercase tracking-[0.2em] font-bold text-[10px] md:text-xs px-4 py-1.5 border border-white/20 rounded-full mb-6">
+            <span className="w-2 h-2 rounded-full bg-red-600 animate-pulse shadow-[0_0_8px_rgba(220,38,38,0.8)] ml-1" />
+            Tentativas Frustradas
+          </span>
           <h2 className="type-h2 text-center text-text-primary mb-6">
-            Você já tentou as <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-rose-500">saídas fáceis</span>, mas elas só serviram para aumentar o seu cansaço
+            Você já tentou as <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-rose-500 font-black">saídas fáceis</span>, mas elas só serviram para aumentar o seu cansaço
           </h2>
         </header>
 
@@ -77,6 +81,32 @@ export const ProblemSection: React.FC = () => {
           {problems.map((prob, idx) => (
             <ProblemCard key={idx} {...prob} />
           ))}
+        </div>
+
+        {/* Conclusão: Balde Furado */}
+        <div className="mt-24 max-w-4xl mx-auto text-center reveal-hidden">
+          <div className="flex flex-col gap-8 mb-12">
+            <h4 className="type-h4 text-text-secondary leading-relaxed md:text-2xl font-medium">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-rose-500 font-black">A dura realidade:</span> O seu escritório não tem um problema de "falta de clientes". Ele tem um problema de <span className="text-white font-bold">processo.</span>
+            </h4>
+            
+            <p className="text-text-secondary leading-relaxed md:text-2xl font-medium">
+              Contratar agências ou comprar robôs soltos é tentar apagar um incêndio jogando gasolina. Enquanto a sua forma de captar, atender e cobrar não conversar entre si, você vai continuar enxugando gelo. 
+            </p>
+
+            <p className="text-text-secondary leading-relaxed md:text-2xl font-medium">
+              Você não precisa de mais esforço manual ou de uma nova ferramenta mágica. O que os grandes escritórios usam para crescer em paz é uma única coisa: <br /><span className="text-white font-black">Um Sistema Operacional de Receita.</span>
+            </p>
+          </div>
+          
+          <div className="flex justify-center">
+            <Button 
+              variant="danger"
+              onClick={() => document.getElementById('solution')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              Quero consertar o minha advocacia
+            </Button>
+          </div>
         </div>
       </div>
     </section>

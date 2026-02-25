@@ -1,20 +1,30 @@
 import React from 'react';
-import { Users, Zap, MonitorPlay, MessagesSquare, MessageCircle, Gift } from 'lucide-react';
+import { Users, Zap, MonitorPlay, MessagesSquare, MessageCircle, Gift, Ticket, ClipboardList, Library, Compass, Bot } from 'lucide-react';
 import { useReveal } from '../hooks/useReveal';
+import { Button } from './Button';
 
-const ArsenalCard: React.FC<{ icon: any; title: string; description: string; isBonus?: boolean }> = ({ icon: Icon, title, description, isBonus }) => (
-  <div className={`group relative bg-brand-card border rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 inner-glow flex flex-col gap-6 reveal-hidden ${isBonus ? 'border-brand-primary/40 shadow-[0_0_30px_-10px_rgba(139,92,246,0.3)]' : 'border-white/10 hover:border-brand-primary/50'}`}>
-    <div className="absolute inset-0 bg-gradient-to-b from-brand-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>
+const ArsenalCard: React.FC<{ icon: any; title: React.ReactNode; description: string; isBonus?: boolean; className?: string }> = ({ icon: Icon, title, description, isBonus, className }) => (
+  <div className={`group relative bg-black/60 bg-brand-primary/10 backdrop-blur-md border rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 flex flex-col reveal-hidden overflow-hidden ${isBonus ? 'border-brand-primary/40 shadow-[0_0_30px_-10px_rgba(139,92,246,0.3)]' : 'border-white/10 hover:border-brand-primary/50'} ${className || ''}`}>
+    {/* Internal Purple Glow */}
+    <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(139,92,246,0.15),transparent_70%)] pointer-events-none rounded-2xl" />
+    <div className="absolute inset-0 shadow-[inset_0_0_25px_rgba(139,92,246,0.12)] pointer-events-none rounded-2xl" />
     
-    <div className={`w-14 h-14 rounded-xl flex items-center justify-center border transition-all shrink-0 ${isBonus ? 'bg-brand-primary text-white border-brand-primary shadow-[0_0_20px_-5px_rgba(139,92,246,0.5)]' : 'bg-brand-primary/10 border-brand-primary/20 text-brand-primary group-hover:bg-brand-primary/20'}`}>
-      <Icon className="w-7 h-7" />
-    </div>
-    
-    <div className="flex flex-col gap-3">
-      <div className="flex items-center gap-2">
-        <h3 className="text-xl font-bold text-text-primary group-hover:text-brand-primary transition-colors">{title}</h3>
+    <div className="absolute inset-0 bg-gradient-to-b from-brand-primary/15 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>
+
+    <div className={`flex flex-col gap-6 h-full relative z-20 ${className?.includes('row-span') ? 'justify-end' : 'justify-center'}`}>
+      {/* Icon */}
+      <div className="w-14 h-14 rounded-xl flex items-center justify-center border border-brand-primary/20 bg-brand-primary/10 text-brand-primary group-hover:bg-brand-primary/20 transition-all shrink-0">
+        <Icon className="w-7 h-7" />
       </div>
-      <p className="text-text-secondary leading-relaxed text-base">{description}</p>
+
+      <div className="flex flex-col gap-4">
+        <h3 className="type-h3 leading-tight text-text-primary group-hover:text-brand-primary transition-colors">
+          {title}
+        </h3>
+        <p className="type-body text-text-secondary">
+          {description}
+        </p>
+      </div>
     </div>
   </div>
 );
@@ -22,67 +32,90 @@ const ArsenalCard: React.FC<{ icon: any; title: string; description: string; isB
 export const ImplementationArsenalSection: React.FC = () => {
     const sectionRef = useReveal();
 
+    const OnlineBadge = () => (
+        <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-brand-primary/20 text-brand-primary border border-brand-primary/30 ml-1 whitespace-nowrap align-middle">
+            ONLINE
+        </span>
+    );
+
+    const BonusBadge = () => (
+        <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-amber-500/20 text-amber-500 border border-amber-500/30 ml-2 align-middle uppercase">
+            Bônus
+        </span>
+    );
+
     const arsenalItems = [
         {
+            icon: Ticket,
+            title: <>Ingresso para a <br /> Imersão ao Vivo <OnlineBadge /></>,
+            description: "O encontro prático (via chamada de vídeo) onde vamos desenhar juntos o plano para o seu escritório parar de vazar dinheiro."
+        },
+        {
+            icon: ClipboardList,
+            title: "O Laudo de Diagnóstico",
+            description: "Um raio-x inteligente que analisa a sua rotina atual e te mostra, em segundos, exatamente onde estão os furos do seu faturamento."
+        },
+        {
+            icon: Bot,
+            title: <>30 Dias Grátis da <br /> Plataforma Causi <BonusBadge /></>,
+            description: "Não basta ter o método se você tiver que fazer tudo no Excel. Ao entrar hoje, nós vamos liberar e configurar junto com você a nossa inteligência artificial para atender, filtrar e agendar seus clientes 24 horas por dia no seu WhatsApp. A tecnologia que os grandes escritórios usam, rodando de graça para você por um mês.",
+            className: "lg:row-span-2"
+        },
+        {
             icon: Users,
-            title: "A Imersão ao Vivo com a Equipe Causi",
-            description: "O encontro onde vamos desenhar a arquitetura do seu faturamento passo a passo."
+            title: <>O Grupo de Networking <br /> Exclusivo</>,
+            description: "Uma comunidade blindada no WhatsApp com advogados que decidiram profissionalizar a gestão. Você não está mais sozinho no mercado."
         },
         {
-            icon: Zap,
-            title: "A Auditoria de Aceleração",
-            description: "Nossa inteligência artificial vai diagnosticar exatamente por onde o seu dinheiro está vazando hoje."
-        },
-        {
-            icon: MonitorPlay,
-            title: "Sala de Aula Causi",
-            description: "Um acervo de aulas e materiais práticos para você acelerar a instalação do seu sistema."
-        },
-        {
-            icon: MessagesSquare,
-            title: "Encontros Mensais de Estratégia",
-            description: "Reuniões exclusivas em grupo para tirar dúvidas e manter sua máquina de faturamento azeitada."
-        },
-        {
-            icon: MessageCircle,
-            title: "Grupo de Networking (WhatsApp)",
-            description: "Uma comunidade de advogados que decidiram abandonar o improviso e profissionalizar a gestão."
-        },
-        {
-            icon: Gift,
-            isBonus: true,
-            title: "BÔNUS: 30 Dias Grátis do Plano Profissional do Causi",
-            description: "A ferramenta tecnológica que sustenta todo o método pronta para você usar."
+            icon: Compass,
+            title: <>Encontros Estratégicos <br /> Mensais <OnlineBadge /></>,
+            description: "Reuniões de alinhamento em grupo (via chamada de vídeo) com a nossa equipe para tirar suas dúvidas e garantir que o seu novo sistema não pare de rodar."
         }
     ];
 
     return (
-        <section ref={sectionRef} className="py-12 md:py-24 px-6 bg-bg-page relative overflow-hidden">
+        <section id="arsenal" ref={sectionRef} className="py-20 md:py-32 px-6 bg-bg-page relative overflow-hidden">
             {/* Blueprint Grid Overlay */}
             <div
-                className="absolute inset-x-0 top-0 bottom-0 opacity-[0.05] pointer-events-none"
+                className="absolute inset-x-0 top-0 bottom-0 opacity-[0.1] pointer-events-none"
                 style={{
                     backgroundImage: `linear-gradient(to right, #ffffff 1px, transparent 1px), linear-gradient(to bottom, #ffffff 1px, transparent 1px)`,
-                    backgroundSize: '32px 32px',
+                    backgroundSize: '40px 40px',
                     maskImage: 'linear-gradient(to bottom, transparent, black 15%, black 85%, transparent)',
                     WebkitMaskImage: 'linear-gradient(to bottom, transparent, black 15%, black 85%, transparent)'
                 }}
             />
 
-            <div className="max-w-7xl mx-auto relative z-10">
+            <div className="max-w-screen-2xl mx-auto relative z-10">
                 <header className="text-center mb-20 px-4 max-w-[960px] mx-auto reveal-hidden">
-                    <h2 className="type-h2 text-center text-text-primary mb-6">
-                        O seu <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-glow">arsenal de implementação</span>
+                    <span className="inline-flex items-center gap-4 text-white uppercase tracking-[0.2em] font-bold text-[10px] md:text-xs px-4 py-1.5 border border-white/20 rounded-full mb-4">
+                        <span className="w-2 h-2 rounded-full bg-brand-primary animate-pulse shadow-[0_0_8px_rgba(139,92,246,0.8)] ml-1" />
+                        A IMPLEMENTAÇÃO
+                    </span>
+                    <h2 className="type-h2 text-center text-text-primary mb-6 leading-tight">
+                        Tudo o que você recebe hoje ao destravar o seu acesso ao <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-glow font-black">Programa de Aceleração Jurídica</span>
                     </h2>
                     <p className="type-body-lg text-center text-text-secondary max-w-4xl mx-auto">
-                        Tudo o que está incluso no seu acesso ao <strong className="text-text-primary">Programa de Aceleração Jurídica</strong>
+                        Você não está comprando um evento, está recebendo as chaves de um <strong className="text-text-primary">ecossistema completo</strong> para profissionalizar o seu faturamento.
                     </p>
                 </header>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-fr gap-6 mb-12">
                     {arsenalItems.map((item, idx) => (
                         <ArsenalCard key={idx} {...item} />
                     ))}
+                </div>
+
+                {/* Conclusão: Fluxo de Resultados */}
+                <div className="mt-20 max-w-4xl mx-auto text-center reveal-hidden">
+
+                    <div className="flex justify-center">
+                        <Button 
+                            onClick={() => document.getElementById('outcome')?.scrollIntoView({ behavior: 'smooth' })}
+                        >
+                            LIBERAR MEU ARSENAL POR R$ 47,90
+                        </Button>
+                    </div>
                 </div>
             </div>
         </section>

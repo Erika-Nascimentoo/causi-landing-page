@@ -2,7 +2,7 @@ import React from 'react';
 import { Rocket } from 'lucide-react';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: 'primary' | 'secondary' | 'outline';
+  variant?: 'primary' | 'secondary' | 'outline' | 'danger' | 'danger-outline';
   fullWidth?: boolean;
   icon?: boolean;
 }
@@ -20,7 +20,9 @@ export const Button: React.FC<ButtonProps> = ({
   const variants = {
     primary: "bg-brand-primary text-white shadow-[0_0_20px_rgba(139,92,246,0.3)] hover:shadow-[0_0_40px_rgba(139,92,246,0.5)] border border-white/10",
     secondary: "bg-white text-brand-dark hover:bg-gray-100",
-    outline: "border border-brand-primary/50 text-brand-primary hover:bg-brand-primary/10"
+    outline: "border border-brand-primary/50 text-brand-primary hover:bg-brand-primary/10",
+    danger: "bg-gradient-to-r from-red-600 to-rose-600 text-white shadow-[0_0_20px_rgba(220,38,38,0.3)] hover:shadow-[0_0_40px_rgba(220,38,38,0.5)] border border-white/10",
+    'danger-outline': "border-2 border-red-500/50 text-red-500 hover:border-red-500 hover:bg-red-500/5"
   };
 
   return (
@@ -31,7 +33,7 @@ export const Button: React.FC<ButtonProps> = ({
 
 
       {/* Button Content */}
-      <span className="relative z-10 uppercase tracking-[0.1em] font-black">{children}</span>
+      <span className="relative z-10 uppercase font-black">{children}</span>
       {icon && <Rocket className="relative z-10 w-4 h-4 md:w-5 md:h-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />}
 
       {/* Subtle Inner Glow */}
