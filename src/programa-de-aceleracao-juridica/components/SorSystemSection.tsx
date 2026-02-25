@@ -77,16 +77,26 @@ export const SorSystemSection: React.FC = () => {
 
                         {/* Pricing and Button - NOW AT THE BOTTOM */}
                         <div className="w-full flex flex-col items-center mt-10 pt-10 border-t border-slate-200">
-                            <div className="text-center mb-8 max-w-lg text-lg">
+                            <div className="text-center mb-8 max-w-xl mx-auto text-lg">
                                 <p className="text-slate-600 leading-relaxed mb-4">
-                                    Contratar uma consultoria para estruturar isso custaria milhares de reais. Pagar pelas ferramentas de IA soltas no mercado custaria centenas de reais todos os meses.
+                                    O Programa de Aceleração Jurídica tem apenas um objetivo: construir o seu Sistema Operacional e colocar dinheiro no caixa do seu escritório.
+                                </p>
+                                <p className="text-slate-600 leading-relaxed mb-4">
+                                    Nós não vamos te cobrar os milhares de reais que uma consultoria tradicional cobra. Mas nós também não damos o acesso de graça, porque precisamos separar os advogados comprometidos dos "curiosos".
                                 </p>
                                 <p className="text-slate-900 font-bold">
-                                    Mas hoje, você tem acesso ao sistema completo, validado por grandes escritórios, por um valor simbólico:
+                                    Por isso, nós cobramos apenas um valor simbólico de comprometimento para você sentar à mesa com a nossa equipe:
                                 </p>
                             </div>
 
-                            <p className="text-base font-bold text-brand-primary uppercase tracking-widest mb-2">Investimento Único</p>
+                            <div className="text-center mb-2">
+                                <p className="text-base font-bold text-brand-primary uppercase tracking-widest">
+                                    INVESTIMENTO ÚNICO
+                                </p>
+                                <p className="text-[0.8rem] italic text-brand-primary uppercase tracking-widest">
+                                    (TAXA DE COMPROMETIMENTO)
+                                </p>
+                            </div>
                             
                             <div className="flex items-baseline gap-2 mb-2">
                                 <span className="text-2xl font-medium text-slate-600">R$</span>
