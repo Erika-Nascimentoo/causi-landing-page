@@ -6,27 +6,27 @@ export const FaqFooter: React.FC = () => {
     const faqs = [
         {
             question: "1. Isso é permitido pela OAB?",
-            answer: "Sim. Nosso sistema foca em gestão, faturamento e profissionalização. Nós não usamos estratégias de \"venda agressiva\" ou mercantilização. O Sistema Operacional de Receita é a forma mais ética e segura de crescer hoje no Brasil."
+            answer: "Sim, 100% alinhado ao provimento da OAB. O Sistema Operacional de Receita não tem nada a ver com panfletagem ou mercantilização da profissão. Ele é focado em gestão interna, organização comercial e atendimento de excelência. É a forma mais ética, segura e profissional de crescer na advocacia hoje."
         },
         {
             question: "2. Eu não entendo nada de tecnologia, vou conseguir usar?",
-            answer: "Com certeza. O sistema foi desenhado para ser simples e direto. Além disso, você recebe o acesso à ferramenta pronta e o passo a passo na imersão com os especialistas do Causi."
+            answer: "Não se preocupe, você não precisa ser de T.I. O sistema foi desenhado para ser tão simples quanto usar o WhatsApp. Além disso, você não estará sozinho: na Imersão e nos encontros, nossa equipe vai te mostrar o botão exato para apertar. É copiar, colar e rodar."
         },
         {
-            question: "3. Isso funciona para o meu nicho?",
-            answer: "Sim. Toda advocacia precisa de Atração, Conversão e Perpetuidade. O sistema é a base de qualquer escritório, não importa a área do Direito."
+            question: "3. Isso funciona para a minha área de atuação (nicho)?",
+            answer: "Com certeza. Não importa se você faz Previdenciário, Família, Criminal ou Empresarial. Todo escritório precisa atrair contatos, filtrar curiosos e organizar o financeiro. O Sistema Operacional é o alicerce, e durante a Imersão nós te ajudamos a adaptar as regras para a realidade da sua área."
         },
         {
             question: "4. Quanto tempo eu preciso dedicar para ver resultados?",
-            answer: "O objetivo do sistema é justamente te devolver tempo. Logo na primeira semana, com a Auditoria e os 30 dias de plataforma, você já começa a organizar a casa e estancar as perdas."
+            answer: "O objetivo do PAJ é devolver o seu tempo, e não roubar mais dele. Logo na primeira semana, ao ativar o seu Diagnóstico e plugar a IA no WhatsApp, você já vai sentir a diferença cortando os curiosos e organizando o fluxo. O alívio operacional é imediato."
         },
         {
             question: "5. E se eu não puder participar da Imersão ao vivo?",
-            answer: "Não se preocupe. O seu ingresso dá direito à participação na próxima data disponível. Você sempre terá uma vaga garantida no próximo encontro com a equipe."
+            answer: "Fique tranquilo. O seu ingresso de R$ 47,90 é o seu passaporte para o programa. Se não puder estar presente na próxima data, sua vaga está automaticamente garantida para a Imersão seguinte. Você não perde absolutamente nada."
         },
         {
-            question: "6. Como funciona o bônus de 30 dias do Plano Profissional?",
-            answer: "Assim que você entrar no grupo, nossa equipe liberará o seu acesso total à plataforma para você já começar a usar o método na prática."
+            question: "6. Como funciona o bônus de 30 dias da Plataforma Causi?",
+            answer: "Nós fazemos com você. Após a Imersão, você vai agendar um Onboarding com a nossa equipe. Nesse encontro, nós ativamos os seus 30 dias gratuitos e configuramos o software Causi no seu WhatsApp juntos. É a garantia de que a tecnologia vai funcionar para você desde o primeiro minuto."
         }
     ];
 
