@@ -145,11 +145,6 @@
     .type-small {
         @apply text-sm font-normal leading-relaxed text-text-tertiary;
     }
-    
-    .font-serif-italic {
-        font-family: 'Playfair Display', serif;
-        font-style: italic;
-    }
 
     .inner-glow {
         box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.05);
