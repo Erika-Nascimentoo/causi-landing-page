@@ -90,7 +90,7 @@ export const SorSystemSection: React.FC = () => {
                                     title={<span className="font-medium">Acesso de 30 dias Grátis na <span className="text-brand-primary font-black">Plataforma Causi</span> no Plano Profissional<span className="text-[0.7em] align-super">*</span></span>}
                                 />
                             </ul>
-                            <p className="text-center text-xs text-slate-400 mt-4">
+                            <p className="text-center text-xs text-slate-400 mt-4 italic">
                                 * Acesso de 30 dias grátis no Plano profissional com direito a conexão de 1 número de WhatsApp e 1 usuário.
                             </p>
                         </div>
