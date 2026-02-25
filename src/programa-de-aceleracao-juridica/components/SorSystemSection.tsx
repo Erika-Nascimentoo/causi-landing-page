@@ -87,7 +87,7 @@ export const SorSystemSection: React.FC = () => {
                                 />
                                 <OfferListItem 
                                     isBonus
-                                    title="30 dias Grátis da Plataforma Causi no Plano Profissional"
+                                    title={<>30 dias Grátis da <span className="text-brand-primary">Plataforma Causi</span> no Plano Profissional</>}
                                 />
                             </ul>
                         </div>
