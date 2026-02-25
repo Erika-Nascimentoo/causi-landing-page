@@ -60,7 +60,7 @@ export const SorSystemSection: React.FC = () => {
 
                 {/* Centralized High Impact Pricing Card */}
                 <div className="reveal-hidden max-w-lg mx-auto">
-                    <div className="bg-white border border-slate-200 rounded-3xl p-8 md:p-12 relative overflow-hidden shadow-2xl flex flex-col items-center">
+                    <div className="bg-white border border-slate-200 rounded-3xl p-8 md:p-12 relative overflow-hidden shadow-[0_0_50px_rgba(255,255,255,0.5)] flex flex-col items-center">
                         <div className="absolute top-0 right-0 w-32 h-32 bg-brand-primary/5 blur-3xl rounded-full -mr-16 -mt-16"></div>
                         
                         {/* Offer List Integrated Inside Card - NOW AT THE TOP */}
