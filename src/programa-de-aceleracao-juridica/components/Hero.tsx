@@ -56,7 +56,7 @@ export const Hero: React.FC = () => {
 
             <div className="flex flex-col items-center reveal-hidden mt-6 md:mt-8">
               <Button onClick={() => document.getElementById('routine')?.scrollIntoView({ behavior: 'smooth' })}>
-                <span className="font-black text-white">Conhecer o programa</span>
+                <span className="font-black text-white">Conhecer o Programa agora</span>
               </Button>
             </div>
           </div>
