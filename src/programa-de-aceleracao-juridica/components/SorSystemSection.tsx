@@ -6,7 +6,7 @@ import { useReveal } from '../hooks/useReveal';
 const OfferListItem: React.FC<{ title: React.ReactNode; description?: string; isBonus?: boolean }> = ({ title, description, isBonus }) => (
   <li className="flex items-center gap-4 py-3 group">
     <div className="w-6 h-6 flex items-center justify-center shrink-0">
-      {isBonus ? <Gift className="w-5 h-5 text-amber-500" /> : <CheckCircle2 className="w-5 h-5 text-brand-primary" />}
+      {isBonus ? <Gift className="w-5 h-5 text-brand-primary" /> : <CheckCircle2 className="w-5 h-5 text-brand-primary" />}
     </div>
     <div className="text-lg md:text-xl leading-relaxed text-left text-slate-900 flex-1">
       <span className="font-bold">{title}</span>
