@@ -58,7 +58,7 @@ export const SuccessRoutineSection: React.FC = () => {
     {
       step: "04",
       title: "A Instalação do Sistema",
-      description: <>Você não precisa ser o <em className="italic">"Cara do T.I"</em>. Logo após a imersão, a nossa equipe vai te ajudar a plugar e ligar a IA do Causi no seu WhatsApp para barrar os curiosos (usando seus 30 dias grátis).</>
+      description: <>Você não precisa ser o <em className="italic">"Cara do T.I"</em>. Logo após a imersão, a nossa equipe vai te ajudar a plugar e ligar a IA do Causi no seu WhatsApp para barrar os curiosos <em className="italic">(usando seus 30 dias grátis)</em>.</>
     },
     {
       step: "05",
