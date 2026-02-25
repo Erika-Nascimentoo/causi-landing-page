@@ -4,13 +4,13 @@ import { Button } from './Button';
 import { useReveal } from '../hooks/useReveal';
 
 const OfferListItem: React.FC<{ title: React.ReactNode; description?: string; isBonus?: boolean }> = ({ title, description, isBonus }) => (
-  <li className="flex items-center gap-4 py-4 border-b border-white/5 last:border-0 group">
+  <li className="flex items-center gap-4 py-4 border-b border-slate-200 last:border-0 group">
     <div className="w-6 h-6 flex items-center justify-center shrink-0">
-      {isBonus ? <Gift className="w-5 h-5 text-amber-400" /> : <CheckCircle2 className="w-5 h-5 text-brand-glow" />}
+      {isBonus ? <Gift className="w-5 h-5 text-amber-500" /> : <CheckCircle2 className="w-5 h-5 text-brand-primary" />}
     </div>
-    <div className="text-lg md:text-xl leading-relaxed text-left text-text-primary flex-1">
+    <div className="text-lg md:text-xl leading-relaxed text-left text-slate-900 flex-1">
       <span className="font-bold">{title}</span>
-      {description && <span className="text-text-secondary ml-2">{description}</span>}
+      {description && <span className="text-slate-600 ml-2">{description}</span>}
     </div>
   </li>
 );
@@ -43,12 +43,12 @@ export const SorSystemSection: React.FC = () => {
 
                 {/* Centralized High Impact Pricing Card */}
                 <div className="reveal-hidden">
-                    <div className="bg-brand-deep border border-brand-glow/30 rounded-3xl p-8 md:p-12 relative overflow-hidden shadow-[0_0_60px_-15px_rgba(139,92,246,0.6)] flex flex-col items-center">
-                        <div className="absolute top-0 right-0 w-32 h-32 bg-brand-primary/10 blur-3xl rounded-full -mr-16 -mt-16"></div>
+                    <div className="bg-white border border-slate-200 rounded-3xl p-8 md:p-12 relative overflow-hidden shadow-2xl flex flex-col items-center">
+                        <div className="absolute top-0 right-0 w-32 h-32 bg-brand-primary/5 blur-3xl rounded-full -mr-16 -mt-16"></div>
                         
                         {/* Offer List Integrated Inside Card - NOW AT THE TOP */}
                         <div className="w-full text-left mb-12">
-                            <h3 className="text-2xl md:text-3xl font-bold text-text-primary mb-6 text-center">
+                            <h3 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6 text-center">
                                 Revisando tudo o que você recebe hoje:
                             </h3>
                             
@@ -77,13 +77,13 @@ export const SorSystemSection: React.FC = () => {
 
                         {/* Pricing and Button - NOW AT THE BOTTOM */}
                         <div className="w-full flex flex-col items-center mt-12">
-                            <p className="text-lg font-bold text-brand-glow uppercase mb-4">Investimento Único</p>
+                            <p className="text-lg font-bold text-brand-primary uppercase mb-4">Investimento Único</p>
                             
                             <div className="flex items-baseline gap-2 mb-2">
-                                <span className="text-2xl font-medium text-white/70">R$</span>
-                                <span className="text-7xl md:text-8xl font-black text-white">47,90</span>
+                                <span className="text-2xl font-medium text-slate-600">R$</span>
+                                <span className="text-7xl md:text-8xl font-black text-slate-900">47,90</span>
                             </div>
-                            <p className="text-white/60 mb-8 font-medium italic">Pagamento único. Sem mensalidades ocultas.</p>
+                            <p className="text-slate-600 mb-8 font-medium italic">Pagamento único. Sem mensalidades ocultas.</p>
                             
                             <Button 
                                 fullWidth 
