@@ -92,7 +92,7 @@ export const SorSystemSection: React.FC = () => {
                                 <span className="text-2xl font-medium text-slate-600">R$</span>
                                 <span className="text-7xl md:text-8xl font-black text-slate-900">47,90</span>
                             </div>
-                            <p className="text-slate-600 mb-8 font-medium italic">Pagamento único. Sem mensalidades ocultas.</p>
+                            <p className="text-slate-500 text-sm mb-8 font-medium">Pagamento único e seguro. Sem surpresas ou mensalidades ocultas</p>
                             
                             <Button 
                                 fullWidth 
