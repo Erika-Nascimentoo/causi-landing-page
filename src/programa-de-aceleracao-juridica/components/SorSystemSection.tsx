@@ -98,12 +98,12 @@ export const SorSystemSection: React.FC = () => {
                                 </p>
                             </div>
                             
-                            <div className="flex justify-center items-start text-slate-900 mt-2 mb-2 select-none">
-                                <span className="text-2xl md:text-3xl font-bold mt-3 md:mt-4 mr-1 text-slate-400">R$</span>
+                            <div className="flex justify-center items-start mt-2 mb-2 select-none">
+                                <span className="text-2xl md:text-3xl font-bold mt-3 md:mt-4 text-slate-500">R$</span>
                                 <span className="text-[6rem] md:text-[8rem] font-black leading-none tracking-tighter text-transparent bg-clip-text bg-gradient-to-br from-slate-900 to-slate-600">
                                     47
                                 </span>
-                                <span className="text-2xl md:text-3xl font-bold mt-3 md:mt-4 ml-1 text-slate-400">,90</span>
+                                <span className="text-2xl md:text-3xl font-bold mt-3 md:mt-4 text-slate-500">,90</span>
                             </div>
                             <p className="text-slate-500 text-sm mb-8 font-medium text-center">Pagamento único e seguro.<br />Sem surpresas ou mensalidades ocultas</p>
                             
