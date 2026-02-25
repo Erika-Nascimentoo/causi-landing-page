@@ -130,7 +130,7 @@ export const SorSystemSection: React.FC = () => {
                             <Button 
                                 variant="success"
                                 fullWidth 
-                                className="py-6 text-[26px] shadow-[0_0_30px_rgba(5,150,105,0.4)]"
+                                className="py-6 text-[30px] md:text-[36px] shadow-[0_0_30px_rgba(5,150,105,0.4)]"
                                 onClick={() => window.location.href = 'https://www.causi.com.br/advogado/triagem/servico'}
                             >
                                 <span className="font-black">QUERO ENTRAR AGORA</span>
