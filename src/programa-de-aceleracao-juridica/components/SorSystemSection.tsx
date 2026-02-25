@@ -20,13 +20,13 @@ const OfferListItem: React.FC<{ title: React.ReactNode; description?: string; is
   }
 
   return (
-    <li className="flex items-center gap-4 py-3 group">
-      <div className="w-6 h-6 flex items-center justify-center shrink-0">
-        <CheckCircle2 className="w-5 h-5 text-brand-primary" />
+    <li className="flex items-start gap-4 py-4 md:py-5 group">
+      <div className="w-6 h-6 flex items-center justify-center shrink-0 mt-0.5 md:mt-1">
+        <CheckCircle2 className="w-6 h-6 text-brand-primary" />
       </div>
-      <div className="text-lg md:text-xl leading-relaxed text-left text-slate-900 flex-1">
-        <span className="font-bold">{title}</span>
-        {description && <span className="text-slate-600 ml-2">{description}</span>}
+      <div className="text-[1.1rem] md:text-xl leading-snug md:leading-snug text-left text-slate-800 flex-1">
+        <span className="font-extrabold">{title}</span>
+        {description && <span className="text-slate-500 block text-base mt-1.5 leading-relaxed">{description}</span>}
       </div>
     </li>
   );
