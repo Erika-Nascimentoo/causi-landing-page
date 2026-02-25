@@ -4,7 +4,7 @@ import { Button } from './Button';
 import { useReveal } from '../hooks/useReveal';
 
 const OfferListItem: React.FC<{ title: React.ReactNode; description?: string; isBonus?: boolean }> = ({ title, description, isBonus }) => (
-  <li className="flex items-center gap-4 py-4 border-b border-slate-200 last:border-0 group">
+  <li className="flex items-center gap-4 py-3 group">
     <div className="w-6 h-6 flex items-center justify-center shrink-0">
       {isBonus ? <Gift className="w-5 h-5 text-amber-500" /> : <CheckCircle2 className="w-5 h-5 text-brand-primary" />}
     </div>
@@ -48,7 +48,7 @@ export const SorSystemSection: React.FC = () => {
                         
                         {/* Offer List Integrated Inside Card - NOW AT THE TOP */}
                         <div className="w-full text-left mb-12">
-                            <h3 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6 text-center">
+                            <h3 className="text-2xl md:text-3xl font-bold text-brand-primary mb-6 text-center">
                                 Revisando tudo o que você recebe hoje:
                             </h3>
                             
@@ -92,7 +92,7 @@ export const SorSystemSection: React.FC = () => {
                                 <span className="text-2xl font-medium text-slate-600">R$</span>
                                 <span className="text-7xl md:text-8xl font-black text-slate-900">47,90</span>
                             </div>
-                            <p className="text-slate-500 text-sm mb-8 font-medium">Pagamento único e seguro. Sem surpresas ou mensalidades ocultas</p>
+                            <p className="text-slate-500 text-sm mb-8 font-medium text-center">Pagamento único e seguro.<br />Sem surpresas ou mensalidades ocultas</p>
                             
                             <Button 
                                 fullWidth 
