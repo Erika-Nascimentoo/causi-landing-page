@@ -151,7 +151,7 @@ export const SuccessRoutineSection: React.FC = () => {
               <Button 
                 onClick={() => document.getElementById('offer')?.scrollIntoView({ behavior: 'smooth' })}
               >
-                Garantir meu acesso ao Programa
+                Quero garantir meu acesso agora
               </Button>
             </div>
           </div>
