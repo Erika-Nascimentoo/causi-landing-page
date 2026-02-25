@@ -8,7 +8,7 @@ export const Hero: React.FC = () => {
     <section className="relative w-full bg-white overflow-hidden pt-28 pb-20 md:pt-40 md:pb-32 flex items-center justify-center">
       {/* Blueprint Grid Overlay */}
       <div
-        className="absolute inset-x-0 top-0 bottom-0 opacity-[0.03] pointer-events-none"
+        className="absolute inset-x-0 top-0 bottom-0 opacity-[0.06] pointer-events-none"
         style={{
           backgroundImage: `linear-gradient(to right, #000000 1px, transparent 1px), linear-gradient(to bottom, #000000 1px, transparent 1px)`,
           backgroundSize: '32px 32px',
