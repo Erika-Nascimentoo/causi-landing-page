@@ -4,7 +4,7 @@ import { Button } from './Button';
 import { useReveal } from '../hooks/useReveal';
 
 const OfferListItem: React.FC<{ title: React.ReactNode; description?: string; isBonus?: boolean }> = ({ title, description, isBonus }) => (
-  <li className="flex items-center gap-4 py-3 group">
+  <li className={`flex items-center gap-4 group ${isBonus ? 'border border-slate-200 rounded-2xl p-4 mt-2' : 'py-3'}`}>
     <div className="w-6 h-6 flex items-center justify-center shrink-0">
       {isBonus ? <Gift className="w-5 h-5 text-brand-primary" /> : <CheckCircle2 className="w-5 h-5 text-brand-primary" />}
     </div>
