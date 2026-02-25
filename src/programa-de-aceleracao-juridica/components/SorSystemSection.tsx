@@ -20,7 +20,7 @@ const OfferListItem: React.FC<{ title: React.ReactNode; description?: string; is
   }
 
   return (
-    <li className="flex items-start gap-4 py-4 md:py-5 group">
+    <li className="flex items-start gap-4 py-3 md:py-3.5 group">
       <div className="w-6 h-6 flex items-center justify-center shrink-0 mt-0.5 md:mt-1">
         <CheckCircle2 className="w-6 h-6 text-brand-primary" />
       </div>
@@ -71,19 +71,19 @@ export const SorSystemSection: React.FC = () => {
                             
                             <ul className="flex flex-col">
                                 <OfferListItem 
-                                    title={<>Ingresso para a Imersão ao Vivo <span className="italic font-light text-[0.85em]">(Online)</span></>}
+                                    title="Ingresso para a Imersão ao Vivo"
                                 />
                                 <OfferListItem 
                                     title="O Laudo de Diagnóstico do seu escritório"
                                 />
                                 <OfferListItem 
-                                    title={<>Acesso ao Cofre Causi <span className="italic font-light text-[0.85em]">(Vídeo Aulas)</span></>}
+                                    title="Acesso ao Cofre Causi"
                                 />
                                 <OfferListItem 
-                                    title={<>O Grupo de Networking Exclusivo <span className="italic font-light text-[0.85em]">(WhatsApp)</span></>}
+                                    title="O Grupo de Networking Exclusivo"
                                 />
                                 <OfferListItem 
-                                    title={<>Encontros Estratégicos Mensais <span className="italic font-light text-[0.85em]">(Online)</span></>}
+                                    title="Encontros Estratégicos Mensais"
                                 />
                                 <OfferListItem 
                                     isBonus
