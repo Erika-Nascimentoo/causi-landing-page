@@ -37,11 +37,11 @@ export const Hero: React.FC = () => {
               </span>
             </div>
             <h1 className="text-[2.2rem] md:text-[3.5rem] font-black leading-[1.2] pb-2 text-transparent bg-clip-text bg-gradient-to-r from-brand-deep to-brand-primary box-decoration-clone reveal-hidden">
-              Programa de Aceleração Jurídica
+              Você trabalha muito, mas o dinheiro não sobra no final do mês?<br/> O problema não é a sua advocacia, é o seu processo de vendas.
             </h1>
 
             <h2 className="text-xl md:text-2xl font-medium leading-[1.6] text-slate-600 reveal-hidden max-w-3xl mx-auto">
-              Advogado, saia do improviso e <span className="text-brand-primary font-bold">feche contratos todos os dias</span> instalando o método do Causi para organizar sua advocacia e recuperar sua paz de agenda.
+              Conheça o <span className="text-brand-primary font-bold">Programa de Aceleração Jurídica</span>: o método passo a passo que tapa os furos do seu escritório, afasta quem só quer "tirar dúvida" e coloca <span className="text-brand-primary font-bold">contratos reais na sua mesa</span>.
             </h2>
           </div>
 
