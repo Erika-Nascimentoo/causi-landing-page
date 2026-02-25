@@ -50,7 +50,8 @@ export const Hero: React.FC = () => {
               Você trabalha muito,<br/>
               mas o dinheiro não sobra<br/>
               no final do mês?<br/>
-              O problema não é a sua advocacia,<br/>
+              O problema não é<br/>
+              a sua advocacia,<br/>
               é o seu processo de vendas.
             </h1>
 
