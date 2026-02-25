@@ -20,21 +20,25 @@ const ArsenalCard: React.FC<{
     <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(139,92,246,0.15),transparent_70%)] pointer-events-none rounded-2xl z-0" />
     <div className="absolute inset-0 shadow-[inset_0_0_25px_rgba(139,92,246,0.12)] pointer-events-none rounded-2xl z-0" />
     
-    {/* Image Layer - Harmonious Spacing with 64px (pl-16) gutter */}
+    {/* Image Layer - Fixed 20px gap (pl-5) from content */}
     {image && isBonus && (
-      <div className="absolute top-12 right-0 bottom-0 w-full lg:w-[55%] pl-16 overflow-hidden pointer-events-none z-10 hidden lg:block">
+      <div className="absolute top-12 lg:left-[60%] right-[-40px] bottom-0 pl-5 overflow-hidden pointer-events-none z-10 hidden lg:block">
         <div className="h-full relative overflow-hidden rounded-tl-[15px] border-l border-t border-white/10">
           <img 
-            src={image} 
+            src="/oportunidades-causi-optimized.webp" 
             alt="Interface da Plataforma" 
-            className="w-full h-full object-cover object-left-top transition-transform duration-500" 
+            loading="lazy"
+            decoding="async"
+            width={445}
+            height={345}
+            className="w-full h-full object-cover object-left-top transition-transform duration-500 [image-rendering:-webkit-optimize-contrast] brightness-[1.1]" 
           />
         </div>
       </div>
     )}
 
-    {/* Content Layer - Adjusted to 45% width for balance */}
-    <div className={`px-8 pb-8 flex flex-col gap-4 relative z-30 pt-10 ${isBonus ? 'lg:w-[45%] lg:py-12 lg:pr-12' : 'flex-1'}`}>
+    {/* Content Layer - Restored width to 60% */}
+    <div className={`px-8 pb-8 flex flex-col gap-4 relative z-30 pt-10 ${isBonus ? 'lg:w-[60%] lg:py-12 lg:pr-8' : 'flex-1'}`}>
       {/* Icon */}
       <div className={`w-14 h-14 rounded-xl flex items-center justify-center border border-brand-primary/20 bg-brand-primary/10 text-brand-primary group-hover:bg-brand-primary/20 transition-all shrink-0`}>
         <Icon className="w-7 h-7" />
