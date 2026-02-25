@@ -43,7 +43,7 @@ export const SuccessRoutineSection: React.FC = () => {
     {
       step: "01",
       title: "O Acesso Imediato",
-      description: "Assim que confirmar o pagamento, você recebe as instruções no e-mail e garante a sua vaga na próxima Imersão ao Vivo. É o fim da dúvida e o início da sua organização."
+      description: "Assim que confirmar o pagamento, você recebe as instruções em um vídeo explicativo e garante a sua vaga na próxima Imersão ao Vivo. É o fim da dúvida e o início da sua organização. As imersões acontecem todos os meses e você pode participar quantas vezes quiser."
     },
     {
       step: "02",
@@ -58,12 +58,12 @@ export const SuccessRoutineSection: React.FC = () => {
     {
       step: "04",
       title: "A Instalação do Sistema",
-      description: "Você não precisa ser o \"Cara do T.I\". Logo após a imersão, a nossa equipe vai te ajudar a plugar e ligar a IA do Causi no seu WhatsApp para barrar os curiosos (usando seus 30 dias grátis)."
+      description: <>Você não precisa ser o <em className="italic">"Cara do T.I"</em>. Logo após a imersão, a nossa equipe vai te ajudar a plugar e ligar a IA do Causi no seu WhatsApp para barrar os curiosos (usando seus 30 dias grátis).</>
     },
     {
       step: "05",
       title: "A Manutenção",
-      description: "O sistema está rodando. Agora você entra para o grupo de WhatsApp exclusivo e participa dos nossos encontros mensais apenas para ajustar as velas e ver o faturamento crescer."
+      description: "O sistema está rodando. Agora você entra para o grupo de WhatsApp exclusivo e participa dos nossos encontros mensais apenas para tirar dúvidas e aprender mais, assim você ajusta os parafusos corretos e visualiza o seu faturamento crescer."
     }
   ];
 
