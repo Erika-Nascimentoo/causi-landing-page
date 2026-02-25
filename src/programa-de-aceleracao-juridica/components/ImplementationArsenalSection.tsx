@@ -20,10 +20,10 @@ const ArsenalCard: React.FC<{
     <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(139,92,246,0.15),transparent_70%)] pointer-events-none rounded-2xl z-0" />
     <div className="absolute inset-0 shadow-[inset_0_0_25px_rgba(139,92,246,0.12)] pointer-events-none rounded-2xl z-0" />
     
-    {/* Image Layer - Fixed 20px gap (pl-5) from content */}
+    {/* Image Layer - Exact 425x317, moved to the right tip, no padding. Brighter glow applied. */}
     {image && isBonus && (
-      <div className="absolute top-12 lg:left-[60%] right-[-40px] bottom-0 pl-5 overflow-hidden pointer-events-none z-10 hidden lg:block">
-        <div className="h-full relative overflow-hidden rounded-tl-[15px] border-l border-t border-white/10">
+      <div className="absolute top-12 right-[-40px] w-[425px] h-[317px] pointer-events-none z-10 hidden lg:block">
+        <div className="h-full relative overflow-hidden rounded-tl-[15px] border-l border-t border-white/10 shadow-[0_0_50px_rgba(139,92,246,0.6)]">
           <img 
             src={image} 
             alt="Interface da Plataforma" 
@@ -33,15 +33,15 @@ const ArsenalCard: React.FC<{
       </div>
     )}
 
-    {/* Content Layer - Restored width to 60% */}
-    <div className={`px-8 pb-8 flex flex-col gap-4 relative z-30 pt-10 ${isBonus ? 'lg:w-[60%] lg:py-12 lg:pr-8' : 'flex-1'}`}>
+    {/* Content Layer - Dynamically sized for 425x317 image with 20px gap */}
+    <div className={`px-8 pb-8 flex flex-col gap-4 relative z-30 pt-10 ${isBonus ? 'lg:w-[calc(100%-405px)] lg:py-12 lg:pr-8' : 'flex-1'}`}>
       {/* Icon */}
       <div className={`w-14 h-14 rounded-xl flex items-center justify-center border border-brand-primary/20 bg-brand-primary/10 text-brand-primary group-hover:bg-brand-primary/20 transition-all shrink-0`}>
         <Icon className="w-7 h-7" />
       </div>
 
       <div className="flex flex-col gap-4">
-        <h3 className="type-h3 leading-tight text-text-primary group-hover:text-brand-primary transition-colors">
+        <h3 className="type-h3 leading-tight text-text-primary transition-colors">
           {title}
         </h3>
         <p className="type-body text-text-secondary">
