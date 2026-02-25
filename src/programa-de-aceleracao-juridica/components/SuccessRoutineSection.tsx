@@ -52,17 +52,17 @@ export const SuccessRoutineSection: React.FC = () => {
     },
     {
       step: "03",
-      title: "A Imersão ao Vivo (O Plano)",
+      title: "A Imersão ao Vivo",
       description: "No dia marcado, nós nos encontramos online. Com o seu diagnóstico em mãos, nós vamos desenhar o Sistema Operacional de Receita exato para o seu momento."
     },
     {
       step: "04",
-      title: "A Instalação do Sistema (Onboarding)",
+      title: "A Instalação do Sistema",
       description: "Você não precisa ser o \"Cara do T.I\". Logo após a imersão, a nossa equipe vai te ajudar a plugar e ligar a IA do Causi no seu WhatsApp para barrar os curiosos (usando seus 30 dias grátis)."
     },
     {
       step: "05",
-      title: "A Manutenção (Grupo e Mentorias)",
+      title: "A Manutenção",
       description: "O sistema está rodando. Agora você entra para o grupo de WhatsApp exclusivo e participa dos nossos encontros mensais apenas para ajustar as velas e ver o faturamento crescer."
     }
   ];
