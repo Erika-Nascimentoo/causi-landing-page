@@ -99,7 +99,7 @@ export const SorSystemSection: React.FC = () => {
                                 className="py-6 text-xl shadow-[0_0_30px_rgba(139,92,246,0.4)]"
                                 onClick={() => window.location.href = 'https://www.causi.com.br/advogado/triagem/servico'}
                             >
-                                <span className="font-black">GARANTIR MEU ACESSO AGORA</span>
+                                <span className="font-black">QUERO ENTRAR AGORA</span>
                             </Button>
                         </div>
                     </div>
