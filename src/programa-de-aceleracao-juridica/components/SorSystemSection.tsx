@@ -79,7 +79,7 @@ export const SorSystemSection: React.FC = () => {
                         <div className="w-full flex flex-col items-center mt-10 pt-4">
                             <div className="text-center mb-8 max-w-xl mx-auto text-lg">
                                 <p className="text-slate-600 leading-relaxed mb-4">
-                                    O Programa de Aceleração Jurídica tem apenas um objetivo: construir o seu Sistema Operacional e colocar dinheiro no caixa do seu escritório.
+                                    O <strong className="font-bold text-slate-900">Programa de Aceleração Jurídica</strong> tem apenas um objetivo: construir o seu Sistema Operacional e colocar dinheiro no caixa do seu escritório.
                                 </p>
                                 <p className="text-slate-600 leading-relaxed mb-4">
                                     Nós não vamos te cobrar os milhares de reais que uma consultoria tradicional cobra. Mas nós também não damos o acesso de graça, porque precisamos separar os advogados comprometidos dos "curiosos".
@@ -90,7 +90,7 @@ export const SorSystemSection: React.FC = () => {
                             </div>
 
                             <div className="text-center mb-2">
-                                <p className="text-base font-bold text-brand-primary uppercase tracking-widest">
+                                <p className="text-base font-black text-brand-primary uppercase tracking-widest">
                                     INVESTIMENTO ÚNICO
                                 </p>
                                 <p className="text-[0.8rem] italic text-brand-primary">
