@@ -25,12 +25,12 @@ const ArsenalCard: React.FC<{
       <div className="absolute top-12 lg:left-[60%] right-[-40px] bottom-0 pl-5 overflow-hidden pointer-events-none z-10 hidden lg:block">
         <div className="h-full relative overflow-hidden rounded-tl-[15px] border-l border-t border-white/10">
           <img 
-            src="/oportunidades-causi-optimized.webp" 
+            src={image} 
             alt="Interface da Plataforma" 
             loading="lazy"
             decoding="async"
-            width={445}
-            height={345}
+            width={425}
+            height={266}
             className="w-full h-full object-cover object-left-top transition-transform duration-500 [image-rendering:-webkit-optimize-contrast] brightness-[1.1]" 
           />
         </div>
@@ -98,7 +98,7 @@ export const ImplementationArsenalSection: React.FC = () => {
             description: "Não basta ter o método se você tiver que fazer tudo no Excel. Ao entrar hoje, nós vamos liberar e configurar junto com você a nossa inteligência artificial para atender, filtrar e agendar seus clientes 24 horas por dia no seu WhatsApp.",
             isBonus: true,
             className: "lg:col-span-2",
-            image: "/oportunidades-causi.webp"
+            image: "/oportunidades-causi-425.webp"
         }
     ];
 
