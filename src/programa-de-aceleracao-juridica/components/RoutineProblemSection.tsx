@@ -25,11 +25,6 @@ export const RoutineProblemSection: React.FC = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-bg-page via-transparent to-transparent"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-bg-page via-transparent to-bg-page"></div>
 
-        {/* Glass Tag - João da Silva */}
-        <div className="absolute bottom-12 left-12 p-4 px-6 rounded-2xl border border-white/20 bg-white/5 backdrop-blur-md shadow-2xl flex flex-col gap-0.5 ring-1 ring-white/10">
-          <span className="text-white font-bold text-xl leading-tight tracking-tight">João da Silva</span>
-          <span className="text-red-400/90 font-semibold text-[11px] uppercase tracking-[0.2em]">o Advogado cansado</span>
-        </div>
       </div>
 
       <div className="max-w-7xl mx-auto relative z-10 w-full">
