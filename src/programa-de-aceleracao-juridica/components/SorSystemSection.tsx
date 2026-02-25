@@ -116,13 +116,12 @@ export const SorSystemSection: React.FC = () => {
                                 <span className="font-black">QUERO ENTRAR AGORA</span>
                             </Button>
                             
-                            <div className="mt-6 flex flex-col md:flex-row items-center justify-center gap-2 text-slate-500 text-[13px] md:text-sm font-medium">
-                                <div className="flex items-center gap-1.5">
+                            <div className="mt-6 flex flex-col items-center justify-center gap-1 text-slate-500 text-[13px] md:text-sm font-medium">
+                                <div className="flex items-center justify-center gap-1.5">
                                     <ShieldCheck className="w-4 h-4 text-emerald-600" />
                                     <span>Compra segura processada pela <strong>Hotmart</strong>.</span>
                                 </div>
-                                <span className="hidden md:inline text-slate-300">•</span>
-                                <span>Garantia incondicional de 7 dias.</span>
+                                <span className="text-center">Garantia incondicional de 7 dias.</span>
                             </div>
                         </div>
                     </div>
