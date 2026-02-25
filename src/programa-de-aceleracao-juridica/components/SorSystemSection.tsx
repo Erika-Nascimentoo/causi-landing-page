@@ -54,7 +54,7 @@ export const SorSystemSection: React.FC = () => {
                         {/* Offer List Integrated Inside Card - NOW AT THE TOP */}
                         <div className="w-full text-left mb-12">
                             <h3 className="text-2xl md:text-3xl font-bold text-text-primary mb-6 text-center">
-                                Ao entrar agora você recebe:
+                                Revisando tudo o que você recebe hoje:
                             </h3>
                             
                             <ul className="flex flex-col">
