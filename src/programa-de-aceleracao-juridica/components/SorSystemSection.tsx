@@ -1,21 +1,16 @@
 import React from 'react';
-import { CheckCircle2 } from 'lucide-react';
+import { CheckCircle2, Gift } from 'lucide-react';
 import { Button } from './Button';
 import { useReveal } from '../hooks/useReveal';
 
-const OfferListItem: React.FC<{ title: string; description: string; isBonus?: boolean }> = ({ title, description, isBonus }) => (
-  <li className="flex items-start gap-4 py-4 border-b border-white/5 last:border-0 group">
-    <div className="w-6 h-6 flex items-center justify-center shrink-0 mt-1">
-      <CheckCircle2 className="w-5 h-5 text-brand-primary" />
+const OfferListItem: React.FC<{ title: React.ReactNode; description?: string; isBonus?: boolean }> = ({ title, description, isBonus }) => (
+  <li className="flex items-center gap-4 py-4 border-b border-white/5 last:border-0 group">
+    <div className="w-6 h-6 flex items-center justify-center shrink-0">
+      {isBonus ? <Gift className="w-5 h-5 text-amber-500" /> : <CheckCircle2 className="w-5 h-5 text-brand-primary" />}
     </div>
-    <div className="text-lg md:text-xl leading-relaxed text-left text-text-primary">
-      <span className="font-bold">{title}:</span>{' '}
-      <span className="text-text-secondary">{description}</span>
-      {isBonus && (
-        <span className="ml-3 text-[10px] font-bold uppercase bg-brand-primary text-white px-2 py-0.5 rounded-full inline-block align-middle">
-          BÔNUS
-        </span>
-      )}
+    <div className="text-lg md:text-xl leading-relaxed text-left text-text-primary flex-1">
+      <span className="font-bold">{title}</span>
+      {description && <span className="text-text-secondary ml-2">{description}</span>}
     </div>
   </li>
 );
@@ -59,29 +54,23 @@ export const SorSystemSection: React.FC = () => {
                             
                             <ul className="flex flex-col">
                                 <OfferListItem 
-                                    title="A Imersão ao Vivo com a Equipe Causi"
-                                    description="Desenhe a arquitetura do seu faturamento."
+                                    title={<>Ingresso para a Imersão ao Vivo <span className="italic font-light text-[0.85em]">(Online)</span></>}
                                 />
                                 <OfferListItem 
-                                    title="A Auditoria de Aceleração"
-                                    description="Descubra por onde o seu dinheiro está vazando hoje."
+                                    title="O Laudo de Diagnóstico do seu escritório"
                                 />
                                 <OfferListItem 
-                                    title="Sala de Aula Causi"
-                                    description="Acesso a aulas e materiais exclusivos para acelerar sua implementação."
+                                    title={<>Acesso ao Cofre Causi <span className="italic font-light text-[0.85em]">(Vídeo Aulas)</span></>}
                                 />
                                 <OfferListItem 
-                                    title="Encontros Mensais Exclusivos"
-                                    description="Reuniões em grupo para tirar dúvidas e avançar na sua estratégia."
+                                    title={<>O Grupo de Networking Exclusivo <span className="italic font-light text-[0.85em]">(WhatsApp)</span></>}
                                 />
                                 <OfferListItem 
-                                    title="O Grupo de Networking (WhatsApp)"
-                                    description="Uma comunidade de advogados no mesmo momento que você."
+                                    title={<>Encontros Estratégicos Mensais <span className="italic font-light text-[0.85em]">(Online)</span></>}
                                 />
                                 <OfferListItem 
                                     isBonus
-                                    title="BÔNUS: 30 Dias Grátis do Plano Profissional do Causi"
-                                    description="A ferramenta pronta para usar."
+                                    title="SUPER BÔNUS: 30 Dias Livres da Plataforma Causi"
                                 />
                             </ul>
                         </div>
