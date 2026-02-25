@@ -3,17 +3,34 @@ import { CheckCircle2, Gift, ShieldCheck } from 'lucide-react';
 import { Button } from './Button';
 import { useReveal } from '../hooks/useReveal';
 
-const OfferListItem: React.FC<{ title: React.ReactNode; description?: string; isBonus?: boolean }> = ({ title, description, isBonus }) => (
-  <li className={`flex items-center gap-4 group ${isBonus ? 'border border-slate-200 rounded-2xl p-4 mt-2' : 'py-3'}`}>
-    <div className="w-6 h-6 flex items-center justify-center shrink-0">
-      {isBonus ? <Gift className="w-5 h-5 text-brand-primary" /> : <CheckCircle2 className="w-5 h-5 text-brand-primary" />}
-    </div>
-    <div className="text-lg md:text-xl leading-relaxed text-left text-slate-900 flex-1">
-      <span className="font-bold">{title}</span>
-      {description && <span className="text-slate-600 ml-2">{description}</span>}
-    </div>
-  </li>
-);
+const OfferListItem: React.FC<{ title: React.ReactNode; description?: string; isBonus?: boolean }> = ({ title, description, isBonus }) => {
+  if (isBonus) {
+    return (
+      <li className="relative flex flex-col items-center justify-center p-6 mt-8 border border-slate-200 rounded-2xl group text-center shadow-sm">
+        <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-brand-primary text-white text-[11px] uppercase tracking-widest font-bold px-4 py-1.5 rounded-full flex items-center gap-1.5 shadow-md">
+          <Gift className="w-3.5 h-3.5" />
+          <span>SUPER BÔNUS</span>
+        </div>
+        <div className="text-lg md:text-xl leading-relaxed text-slate-900">
+          <span className="font-bold">{title}</span>
+          {description && <span className="text-slate-600 block text-base mt-1">{description}</span>}
+        </div>
+      </li>
+    );
+  }
+
+  return (
+    <li className="flex items-center gap-4 py-3 group">
+      <div className="w-6 h-6 flex items-center justify-center shrink-0">
+        <CheckCircle2 className="w-5 h-5 text-brand-primary" />
+      </div>
+      <div className="text-lg md:text-xl leading-relaxed text-left text-slate-900 flex-1">
+        <span className="font-bold">{title}</span>
+        {description && <span className="text-slate-600 ml-2">{description}</span>}
+      </div>
+    </li>
+  );
+};
 
 export const SorSystemSection: React.FC = () => {
     const sectionRef = useReveal();
@@ -70,7 +87,7 @@ export const SorSystemSection: React.FC = () => {
                                 />
                                 <OfferListItem 
                                     isBonus
-                                    title="SUPER BÔNUS: 30 Dias Livres da Plataforma Causi"
+                                    title="30 Dias Livres da Plataforma Causi"
                                 />
                             </ul>
                         </div>
