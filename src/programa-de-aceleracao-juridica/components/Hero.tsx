@@ -36,11 +36,12 @@ export const Hero: React.FC = () => {
                 O Fim do Improviso na Advocacia
               </span>
             </div>
-            <h1 className="text-[1.8rem] md:text-[2.8rem] font-black leading-[1.2] pb-2 text-transparent bg-clip-text bg-gradient-to-r from-brand-deep to-brand-primary box-decoration-clone reveal-hidden">
-              Você trabalha muito, mas o dinheiro não sobra no final do mês?<br/> O problema não é a sua advocacia, é o seu processo de vendas.
+            <h1 className="leading-[1.2] pb-2 text-transparent bg-clip-text bg-gradient-to-r from-brand-deep to-brand-primary box-decoration-clone reveal-hidden">
+              <span className="text-[1.6rem] md:text-[2.2rem] font-extrabold opacity-90">Você trabalha muito, mas o dinheiro não sobra no final do mês?</span>
+              <span className="block text-[2rem] md:text-[3.2rem] font-black mt-2 md:mt-3">O problema não é a sua advocacia, é o seu processo de vendas.</span>
             </h1>
 
-            <h2 className="text-xl md:text-2xl font-medium leading-[1.6] text-slate-600 reveal-hidden max-w-3xl mx-auto">
+            <h2 className="text-lg md:text-xl font-normal leading-[1.7] text-slate-500 reveal-hidden max-w-3xl mx-auto">
               Conheça o <span className="text-brand-primary font-bold">Programa de Aceleração Jurídica</span>: o método passo a passo que tapa os furos do seu escritório, afasta quem só quer "tirar dúvida" e coloca <span className="text-brand-primary font-bold">contratos reais na sua mesa</span>.
             </h2>
           </div>
