@@ -76,8 +76,17 @@ export const SorSystemSection: React.FC = () => {
                         </div>
 
                         {/* Pricing and Button - NOW AT THE BOTTOM */}
-                        <div className="w-full flex flex-col items-center mt-12">
-                            <p className="text-lg font-bold text-brand-primary uppercase mb-4">Investimento Único</p>
+                        <div className="w-full flex flex-col items-center mt-10 pt-10 border-t border-slate-200">
+                            <div className="text-center mb-8 max-w-lg text-lg">
+                                <p className="text-slate-600 leading-relaxed mb-4">
+                                    Contratar uma consultoria para estruturar isso custaria milhares de reais. Pagar pelas ferramentas de IA soltas no mercado custaria centenas de reais todos os meses.
+                                </p>
+                                <p className="text-slate-900 font-bold">
+                                    Mas hoje, você tem acesso ao sistema completo, validado por grandes escritórios, por um valor simbólico:
+                                </p>
+                            </div>
+
+                            <p className="text-base font-bold text-brand-primary uppercase tracking-widest mb-2">Investimento Único</p>
                             
                             <div className="flex items-baseline gap-2 mb-2">
                                 <span className="text-2xl font-medium text-slate-600">R$</span>
