@@ -43,12 +43,12 @@ export const Hero: React.FC = () => {
             <h2 className="text-xl md:text-2xl font-medium leading-[1.6] text-slate-600 reveal-hidden max-w-3xl mx-auto">
               Conheça o <span className="text-brand-primary font-bold">Programa de Aceleração Jurídica</span>: o método passo a passo que tapa os furos do seu escritório, afasta quem só quer "tirar dúvida" e coloca <span className="text-brand-primary font-bold">contratos reais na sua mesa</span>.
             </h2>
-          </div>
 
-          <div className="flex flex-col items-center reveal-hidden">
-            <Button onClick={() => document.getElementById('routine')?.scrollIntoView({ behavior: 'smooth' })}>
-              <span className="font-black text-white">Conhecer o programa</span>
-            </Button>
+            <div className="flex flex-col items-center reveal-hidden mt-6 md:mt-8">
+              <Button onClick={() => document.getElementById('routine')?.scrollIntoView({ behavior: 'smooth' })}>
+                <span className="font-black text-white">Conhecer o programa</span>
+              </Button>
+            </div>
           </div>
         </div>
       </div>
