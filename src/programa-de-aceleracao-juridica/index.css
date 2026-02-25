@@ -146,8 +146,9 @@
         @apply text-sm font-normal leading-relaxed text-text-tertiary;
     }
     
-    .font-cursive {
-        font-family: 'Yellowtail', cursive;
+    .font-serif-italic {
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
     }
 
     .inner-glow {
