@@ -2,7 +2,7 @@ import React from 'react';
 import { Rocket } from 'lucide-react';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: 'primary' | 'secondary' | 'outline' | 'danger' | 'danger-outline';
+  variant?: 'primary' | 'secondary' | 'outline' | 'danger' | 'danger-outline' | 'success';
   fullWidth?: boolean;
   icon?: boolean;
 }
@@ -22,7 +22,8 @@ export const Button: React.FC<ButtonProps> = ({
     secondary: "bg-white text-brand-dark hover:bg-gray-100",
     outline: "border border-brand-primary/50 text-brand-primary hover:bg-brand-primary/10",
     danger: "bg-gradient-to-r from-red-600 to-rose-600 text-white shadow-[0_0_20px_rgba(220,38,38,0.3)] hover:shadow-[0_0_40px_rgba(220,38,38,0.5)] border border-white/10",
-    'danger-outline': "border-2 border-red-500/50 text-red-500 hover:border-red-500 hover:bg-red-500/5"
+    'danger-outline': "border-2 border-red-500/50 text-red-500 hover:border-red-500 hover:bg-red-500/5",
+    success: "bg-emerald-600 hover:bg-emerald-500 text-white shadow-[0_0_20px_rgba(5,150,105,0.3)] hover:shadow-[0_0_40px_rgba(5,150,105,0.5)] border border-white/10"
   };
 
   return (

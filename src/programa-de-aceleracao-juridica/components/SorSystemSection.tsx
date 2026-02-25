@@ -108,8 +108,9 @@ export const SorSystemSection: React.FC = () => {
                             <p className="text-slate-500 text-sm mb-8 font-medium text-center">Pagamento único e seguro.<br />Sem surpresas ou mensalidades ocultas</p>
                             
                             <Button 
+                                variant="success"
                                 fullWidth 
-                                className="py-6 text-xl shadow-[0_0_30px_rgba(139,92,246,0.4)]"
+                                className="py-6 text-xl shadow-[0_0_30px_rgba(5,150,105,0.4)]"
                                 onClick={() => window.location.href = 'https://www.causi.com.br/advogado/triagem/servico'}
                             >
                                 <span className="font-black">QUERO ENTRAR AGORA</span>
