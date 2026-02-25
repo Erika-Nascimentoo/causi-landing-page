@@ -46,7 +46,7 @@ export const Hero: React.FC = () => {
                 O Fim do Improviso na Advocacia
               </span>
             </div>
-            <h1 className="text-[1.8rem] md:text-[2.8rem] font-black leading-[1.2] pb-2 text-transparent bg-clip-text bg-gradient-to-r from-brand-deep to-brand-primary box-decoration-clone reveal-hidden">
+            <h1 className="text-[1.8rem] md:text-[2.8rem] font-black leading-[1.2] pb-2 text-transparent bg-clip-text bg-gradient-to-r from-brand-deep to-pink-500 box-decoration-clone reveal-hidden">
               Você trabalha muito, mas o dinheiro não sobra no final do mês?<br/> O problema não é a sua advocacia, é o seu processo de vendas.
             </h1>
 
