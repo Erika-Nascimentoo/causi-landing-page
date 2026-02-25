@@ -40,12 +40,7 @@ export const Hero: React.FC = () => {
 
           {/* Group 2: Core Message (Title & Subtitle) */}
           <div className="flex flex-col items-center gap-6 md:gap-8 text-center max-w-4xl mx-auto">
-            <div className="reveal-hidden">
-              <span className="inline-flex items-center gap-2 text-brand-deep uppercase tracking-[0.2em] font-bold text-[10px] md:text-xs px-4 py-1.5 border border-brand-deep/20 rounded-full mb-2 bg-brand-deep/5">
-                <ShieldCheck className="w-4 h-4" />
-                O Fim do Improviso na Advocacia
-              </span>
-            </div>
+
             <h1 className="text-[1.8rem] md:text-[2.8rem] font-black leading-[1.2] pb-2 text-transparent bg-clip-text bg-gradient-to-r from-brand-deep to-brand-primary box-decoration-clone reveal-hidden">
               Você trabalha muito, mas o dinheiro não sobra no final do mês?<br/> O problema não é a sua advocacia,<br/> é o seu processo de vendas.
             </h1>
