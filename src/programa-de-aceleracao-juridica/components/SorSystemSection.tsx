@@ -48,7 +48,7 @@ export const SorSystemSection: React.FC = () => {
                         
                         {/* Offer List Integrated Inside Card - NOW AT THE TOP */}
                         <div className="w-full text-left mb-12">
-                            <h3 className="text-2xl md:text-3xl font-bold text-brand-primary mb-6 text-center uppercase">
+                            <h3 className="text-2xl md:text-3xl font-black text-brand-primary mb-6 text-center uppercase">
                                 Revisando tudo o que você recebe hoje:
                             </h3>
                             
