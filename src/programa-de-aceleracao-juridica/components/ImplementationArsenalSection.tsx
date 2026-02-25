@@ -3,17 +3,40 @@ import { Users, Zap, MonitorPlay, MessagesSquare, MessageCircle, Gift, Ticket, C
 import { useReveal } from '../hooks/useReveal';
 import { Button } from './Button';
 
-const ArsenalCard: React.FC<{ icon: any; title: React.ReactNode; description: string; isBonus?: boolean; className?: string }> = ({ icon: Icon, title, description, isBonus, className }) => (
-  <div className={`group relative bg-black/60 bg-brand-primary/10 backdrop-blur-md border rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 flex flex-col reveal-hidden overflow-hidden ${isBonus ? 'border-brand-primary/40 shadow-[0_0_30px_-10px_rgba(139,92,246,0.3)]' : 'border-white/10 hover:border-brand-primary/50'} ${className || ''}`}>
-    {/* Internal Purple Glow */}
-    <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(139,92,246,0.15),transparent_70%)] pointer-events-none rounded-2xl" />
-    <div className="absolute inset-0 shadow-[inset_0_0_25px_rgba(139,92,246,0.12)] pointer-events-none rounded-2xl" />
+const ArsenalCard: React.FC<{ 
+    icon: any; 
+    title: React.ReactNode; 
+    description: string; 
+    isBonus?: boolean; 
+    className?: string;
+    image?: string;
+}> = ({ icon: Icon, title, description, isBonus, className, image }) => (
+  <div className={`group relative bg-black/40 backdrop-blur-md border rounded-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col reveal-hidden overflow-hidden ${
+    isBonus 
+      ? 'border-brand-primary/50 shadow-[0_0_40px_rgba(139,92,246,0.3)] hover:shadow-[0_0_60px_rgba(139,92,246,0.4)] lg:flex-row' 
+      : 'border-brand-primary/20 hover:border-brand-primary/50 shadow-[0_0_30px_rgba(139,92,246,0.15)] hover:shadow-[0_0_50px_rgba(139,92,246,0.25)]'
+  } ${className || ''}`}>
+    {/* Internal Purple Glow & Glass Effects */}
+    <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(139,92,246,0.15),transparent_70%)] pointer-events-none rounded-2xl z-0" />
+    <div className="absolute inset-0 shadow-[inset_0_0_25px_rgba(139,92,246,0.12)] pointer-events-none rounded-2xl z-0" />
     
-    <div className="absolute inset-0 bg-gradient-to-b from-brand-primary/15 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>
+    {/* Image Layer - Harmonious Spacing with 64px (pl-16) gutter */}
+    {image && isBonus && (
+      <div className="absolute top-12 right-0 bottom-0 w-full lg:w-[55%] pl-16 overflow-hidden pointer-events-none z-10 hidden lg:block">
+        <div className="h-full relative overflow-hidden rounded-tl-[15px] border-l border-t border-white/10">
+          <img 
+            src={image} 
+            alt="Interface da Plataforma" 
+            className="w-full h-full object-cover object-left-top transition-transform duration-500" 
+          />
+        </div>
+      </div>
+    )}
 
-    <div className={`flex flex-col gap-6 h-full relative z-20 ${className?.includes('row-span') ? 'justify-end' : 'justify-center'}`}>
+    {/* Content Layer - Adjusted to 45% width for balance */}
+    <div className={`px-8 pb-8 flex flex-col gap-4 relative z-30 pt-10 ${isBonus ? 'lg:w-[45%] lg:py-12 lg:pr-12' : 'flex-1'}`}>
       {/* Icon */}
-      <div className="w-14 h-14 rounded-xl flex items-center justify-center border border-brand-primary/20 bg-brand-primary/10 text-brand-primary group-hover:bg-brand-primary/20 transition-all shrink-0">
+      <div className={`w-14 h-14 rounded-xl flex items-center justify-center border border-brand-primary/20 bg-brand-primary/10 text-brand-primary group-hover:bg-brand-primary/20 transition-all shrink-0`}>
         <Icon className="w-7 h-7" />
       </div>
 
@@ -56,12 +79,6 @@ export const ImplementationArsenalSection: React.FC = () => {
             description: "Um raio-x inteligente que analisa a sua rotina atual e te mostra, em segundos, exatamente onde estão os furos do seu faturamento."
         },
         {
-            icon: Bot,
-            title: <>30 Dias Grátis da <br /> Plataforma Causi <BonusBadge /></>,
-            description: "Não basta ter o método se você tiver que fazer tudo no Excel. Ao entrar hoje, nós vamos liberar e configurar junto com você a nossa inteligência artificial para atender, filtrar e agendar seus clientes 24 horas por dia no seu WhatsApp. A tecnologia que os grandes escritórios usam, rodando de graça para você por um mês.",
-            className: "lg:row-span-2"
-        },
-        {
             icon: Users,
             title: <>O Grupo de Networking <br /> Exclusivo</>,
             description: "Uma comunidade blindada no WhatsApp com advogados que decidiram profissionalizar a gestão. Você não está mais sozinho no mercado."
@@ -70,6 +87,14 @@ export const ImplementationArsenalSection: React.FC = () => {
             icon: Compass,
             title: <>Encontros Estratégicos <br /> Mensais <OnlineBadge /></>,
             description: "Reuniões de alinhamento em grupo (via chamada de vídeo) com a nossa equipe para tirar suas dúvidas e garantir que o seu novo sistema não pare de rodar."
+        },
+        {
+            icon: Bot,
+            title: <>30 Dias Grátis da <br /> Plataforma Causi <BonusBadge /></>,
+            description: "Não basta ter o método se você tiver que fazer tudo no Excel. Ao entrar hoje, nós vamos liberar e configurar junto com você a nossa inteligência artificial para atender, filtrar e agendar seus clientes 24 horas por dia no seu WhatsApp.",
+            isBonus: true,
+            className: "lg:col-span-2",
+            image: "/oportunidades-causi.webp"
         }
     ];
 
@@ -100,7 +125,7 @@ export const ImplementationArsenalSection: React.FC = () => {
                     </p>
                 </header>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-fr gap-6 mb-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-auto gap-6 mb-12">
                     {arsenalItems.map((item, idx) => (
                         <ArsenalCard key={idx} {...item} />
                     ))}
