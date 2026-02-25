@@ -89,7 +89,7 @@ export const SorSystemSection: React.FC = () => {
                                 </p>
                             </div>
 
-                            <div className="text-center mb-2">
+                            <div className="w-full text-center mb-2 pt-8 border-t border-dashed border-slate-300">
                                 <p className="text-base font-black text-brand-primary uppercase tracking-widest">
                                     INVESTIMENTO ÚNICO
                                 </p>
