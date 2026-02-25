@@ -42,28 +42,28 @@ export const SuccessRoutineSection: React.FC = () => {
   const steps = [
     {
       step: "01",
-      title: "Pagamento e Boas-vindas",
-      description: "Garanta sua vaga e receba acesso imediato à página com todas as instruções. É o momento de abandonar a dúvida e assinar o compromisso com um novo faturamento."
+      title: "O Acesso Imediato",
+      description: "Assim que confirmar o pagamento, você recebe as instruções no e-mail e garante a sua vaga na próxima Imersão ao Vivo. É o fim da dúvida e o início da sua organização."
     },
     {
       step: "02",
-      title: "Auditoria e Diagnóstico de IA",
-      description: "Preencha nosso formulário inteligente para receber um laudo pericial criado por nossa inteligência artificial. Chega de trabalhar no escuro: descubra exatamente onde o seu dinheiro está vazando."
+      title: "📍 O Raio-X do seu Escritório",
+      description: "Antes mesmo do nosso encontro, você preenche o Diagnóstico Automático e a nossa inteligência mapeia instantaneamente por onde o seu dinheiro está vazando hoje."
     },
     {
       step: "03",
-      title: "Grupo de Networking no WhatsApp",
-      description: "Entre para a nossa comunidade exclusiva e receba as datas da próxima imersão e dos encontros mensais. Deixe de ser um profissional solitário e passe a fazer parte de um time de estrategistas."
+      title: "A Imersão ao Vivo (O Plano)",
+      description: "No dia marcado, nós nos encontramos online. Com o seu diagnóstico em mãos, nós vamos desenhar o Sistema Operacional de Receita exato para o seu momento."
     },
     {
       step: "04",
-      title: "Imersão e Mentorias Mensais",
-      description: "Participe dos encontros ao vivo com nossos especialistas para desenhar o seu novo sistema. Pare de tentar resolver tudo sozinho e instale a metodologia que governa o seu lucro."
+      title: "A Instalação do Sistema (Onboarding)",
+      description: "Você não precisa ser o \"Cara do T.I\". Logo após a imersão, a nossa equipe vai te ajudar a plugar e ligar a IA do Causi no seu WhatsApp para barrar os curiosos (usando seus 30 dias grátis)."
     },
     {
       step: "05",
-      title: "Onboarding e Bônus de 30 Dias",
-      description: "Aprenda com nossa equipe a usar a plataforma e libere sua IA de Atendimento gratuita por 30 dias. Conquiste sua liberdade operacional: o sistema atende e filtra enquanto você foca no Direito."
+      title: "A Manutenção (Grupo e Mentorias)",
+      description: "O sistema está rodando. Agora você entra para o grupo de WhatsApp exclusivo e participa dos nossos encontros mensais apenas para ajustar as velas e ver o faturamento crescer."
     }
   ];
 
@@ -98,10 +98,10 @@ export const SuccessRoutineSection: React.FC = () => {
             <div className="reveal-hidden">
               <span className="inline-flex items-center gap-4 text-slate-600 uppercase tracking-[0.2em] font-bold text-[10px] md:text-xs px-4 py-1.5 border border-slate-200 rounded-full mb-6">
                 <span className="w-2 h-2 rounded-full bg-brand-primary animate-pulse shadow-[0_0_8px_rgba(139,92,246,0.8)] ml-1" />
-                A JORNADA
+                O SEU MAPA DE EXECUÇÃO
               </span>
               <h2 className="type-h2 mb-4 leading-tight text-left text-slate-900">
-                Como sua <span className="text-brand-primary font-black">jornada</span> começa no <span className="text-brand-primary font-black">Programa de Aceleração Jurídica</span> do <span className="text-brand-primary font-black">Causi</span>
+                Como serão os seus <span className="text-brand-primary font-black">próximos passos</span> após destravar o seu acesso hoje:
               </h2>
             </div>
 
