@@ -48,7 +48,8 @@ export const Hero: React.FC = () => {
             </div>
             <h1 className="text-[1.8rem] md:text-[2.8rem] font-black leading-[1.2] pb-2 text-transparent bg-clip-text bg-gradient-to-r from-brand-deep to-brand-primary box-decoration-clone reveal-hidden">
               Você trabalha muito,<br/>
-              mas o dinheiro não sobra no final do mês?<br/>
+              mas o dinheiro não sobra<br/>
+              no final do mês?<br/>
               O problema não é a sua advocacia,<br/>
               é o seu processo de vendas.
             </h1>
