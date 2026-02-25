@@ -100,7 +100,7 @@ export const SorSystemSection: React.FC = () => {
                             
                             <div className="flex justify-center items-start text-slate-900 mt-2 mb-2 select-none">
                                 <span className="text-2xl md:text-3xl font-bold mt-3 md:mt-4 mr-1 text-slate-400">R$</span>
-                                <span className="text-[6rem] md:text-[8rem] font-black leading-none tracking-tighter text-transparent bg-clip-text bg-gradient-to-br from-brand-primary to-brand-glow">
+                                <span className="text-[6rem] md:text-[8rem] font-black leading-none tracking-tighter text-transparent bg-clip-text bg-gradient-to-br from-slate-900 to-slate-600">
                                     47
                                 </span>
                                 <span className="text-2xl md:text-3xl font-bold mt-3 md:mt-4 ml-1 text-slate-400">,90</span>
