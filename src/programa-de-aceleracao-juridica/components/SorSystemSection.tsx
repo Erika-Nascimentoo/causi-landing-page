@@ -93,7 +93,7 @@ export const SorSystemSection: React.FC = () => {
                                 <p className="text-base font-black text-emerald-600 uppercase tracking-widest">
                                     INVESTIMENTO ÚNICO
                                 </p>
-                                <p className="text-[0.8rem] italic text-slate-900">
+                                <p className="text-[0.8rem] italic text-slate-500">
                                     (Taxa de Comprometimento)
                                 </p>
                             </div>
