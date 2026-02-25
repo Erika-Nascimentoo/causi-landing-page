@@ -76,7 +76,7 @@ export const SorSystemSection: React.FC = () => {
                         </div>
 
                         {/* Pricing and Button - NOW AT THE BOTTOM */}
-                        <div className="w-full flex flex-col items-center mt-10 pt-10 border-t border-slate-200">
+                        <div className="w-full flex flex-col items-center mt-10 pt-4">
                             <div className="text-center mb-8 max-w-xl mx-auto text-lg">
                                 <p className="text-slate-600 leading-relaxed mb-4">
                                     O Programa de Aceleração Jurídica tem apenas um objetivo: construir o seu Sistema Operacional e colocar dinheiro no caixa do seu escritório.
