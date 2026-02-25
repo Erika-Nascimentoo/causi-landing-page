@@ -5,10 +5,10 @@ import { useReveal } from '../hooks/useReveal';
 
 const OfferListItem: React.FC<{ title: React.ReactNode; description?: string; isBonus?: boolean }> = ({ title, description, isBonus }) => (
   <li className="flex items-center gap-4 py-4 border-b border-white/5 last:border-0 group">
-    <div className="w-6 h-6 flex items-center justify-center shrink-0">
-      {isBonus ? <Gift className="w-5 h-5 text-amber-500" /> : <CheckCircle2 className="w-5 h-5 text-brand-primary" />}
+    <div className="w-8 h-8 flex items-center justify-center shrink-0">
+      {isBonus ? <Gift className="w-6 h-6 text-amber-500" /> : <CheckCircle2 className="w-6 h-6 text-brand-primary" />}
     </div>
-    <div className="text-lg md:text-xl leading-relaxed text-left text-text-primary flex-1">
+    <div className="text-xl md:text-2xl leading-relaxed text-left text-text-primary flex-1">
       <span className="font-bold">{title}</span>
       {description && <span className="text-text-secondary ml-2">{description}</span>}
     </div>
