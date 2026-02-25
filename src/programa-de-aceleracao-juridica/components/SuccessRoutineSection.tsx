@@ -47,7 +47,7 @@ export const SuccessRoutineSection: React.FC = () => {
     },
     {
       step: "02",
-      title: "📍 O Raio-X do seu Escritório",
+      title: "O Raio-X do seu Escritório",
       description: "Antes mesmo do nosso encontro, você preenche o Diagnóstico Automático e a nossa inteligência mapeia instantaneamente por onde o seu dinheiro está vazando hoje."
     },
     {
