@@ -1,5 +1,5 @@
 import React from 'react';
-import { CheckCircle2, Gift } from 'lucide-react';
+import { CheckCircle2, Gift, ShieldCheck } from 'lucide-react';
 import { Button } from './Button';
 import { useReveal } from '../hooks/useReveal';
 
@@ -110,11 +110,20 @@ export const SorSystemSection: React.FC = () => {
                             <Button 
                                 variant="success"
                                 fullWidth 
-                                className="py-6 text-xl shadow-[0_0_30px_rgba(5,150,105,0.4)]"
+                                className="py-6 text-[26px] shadow-[0_0_30px_rgba(5,150,105,0.4)]"
                                 onClick={() => window.location.href = 'https://www.causi.com.br/advogado/triagem/servico'}
                             >
                                 <span className="font-black">QUERO ENTRAR AGORA</span>
                             </Button>
+                            
+                            <div className="mt-6 flex flex-col md:flex-row items-center justify-center gap-2 text-slate-500 text-[13px] md:text-sm font-medium">
+                                <div className="flex items-center gap-1.5">
+                                    <ShieldCheck className="w-4 h-4 text-emerald-600" />
+                                    <span>Compra segura processada pela <strong>Hotmart</strong>.</span>
+                                </div>
+                                <span className="hidden md:inline text-slate-300">•</span>
+                                <span>Garantia incondicional de 7 dias.</span>
+                            </div>
                         </div>
                     </div>
                 </div>
