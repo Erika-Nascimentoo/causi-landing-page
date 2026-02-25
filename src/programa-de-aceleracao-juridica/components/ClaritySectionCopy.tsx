@@ -83,7 +83,7 @@ export const ClaritySectionCopy: React.FC = () => {
 
                         <div className="reveal-hidden mt-4">
                             <Button 
-                                onClick={() => document.getElementById('comparison')?.scrollIntoView({ behavior: 'smooth' })}
+                                onClick={() => document.getElementById('arsenal')?.scrollIntoView({ behavior: 'smooth' })}
                             >
                                 Como funciona o programa
                             </Button>
