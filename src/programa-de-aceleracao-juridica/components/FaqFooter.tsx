@@ -18,7 +18,7 @@ export const FaqFooter: React.FC = () => {
         },
         {
             question: "4. Quanto tempo eu preciso dedicar para ver resultados?",
-            answer: "O objetivo do PAJ é devolver o seu tempo, e não roubar mais dele. Logo na primeira semana, ao ativar o seu Diagnóstico e plugar a IA no WhatsApp, você já vai sentir a diferença cortando os curiosos e organizando o fluxo. O alívio operacional é imediato."
+            answer: "O objetivo do Programa de Aceleração Jurídica é devolver o seu tempo, e não roubar mais dele. Logo na primeira semana, ao ativar o seu Diagnóstico e plugar a IA no WhatsApp, você já vai sentir a diferença cortando os curiosos e organizando o fluxo. O alívio operacional é imediato."
         },
         {
             question: "5. E se eu não puder participar da Imersão ao vivo?",
