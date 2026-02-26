@@ -21,6 +21,7 @@ export default defineConfig(({ mode }) => {
           main: path.resolve(__dirname, 'index.html'),
           estruturacao: path.resolve(__dirname, 'estruturacao-estrategica/index.html'),
           aceleracao: path.resolve(__dirname, 'programa-de-aceleracao-juridica/index.html'),
+          obrigado: path.resolve(__dirname, 'obrigado/index.html'),
         }
       }
     }

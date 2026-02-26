@@ -104,7 +104,7 @@ export const ProblemSection: React.FC = () => {
               variant="danger"
               onClick={() => document.getElementById('solution')?.scrollIntoView({ behavior: 'smooth' })}
             >
-              Quero consertar o minha advocacia
+              Quero consertar a minha advocacia
             </Button>
           </div>
         </div>
