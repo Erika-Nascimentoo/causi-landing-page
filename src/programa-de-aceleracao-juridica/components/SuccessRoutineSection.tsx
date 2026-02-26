@@ -138,7 +138,7 @@ export const SuccessRoutineSection: React.FC = () => {
                       <h4 className="text-xl md:text-2xl font-bold text-slate-900 group-hover:text-brand-primary transition-colors duration-300">
                         {item.title}
                       </h4>
-                      <p className="type-body leading-relaxed">
+                      <p className="type-body text-slate-600 leading-relaxed">
                         {item.description}
                       </p>
                     </div>

@@ -50,7 +50,7 @@ export const ClaritySectionCopy: React.FC = () => {
                                     </span>
                                 </div>
                                 <div className="flex-1 pt-2">
-                                    <p className="text-lg md:text-xl text-slate-600 leading-relaxed">
+                                    <p className="type-body text-slate-600 leading-relaxed">
                                         <span className="text-brand-primary font-bold">A Máquina de Atração:</span> Como parar de depender de indicações ou da sorte, e criar um canal de contatos previsível (sem precisar virar blogueirinho de Instagram).
                                     </p>
                                 </div>
@@ -62,7 +62,7 @@ export const ClaritySectionCopy: React.FC = () => {
                                     </span>
                                 </div>
                                 <div className="flex-1 pt-2">
-                                    <p className="text-lg md:text-xl text-slate-600 leading-relaxed">
+                                    <p className="type-body text-slate-600 leading-relaxed">
                                         <span className="text-brand-primary font-bold">O Protocolo de Admissão:</span> A trava de segurança que você instala no seu WhatsApp para barrar automaticamente os "curiosos de sábado" e só deixar passar quem tem dinheiro para pagar os seus honorários.
                                     </p>
                                 </div>
@@ -74,7 +74,7 @@ export const ClaritySectionCopy: React.FC = () => {
                                     </span>
                                 </div>
                                 <div className="flex-1 pt-2">
-                                    <p className="text-lg md:text-xl text-slate-600 leading-relaxed">
+                                    <p className="type-body text-slate-600 leading-relaxed">
                                         <span className="text-brand-primary font-bold">A Manutenção do Lucro:</span> O modelo que grandes escritórios usam para fazer o mesmo cliente comprar de novo ou indicar você ativamente, para você nunca mais ter que começar o mês do zero.
                                     </p>
                                 </div>

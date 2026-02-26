@@ -2,11 +2,15 @@
 
 ## Progresso Atual:
 
-- [x] **Arsenal de Implementação**: Finalizado com Bento Grid, card bônus horizontal e glow intenso.
+- [x] **Rodapé e Informações Legais**: Atualizados com dados da Rino3 (Campo Grande, MS) e links diretos para políticas e termos.
+- [x] **Ajuste de Tags/Labels**: Alinhamento vertical corrigido e fontes recalibradas para público 30+.
+- [x] **Arsenal de Implementação**: Card de bônus atualizado com imagem do dashboard, tamanho e posição refinados (450px de largura, deslocamento para a direita e remoção de zoom no hover).
+- [x] **Fontes de Corpo**: Padronizadas para 18px (Mobile) / 20px (Desktop) para melhor legibilidade.
 - [x] **Mapa de Execução (Jornada)**: Texto atualizado sobre o método na fase de construção.
 - [x] **Card de Preço (Oferta)**: Totalmente formatado para conversão e otimizado visualmente com glow.
-- [x] **FAQ (Perguntas Frequentes)**: Atualizada com a nova cópia comercial que quebra objeções mais fortes (OAB com ética, curva de aprendizagem tech, aplicação garantida de bônus, e versatilidade de nichos).
+- [x] **FAQ (Perguntas Frequentes)**: Atualizada com a nova cópia comercial.
 
 ## Próximo Passo:
 
-- Verificar com o usuário se há mais alguma seção textual, link, componente do footer ou de responsividade que precise de refinamento antes de oficializar a página como concluída e publicável.
+- Validar as alterações finais do Arsenal e do Rodapé com o usuário.
+- Verificar se há mais algum ponto de ajuste fino antes da finalização.

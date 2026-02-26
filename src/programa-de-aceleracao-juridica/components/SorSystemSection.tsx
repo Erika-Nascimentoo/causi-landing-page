@@ -97,14 +97,14 @@ export const SorSystemSection: React.FC = () => {
 
                         {/* Pricing and Button - NOW AT THE BOTTOM */}
                         <div className="w-full flex flex-col items-center mt-6">
-                            <div className="text-center mb-8 max-w-xl mx-auto text-xl">
-                                <p className="text-slate-600 leading-relaxed mb-4">
+                            <div className="text-center mb-8 max-w-xl mx-auto">
+                                <p className="type-body text-slate-600 leading-relaxed mb-4">
                                     O <strong className="font-bold text-slate-900">Programa de Aceleração Jurídica</strong> tem apenas um objetivo: construir o seu Sistema Operacional e colocar dinheiro no caixa do seu escritório.
                                 </p>
-                                <p className="text-slate-600 leading-relaxed mb-4">
+                                <p className="type-body text-slate-600 leading-relaxed mb-4">
                                     Nós não vamos te cobrar os milhares de reais que uma consultoria tradicional cobra. Mas nós também não damos o acesso de graça, porque precisamos separar os advogados comprometidos dos "curiosos".
                                 </p>
-                                <p className="text-slate-900 font-bold">
+                                <p className="type-body text-slate-900 font-bold">
                                     Por isso, nós cobramos apenas um valor simbólico de comprometimento para você sentar à mesa com a nossa equipe:
                                 </p>
                             </div>
@@ -125,7 +125,7 @@ export const SorSystemSection: React.FC = () => {
                                 </span>
                                 <span className="text-2xl md:text-3xl font-bold mt-3 md:mt-4 text-slate-500">,90</span>
                             </div>
-                            <p className="text-slate-500 text-base mb-8 font-medium text-center">Pagamento único e seguro.<br />Sem surpresas ou mensalidades ocultas</p>
+                            <p className="type-body text-slate-600 mb-8 font-medium text-center leading-relaxed">Pagamento único e seguro.<br />Sem surpresas ou mensalidades ocultas</p>
                             
                             <Button 
                                 variant="success"
