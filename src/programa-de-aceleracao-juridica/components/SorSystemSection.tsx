@@ -131,7 +131,7 @@ export const SorSystemSection: React.FC = () => {
                                 variant="success"
                                 fullWidth 
                                 className="py-6 text-[24px] md:text-[28px] shadow-[0_0_30px_rgba(5,150,105,0.4)]"
-                                onClick={() => window.location.href = 'https://www.causi.com.br/advogado/triagem/servico'}
+                                onClick={() => window.location.href = 'https://pay.hotmart.com/N104660231A?off=la2uspqn'}
                             >
                                 <span className="font-black">QUERO ENTRAR AGORA</span>
                             </Button>

@@ -1,59 +1,17 @@
 # Objetivo Atual
 
-Remover a gambiarra do UTM forçada nas URLs em todos os projetos do workspace Causi.
+Atualizar as tags SEO (<title> e <meta name="description">) das landing pages.
 
 # Progresso Atual
 
-- Pesquisado por arquivos com as configurações/hacks relacionados a "AutoUTM" em todos os 6 projetos no workspace (`causi-landing-page`, `causi-site`, `causi-hub`, `causi-form`, `causi-blog`, `causi-treinamentos`).
-- Arquivos de hooks/components específicos para "AutoUTM" foram deletados.
-- As referências e usos das funções/components foram removidos de dentro dos principais arquivos de rotas e apps (`main.tsx`, `App.tsx`, `layout.tsx`).
-- Commits das remoções foram criados em cada projeto usando a mensagem: "chore: remover gambiarra de UTM forçada nas URLs" (exceto em `causi-treinamentos` que não é inicializado como git).
-
-# Arquivos Modificados/Deletados
-
-**causi-landing-page**
-
-- Deletados:
-  - `src/programa-de-aceleracao-juridica/hooks/useAutoUTM.ts`
-  - `src/estruturacao-estrategica/hooks/useAutoUTM.ts`
-- Modificados:
-  - `src/programa-de-aceleracao-juridica/main.tsx`
-  - `src/estruturacao-estrategica/main.tsx`
-
-**causi-site**
-
-- Deletados:
-  - `src/components/AutoUTM.tsx`
-- Modificados:
-  - `src/app/layout.tsx`
-
-**causi-hub**
-
-- Deletados:
-  - `src/hub/hooks/useAutoUTM.ts`
-- Modificados:
-  - `src/hub/App.tsx`
-
-**causi-form**
-
-- Deletados:
-  - `src/hooks/useAutoUTM.ts`
-- Modificados:
-  - `src/App.tsx`
-
-**causi-blog**
-
-- Deletados:
-  - `src/components/Analytics/AutoUTM.tsx`
-- Modificados:
-  - `src/app/(frontend)/layout.tsx`
-
-**causi-treinamentos**
-
-- Deletados:
-  - `src/script-comercial/hooks/useAutoUTM.ts`
-- Modificados:
-  - `src/main.tsx`
+- Atualizado o conteúdo de `<title>` para "O Fim do Improviso: Sistema Comercial para Advogados | Causi", focando em um título mais conversivo e direto.
+- Atualizado o conteúdo de `<meta name="description">` para "Trabalha muito e o dinheiro não sobra? Descubra o Sistema Operacional de Receita para afastar curiosos, fechar contratos reais e ter previsibilidade."
+- Também atualizado de forma síncrona os metadados equivalentes do Open Graph (`og:title` e `og:description`) bem como as tags do Twitter (`twitter:title` e `twitter:description`).
+- As alterações foram realizadas nos três arquivos de entrada:
+  - `index.html` (raiz)
+  - `estruturacao-estrategica/index.html`
+  - `programa-de-aceleracao-juridica/index.html`
+- Commits criados com a mensagem: "chore: atualizar seo title e meta description".
 
 # Próximo Passo
 
