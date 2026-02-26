@@ -1,12 +1,11 @@
 # Objetivo Atual
-Corrigir o redirecionamento do botão de CTA para funcionar tanto em localhost quanto em produção (URL absoluta).
+Atualizar a imagem de OpenGraph (imagem de compartilhamento social) para a nova versão fornecida.
 
 # Progresso Atual
-- Implementada uma lógica de verificação de ambiente no `onClick` do botão em `HeroObrigado.tsx`.
-- Se o `hostname` for `localhost`, ele usa a rota relativa (`/programa-de-aceleracao-juridica/criar-conta`), permitindo que você teste localmente sem sair do seu servidor.
-- Caso contrário (em produção), ele força a URL absoluta completa: `https://www.causi.com.br/advogado/solucoes/...`.
-- Isso resolve o problema de o link "quebrar" ou tentar sair do ambiente local durante o desenvolvimento.
-- Commit realizado: `fix(obrigado): implementar lógica de redirecionamento híbrido para localhost e prod`.
+- A nova imagem `OPENGRAPH.webp` fornecida na raiz do projeto foi aplicada como a imagem oficial de compartilhamento.
+- Arquivos atualizados em `public/compress-opengraph.webp` e `public/opengraph.webp`.
+- Verificado em todos os arquivos HTML (`index.html`, páginas de obrigado e criar conta) que a referência `og:image` aponta para esta imagem.
+- Commit realizado: `style(seo): atualizar imagem de opengraph (social share)`.
 
 # Próximos Passos
-Aguardar validação do usuário sobre o comportamento em localhost.
+Aguardar novas instruções do usuário.
