@@ -32,7 +32,6 @@ export const SignUpHero: React.FC = () => {
           {/* Logo / Label */}
           <div className="flex flex-col items-center gap-6 mb-10 reveal-hidden">
              <div className="flex items-center gap-2 select-none">
-              <span className="type-label text-brand-deep">SOLUÇÕES</span>
                <div 
                   className="h-10 md:h-12 w-32 bg-brand-deep" 
                   style={{ 
@@ -50,9 +49,9 @@ export const SignUpHero: React.FC = () => {
           </div>
 
           <h1 className="text-[2rem] md:text-[3rem] font-sans font-black leading-[1.2] mb-4">
-             <span className="text-slate-900">Crie sua conta no</span><br />
+             <span className="text-slate-900">Crie sua conta na</span><br />
              <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-deep to-brand-primary box-decoration-clone">
-               Sistema Operacional de Receita
+               Plataforma Causi
              </span>
           </h1>
           <p className="text-lg text-slate-600 max-w-xl mx-auto mb-12">
