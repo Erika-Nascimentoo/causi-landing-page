@@ -1,11 +1,12 @@
 # Objetivo Atual
-Atualizar infraestrutura de links paralelos no repositório `causi-site` (Sitemap e Headers).
+Mudar string de URL da página restrita de compra para contêr o hash do aniversário e evitar invasores ou curiosos de verem conteúdos internos liberados antecipadamente.
 
 # Progresso Atual
-- A rota máster nativa do `vercel.json` no `causi-site` já estava cobrindo a página de obrigado automaticamente devido à regra Wildcard flexível (```"source": "/advogado/solucoes/programa-de-aceleracao-juridica/:path*"```). Portanto o roteamento orgânico em Produção já funciona de prontidão.
-- Implementei nas Regras de Headers do Vercel (`"headers"`) a emissão forçada de um cabeçalho HTTP: `X-Robots-Tag: noindex, nofollow` voltado especificamente a URL `/obrigado`. Isso previne definitivamente qualquer brecha de vazamento e obriga o servidor a derrubar cache e robôs de busca.
-- No arquivo `src/app/sitemap.ts`, inscrevi ativamente a página de vendas raiz (`/advogado/solucoes/programa-de-aceleracao-juridica`) com um grau de prioridade alta (`1.0`) e recorrência de leitura semanal para ganho em ranqueamento e indexação primária. Mantive a aba de `obrigado` isolada.
-- O repositório paralelo (`causi-site`) foi atualizado e "commitado" (`seo: configurar rotas e sitemap.xml bloqueando a pagina de obrigado`).
+- No repositório `causi-landing-page`, renomeada a pasta principal de leitura para o bundler Vite que estava antes em `/obrigado` para `/obrigado-30091986`.
+- Atualizado o mapeamento da Rollup options dentro de `vite.config.ts`.
+- Atualizado o Script JS inline que fica injetado no Index e refaz forçosamente os roteamentos da Vercel para a nova URL mascarada final.
+- No repositório `causi-site`, atualizadas as Headers JSON com o parâmetro `X-Robots-Tag: noindex, nofollow, noarchive` forçando a segurança nesse exato novo link, derrubando o antigo.
+- Atualizado estado em commits `feat` no branch com "alterar hash url da pagina de obrigado para -30091986".
 
 # Próximos Passos
-Aguardar validação destas proteções e solicitar proxima tarefa.
+Aguardar nova diretriz do usuário.
