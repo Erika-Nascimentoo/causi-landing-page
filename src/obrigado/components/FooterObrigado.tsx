@@ -7,7 +7,7 @@ export const FooterObrigado: React.FC = () => {
                 {/* Brand Header */}
                 <div className="flex items-center gap-2 select-none">
                     <span className="type-label text-slate-900">SOLUÇÕES</span>
-                    <img src={`${import.meta.env.BASE_URL}logo-dark.svg`} alt="Logo Causi - Consultoria e Plataforma de Alta Performance Jurídica para Escritórios de Advocacia" className="h-10 md:h-12 w-auto" />
+                    <img src={`${import.meta.env.BASE_URL}logo-dark.svg`} alt="Logo Causi - Consultoria e Plataforma de Alta Performance Jurídica para Escritórios de Advocacia" className="h-[30px] md:h-[36px] w-auto" />
                 </div>
 
                 {/* Legal Information Block */}

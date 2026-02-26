@@ -1,12 +1,11 @@
 # Objetivo Atual
-Criar um rodapé limpo (Light Mode) equivalente ao da página matriz para compor o encerramento da página de Obrigado, provendo links de compliance obrigatórios aos usuários.
+Corrigir falhas de resolução do caminho em links diretos sem barra oblíqua no final das campanhas de entrada.
 
 # Progresso Atual
-- Criada a nova secção em um componente isolado: `FooterObrigado.tsx` no front-end em Vite.
-- O componente foi desenhado inteiramente com as cores invertidas: fundos transparentes brancos, textos em cinza clássico e sem fontes excessivamente vibrantes, espelhando na perfeição as dimensões estruturais do Rodapé de Perguntas Frequentes (`FaqFooter.tsx`).
-- O texto "SOLUÇÕES" e a chamada final foram perfeitamente repassados.
-- Importado o novo componente na raiz estrutural `/src/obrigado/App.tsx` abaixo do componente Hero que aloja o vídeo. O fundo estica fluidamente.
-- O código do repósitorio principal (`causi-landing-page`) recebeu as injeções em commit `feat(obrigado): adicionar rodape estilo light adaptado`.
+- Analisado o mapeamento de origens ("Rewrites") no Vercel de ambos os repositórios (`causi-site` e `causi-landing-page`).
+- Foi constatado que no repositório `causi-landing-page`, o roteador exigia compulsoriamente a barra inclinada literal no final da URL para entregar o conteúdo (`"source": "/programa-de-aceleracao-juridica/(.*)"`). Essa Regex capturava somente do `/` em diante.
+- Substituídas e aprimoradas as regras dentro do arquivo `vercel.json` na Landing Page. Injetadas regras explícitas espelho que cobrem as subpáginas de raiz cruas (sem a barra informada pelo cliente `"/programa-de-aceleracao-juridica"`).
+- O arquivo e o fix estático foram comitados com `fix(vercel): configurar rewrite para abranger url exata sem trailing slash..`.
 
 # Próximos Passos
-Aguardar novo comando.
+Aguardar mais inputs e validar roteamento.
