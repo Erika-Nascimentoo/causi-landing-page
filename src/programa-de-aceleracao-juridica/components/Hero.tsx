@@ -39,7 +39,7 @@ export const Hero: React.FC = () => {
           </div>
 
           {/* Group 2: Core Message (Title & Subtitle) */}
-          <div className="flex flex-col items-center gap-4 md:gap-6 text-center max-w-4xl mx-auto">
+          <div className="flex flex-col items-center gap-4 md:gap-6 text-center w-full">
 
             <h1 className="sr-only">Programa de Aceleração Jurídica: Sistema Operacional de Receita para Advogados</h1>
             <h2 className="text-[1.8rem] md:text-[2.8rem] font-sans font-black leading-[1.2] pb-0 reveal-hidden">
