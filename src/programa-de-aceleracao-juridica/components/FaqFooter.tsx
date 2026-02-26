@@ -59,7 +59,7 @@ export const FaqFooter: React.FC = () => {
                     {/* Brand Header - Same as Hero */}
                     <div className="flex items-center gap-2 select-none">
                         <span className="type-label text-white">SOLUÇÕES</span>
-                        <img src={`${import.meta.env.BASE_URL}logo.svg`} alt="Logo Causi - Alta Performance Jurídica" className="h-10 md:h-12 w-auto" />
+                        <img src={`${import.meta.env.BASE_URL}logo.svg`} alt="Logo Causi - Consultoria e Plataforma de Alta Performance Jurídica para Escritórios de Advocacia" className="h-10 md:h-12 w-auto" />
                     </div>
 
                     {/* Legal Information Block */}

@@ -26,7 +26,7 @@ const ArsenalCard: React.FC<{
         <div className="h-full relative overflow-hidden rounded-tl-2xl border-l border-t border-white/20 shadow-[0_0_50px_rgba(139,92,246,0.6)] bg-brand-deep/50">
           <img 
             src={image} 
-            alt="Interface da Plataforma" 
+            alt="Interface do Dashboard da Plataforma Causi mostrando gestão de oportunidades jurídicas e CRM para advogados" 
             className="w-full h-full object-cover object-left-top transition-transform duration-500" 
           />
         </div>
