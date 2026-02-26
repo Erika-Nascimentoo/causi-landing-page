@@ -94,7 +94,7 @@ export const ImplementationArsenalSection: React.FC = () => {
             description: "Não basta ter o método se você tiver que fazer tudo no Excel. Ao entrar hoje, nós vamos liberar e configurar junto com você a nossa inteligência artificial para atender, filtrar e agendar seus clientes 24 horas por dia no seu WhatsApp.",
             isBonus: true,
             className: "lg:col-span-2",
-            image: "/frame-59.png"
+            image: "/dash-causi-final-v3.png"
         }
     ];
 
