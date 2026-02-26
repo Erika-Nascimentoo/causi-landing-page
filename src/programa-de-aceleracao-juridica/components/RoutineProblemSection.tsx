@@ -13,12 +13,12 @@ export const RoutineProblemSection: React.FC = () => {
   ];
 
   return (
-    <section id="routine" ref={sectionRef} className="relative pt-[130px] pb-20 md:py-32 px-6 bg-bg-page overflow-hidden min-h-[800px] flex items-center">
+    <section id="routine" ref={sectionRef} className="relative pt-[260px] pb-20 md:py-32 px-6 bg-bg-page overflow-hidden min-h-[800px] flex items-center">
       
       {/* Background Image - Header on Mobile / Side on Desktop */}
       <div className="absolute top-0 right-0 w-full lg:w-1/2 lg:h-full z-0 overflow-hidden h-[450px] pointer-events-none">
         <div 
-          className="w-full h-full bg-cover bg-center bg-no-repeat grayscale opacity-30 lg:opacity-100"
+          className="w-full h-full bg-cover bg-center bg-no-repeat grayscale opacity-50 lg:opacity-100"
           style={{ backgroundImage: `url('${import.meta.env.BASE_URL}advogado-cansado.webp')` }}
         />
         {/* Fades to blend with the dark page bg */}
