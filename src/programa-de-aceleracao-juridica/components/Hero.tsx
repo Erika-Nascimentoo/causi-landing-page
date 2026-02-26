@@ -56,7 +56,10 @@ export const Hero: React.FC = () => {
             </h2>
 
             <div className="flex flex-col items-center reveal-hidden mt-4 md:mt-6">
-              <Button onClick={() => document.getElementById('routine')?.scrollIntoView({ behavior: 'smooth' })}>
+              <Button 
+                onClick={() => document.getElementById('routine')?.scrollIntoView({ behavior: 'smooth' })}
+                className="py-6 px-10 md:py-7 md:px-14 text-xl md:text-2xl shadow-[0_0_60px_-5px_rgba(139,92,246,0.8)] hover:shadow-[0_0_100px_-5px_rgba(139,92,246,1)] transition-all duration-500"
+              >
                 <span className="font-black text-white">Ver como funciona</span>
               </Button>
             </div>
