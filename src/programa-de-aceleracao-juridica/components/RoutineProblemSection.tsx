@@ -13,7 +13,7 @@ export const RoutineProblemSection: React.FC = () => {
   ];
 
   return (
-    <section id="routine" ref={sectionRef} className="relative pt-[270px] pb-20 md:pt-32 md:pb-32 px-6 bg-bg-page overflow-hidden min-h-[800px] block md:flex md:items-center">
+    <section id="routine" ref={sectionRef} className="relative pt-[270px] pb-32 md:pt-32 px-6 bg-bg-page overflow-hidden min-h-[800px] block md:flex md:items-center">
       
       {/* Background Image - Header on Mobile / Side on Desktop */}
       <div className="absolute top-0 right-0 w-full lg:w-1/2 lg:h-full z-[1] overflow-hidden h-[400px] pointer-events-none">

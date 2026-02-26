@@ -7,7 +7,7 @@ export const ClaritySectionCopy: React.FC = () => {
     const sectionRef = useReveal();
 
     return (
-        <section id="solution" ref={sectionRef} className="relative bg-white pt-[270px] pb-20 md:pt-32 md:pb-32 px-6 overflow-hidden min-h-[700px] block md:flex md:items-center">
+        <section id="solution" ref={sectionRef} className="relative bg-white pt-[270px] pb-32 md:pt-32 px-6 overflow-hidden min-h-[700px] block md:flex md:items-center">
             
             {/* Background Image - Header on Mobile / Side on Desktop */}
             <div className="absolute top-0 left-0 w-full lg:w-[55%] lg:h-full z-[1] overflow-hidden h-[400px] pointer-events-none">

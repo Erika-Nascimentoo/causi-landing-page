@@ -68,7 +68,7 @@ export const SuccessRoutineSection: React.FC = () => {
   ];
 
   return (
-    <section id="outcome" ref={sectionRef} className="relative bg-white pt-[270px] pb-20 md:py-0">
+    <section id="outcome" ref={sectionRef} className="relative bg-white pt-[270px] pb-32 md:py-0">
       
       {/* Sticky Background Image - Occupying 50% of the section width on the left */}
       {/* Header Background Image - Simple for Mobile / Sticky for Desktop */}
