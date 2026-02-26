@@ -3,6 +3,7 @@
 @theme {
     /* --- Typography System --- */
     --font-sans: 'Inter', system-ui, sans-serif;
+    --font-serif: 'Lora', serif;
 
     /* --- Color System (Obsidian - Pure Black & Sharp Contrast) --- */
     /* Backgrounds */

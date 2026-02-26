@@ -1,19 +1,12 @@
-# Tarefa Atual: Refinamento de Seções e Conteúdo da Landing Page
+# Tarefa Atual: Refinamento de Seções e Conteúdo Final da Landing Page
 
 ## Progresso Atual:
 
-- [x] **Arsenal de Implementação**: Finalizado com Bento Grid, card bônus horizontal, imagem ultra-otimizada (v3 original PNG 425x317) e glow roxo intenso.
-- [x] **Mapa de Execução (Jornada)**: Texto atualizado, emojis/parênteses removidos, e formatações de itálico aplicadas.
-- [x] **Seção Final (Oferta)**: Headline e sub-headline atualizadas de acordo com o novo copy ("cursinho", "instalação definitiva").
+- [x] **Arsenal de Implementação**: Finalizado com Bento Grid, card bônus horizontal e glow intenso.
+- [x] **Mapa de Execução (Jornada)**: Texto atualizado sobre o método na fase de construção.
+- [x] **Card de Preço (Oferta)**: Totalmente formatado para conversão e otimizado visualmente com glow.
+- [x] **FAQ (Perguntas Frequentes)**: Atualizada com a nova cópia comercial que quebra objeções mais fortes (OAB com ética, curva de aprendizagem tech, aplicação garantida de bônus, e versatilidade de nichos).
 
-## Arquivos Modificados:
+## Próximo Passo:
 
-- `src/programa-de-aceleracao-juridica/components/ImplementationArsenalSection.tsx`
-- `src/programa-de-aceleracao-juridica/components/SuccessRoutineSection.tsx`
-- `src/programa-de-aceleracao-juridica/components/SorSystemSection.tsx`
-- `public/frame-59.png` (Adicionado como imagem original)
-
-## Próximos Passos:
-
-- [ ] Revisar se há inconsistências de estilo (glows/bordas) entre as seções reformuladas e o restante da página.
-- [ ] Aguardar novas instruções do usuário para refinamentos adicionais ou novas seções.
+- Verificar com o usuário se há mais alguma seção textual, link, componente do footer ou de responsividade que precise de refinamento antes de oficializar a página como concluída e publicável.
