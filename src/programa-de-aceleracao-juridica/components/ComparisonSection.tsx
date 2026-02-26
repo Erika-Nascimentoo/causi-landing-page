@@ -38,7 +38,7 @@ export const ComparisonSection: React.FC = () => {
 
             <div className="max-w-screen-2xl mx-auto relative z-10">
                 <header className="text-center mb-20 px-4 max-w-[960px] mx-auto reveal-hidden">
-                    <span className="inline-flex items-center gap-4 text-white uppercase tracking-[0.2em] font-bold text-[10px] md:text-xs px-4 py-1.5 border border-white/20 rounded-full mb-4">
+                    <span className="inline-flex items-center gap-4 text-white uppercase tracking-[0.2em] font-bold text-[10px] md:text-xs px-4 py-1.5 border border-white/20 rounded-full mb-4 leading-none">
                         <span className="w-2 h-2 rounded-full bg-brand-primary animate-pulse shadow-[0_0_8px_rgba(139,92,246,0.8)] ml-1" />
                         OS 3 PILARES
                     </span>

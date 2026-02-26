@@ -56,13 +56,13 @@ export const ImplementationArsenalSection: React.FC = () => {
     const sectionRef = useReveal();
 
     const OnlineBadge = () => (
-        <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-brand-primary/20 text-brand-primary border border-brand-primary/30 ml-1 whitespace-nowrap align-middle">
+        <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-brand-primary/20 text-brand-primary border border-brand-primary/30 ml-1 whitespace-nowrap align-middle leading-none">
             ONLINE
         </span>
     );
 
     const BonusBadge = () => (
-        <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-amber-500/20 text-amber-500 border border-amber-500/30 ml-2 align-middle uppercase">
+        <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-amber-500/20 text-amber-500 border border-amber-500/30 ml-2 align-middle uppercase leading-none">
             Bônus
         </span>
     );
@@ -113,7 +113,7 @@ export const ImplementationArsenalSection: React.FC = () => {
 
             <div className="max-w-screen-2xl mx-auto relative z-10">
                 <header className="text-center mb-20 px-4 max-w-[960px] mx-auto reveal-hidden">
-                    <span className="inline-flex items-center gap-4 text-white uppercase tracking-[0.2em] font-bold text-[10px] md:text-xs px-4 py-1.5 border border-white/20 rounded-full mb-4">
+                    <span className="inline-flex items-center gap-4 text-white uppercase tracking-[0.2em] font-bold text-[10px] md:text-xs px-4 py-1.5 border border-white/20 rounded-full mb-4 leading-none">
                         <span className="w-2 h-2 rounded-full bg-brand-primary animate-pulse shadow-[0_0_8px_rgba(139,92,246,0.8)] ml-1" />
                         A IMPLEMENTAÇÃO
                     </span>

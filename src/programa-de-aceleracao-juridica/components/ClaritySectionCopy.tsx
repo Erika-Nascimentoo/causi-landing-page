@@ -29,7 +29,7 @@ export const ClaritySectionCopy: React.FC = () => {
                     {/* Content on the Right half - Increased from span-6 to span-7 */}
                     <div className="lg:col-span-7 flex flex-col gap-10">
                         <div className="reveal-hidden">
-                            <span className="inline-flex items-center gap-4 text-slate-600 uppercase tracking-[0.2em] font-bold text-[10px] md:text-xs px-4 py-1.5 border border-slate-200 rounded-full mb-4">
+                            <span className="inline-flex items-center gap-4 text-slate-600 uppercase tracking-[0.2em] font-bold text-[10px] md:text-xs px-4 py-1.5 border border-slate-200 rounded-full mb-4 leading-none">
                                 <span className="w-2 h-2 rounded-full bg-brand-primary animate-pulse shadow-[0_0_8px_rgba(139,92,246,0.8)] ml-1" />
                                 A ENGENHARIA DA RECEITA
                             </span>

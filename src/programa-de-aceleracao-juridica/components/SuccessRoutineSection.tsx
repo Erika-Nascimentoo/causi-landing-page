@@ -96,7 +96,7 @@ export const SuccessRoutineSection: React.FC = () => {
           {/* Right Side: Content - Occupying 50% (6 cols) */}
           <div className="lg:col-span-6 flex flex-col gap-12">
             <div className="reveal-hidden">
-              <span className="inline-flex items-center gap-4 text-slate-600 uppercase tracking-[0.2em] font-bold text-[10px] md:text-xs px-4 py-1.5 border border-slate-200 rounded-full mb-6">
+              <span className="inline-flex items-center gap-4 text-slate-600 uppercase tracking-[0.2em] font-bold text-[10px] md:text-xs px-4 py-1.5 border border-slate-200 rounded-full mb-6 leading-none">
                 <span className="w-2 h-2 rounded-full bg-brand-primary animate-pulse shadow-[0_0_8px_rgba(139,92,246,0.8)] ml-1" />
                 O SEU MAPA DE EXECUÇÃO
               </span>

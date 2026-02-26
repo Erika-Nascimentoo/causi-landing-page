@@ -33,7 +33,7 @@ export const RoutineProblemSection: React.FC = () => {
           {/* Left Side: Content - Occupying the left half */}
           <div className="lg:col-span-6 flex flex-col gap-10">
             <div className="reveal-hidden">
-              <span className="inline-flex items-center gap-4 text-white uppercase tracking-[0.2em] font-bold text-[10px] md:text-xs px-4 py-1.5 border border-white/20 rounded-full mb-6">
+              <span className="inline-flex items-center gap-4 text-white uppercase tracking-[0.2em] font-bold text-[10px] md:text-xs px-4 py-1.5 border border-white/20 rounded-full mb-6 leading-none">
                 <span className="w-2 h-2 rounded-full bg-red-600 animate-pulse shadow-[0_0_8px_rgba(220,38,38,0.8)] ml-1" />
                 OS BASTIDORES DA SUA ADVOCACIA
               </span>

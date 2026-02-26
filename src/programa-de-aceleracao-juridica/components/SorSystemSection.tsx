@@ -7,7 +7,7 @@ const OfferListItem: React.FC<{ title: React.ReactNode; description?: string; is
   if (isBonus) {
     return (
       <li className="relative flex flex-col items-center justify-center p-6 mt-8 border-2 border-brand-primary rounded-2xl group text-center">
-        <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-brand-primary text-white text-[11px] uppercase tracking-widest font-bold px-4 py-1.5 rounded-full flex items-center gap-1.5">
+        <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-brand-primary text-white text-[11px] uppercase tracking-widest font-bold px-4 py-1.5 rounded-full flex items-center gap-1.5 leading-none">
           <Gift className="w-3.5 h-3.5" />
           <span>SUPER BÔNUS</span>
         </div>
