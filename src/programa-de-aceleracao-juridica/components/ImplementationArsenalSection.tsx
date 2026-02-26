@@ -113,7 +113,7 @@ export const ImplementationArsenalSection: React.FC = () => {
 
             <div className="max-w-screen-2xl mx-auto relative z-10">
                 <header className="text-center mb-20 px-4 max-w-[960px] mx-auto reveal-hidden">
-                    <span className="inline-flex items-center justify-center gap-2.5 text-white uppercase tracking-[0.2em] font-bold text-[9px] md:text-[10px] h-6 md:h-7 px-4 border border-white/20 rounded-full mb-4 leading-none pt-[1px]">
+                    <span className="inline-flex items-center justify-center gap-2.5 text-white uppercase tracking-[0.2em] font-bold text-[10px] md:text-xs h-7 md:h-8 px-5 border border-white/20 rounded-full mb-4 leading-none pt-[1px]">
                         <span className="w-1.5 h-1.5 rounded-full bg-brand-primary animate-pulse shadow-[0_0_8px_rgba(139,92,246,0.8)]" />
                         A IMPLEMENTAÇÃO
                     </span>
