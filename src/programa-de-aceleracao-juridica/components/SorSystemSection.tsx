@@ -82,18 +82,22 @@ export const SorSystemSection: React.FC = () => {
             />
 
             <div className="max-w-screen-2xl mx-auto relative z-10">
-                <header className="text-center mb-10 md:mb-16 px-4 max-w-[960px] mx-auto reveal-hidden">
+                <header className="text-center mb-8 md:mb-10 max-w-[960px] mx-auto reveal-hidden">
                     <h2 className="type-h2 text-center text-text-primary mb-6">
                         O <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-glow box-decoration-clone font-black">Programa de Aceleração Jurídica</span> não é mais um cursinho para você assistir e esquecer
                     </h2>
                     <p className="type-sub text-center text-text-secondary max-w-4xl mx-auto mt-4">
                         É a instalação definitiva do seu <strong className="text-text-primary font-bold">Sistema Operacional de Receita</strong>.
                     </p>
-                    <div className="mt-8 max-w-lg mx-auto text-[15px] md:text-[17px] font-bold text-rose-600 bg-rose-500/10 backdrop-blur-md border border-rose-500/20 py-4 md:py-5 px-5 md:px-6 rounded-2xl flex items-start gap-3 md:gap-4 text-left w-full shadow-lg shadow-rose-500/5">
+                </header>
+
+                {/* Alert Box - Moved outside header to perfectly match Pricing Card width */}
+                <div className="reveal-hidden max-w-lg mx-auto mb-6">
+                    <div className="text-[15px] md:text-[17px] font-bold text-rose-600 bg-rose-500/10 backdrop-blur-md border border-rose-500/20 py-4 md:py-5 px-5 md:px-6 rounded-2xl flex items-start gap-3 md:gap-4 text-left w-full shadow-lg shadow-rose-500/5">
                         <AlertCircle className="w-6 h-6 md:w-7 md:h-7 shrink-0 mt-0.5" />
                         <span className="leading-snug">Atenção: A próxima Imersão ao Vivo acontecerá no dia {nextImersionDate} às 18h de Brasília. As vagas na sala são limitadas para garantirmos a qualidade do diagnóstico.</span>
                     </div>
-                </header>
+                </div>
 
                 {/* Centralized High Impact Pricing Card */}
                 <div className="reveal-hidden max-w-lg mx-auto">

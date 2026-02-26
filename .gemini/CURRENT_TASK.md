@@ -1,13 +1,13 @@
 # Objetivo Atual
-Criar lógica dinâmica de cálculo da data de imersão ("segunda terça do mês") e re-inserir.
+Remover duplicações conflitantes de margins e containers nas seções.
 
 # Progresso Atual
-- Criada a função `getNextImersionDate()` no arquivo `SorSystemSection.tsx`.
-- Lógica: Encontra a 2ª terça do mês (iterando dias verificando o `.getDay() === 2`).
-- Avaliação de Time-To-Live: Se `now` (data e momento atual) for maior que a segunda terça do mês selecionada às 18:00h, roda imediatamente o algoritmo calculando para o mês subsequente.
-- Formatada para saída string em formato brasileiro: `DD/MM/YY`.
-- Varíavel `nextImersionDate` engatada dentro do placeholder span do UI em `SorSystemSection`.
-- Comitado usando `git commit -m "feat(programa): criar data dinamica da imersao para a segunda terca do mes"`.
+- Analisou-se todas as seções (Hero, FaqFooter, SorSystem, Arsenal... etc) buscando aspas de centralização conflitantes (filho que necessita de mais grid que o pai com `mx-auto`).
+- Solucionados:
+    1. `SorSystemSection.tsx`: A seção inteira possuía `<div className="max-w-2xl mx-auto...">` que esmagava o título (`max-w-[960px]`). Atualizado o contêiner geral para `max-w-screen-2xl`, consertando aquele distanciamento e layout cortado acima do botão de pagamento.
+    2. `FaqFooter.tsx`: A section tinha `max-w-4xl`, e o header interno tinha `max-w-[960px]`. Foi alterado o header para `w-full` com grid dinâmico.
+    3. `Hero.tsx`: Havia um `<div className="max-w-4xl mx-auto">` exatamente dentro do contêiner idêntico com `max-w-4xl mx-auto`. Essa redundância de margem foi varrida e definida como responsiva.
+- Realizado commit `"style: remover classes redundantes de max-width e mx-auto"`.
 
 # Próximo Passo
-Aguardar mais orientações do usuário.
+Aguardar novo comando.
