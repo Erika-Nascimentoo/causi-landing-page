@@ -1,14 +1,13 @@
 # Objetivo Atual
-Ajuste de copy e criação da página de /obrigado
+Alocar a página de `/obrigado` dentro de sua pasta matriz (`/programa-de-aceleracao-juridica/obrigado`).
 
 # Progresso Atual
-- Encontrada e consertada a falha de concordância nominal "o minha advocacia" na `ProblemSection.tsx`. Varri o restante dos arquivos e a gramática está consistente e sólida.
-- Criada toda a infraestrutura da nova página de destino pós-compra `/obrigado`.
-- Definido o endpoint em `vite.config.ts`.
-- Criado o arquivo base e configurado a injeção do Google Tag Manager.
-- Produzido um componente visual (`HeroObrigado.tsx`) espelhando o estilo sofisticado e premium da Landing Page principal (luzes de fundo blur, grid com mask linear, bottom glassmorphism).
-- Inserido botão de "Criar Conta", um pseudo-vídeo aguardando link real, e toda estrutura de roteamento e responsividade visual.
-- Realizado commit `"fix(programa): corrigir concordancia em botao da problem section e criar nova pagina de obrigado"`.
+- A pasta e seus componentes originais no front-end em Vite não estavam alinhados com o diretório matriz.
+- O arquivo `index.html` da página de obrigado foi movido para o diretório `/programa-de-aceleracao-juridica/obrigado`.
+- Ajustado o arquivo estrutural global `vite.config.ts` apontando o arquivo estático ao novo subdiretório.
+- A TAG HTML interna de `<script>` responsável pelo redirect em servidores Vercel e apontamentos foi atualizada com a nova rota (`/programa-de-aceleracao-juridica/obrigado`).
+- O servidor local de testes já reconhece essa árvore de URLs.
+- Realizado commit (`feat(programa): mover pagina de obrigado para rota subdiretorio do programa-de-aceleracao-juridica`).
 
 # Próximo Passo
-Aguardar validação visual das duas tarefas e requisições para continuidade em outras seções.
+Aguardar novo comando.

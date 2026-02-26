@@ -21,10 +21,6 @@ export const HeroObrigado: React.FC = () => {
           
           {/* Eyebrow Label */}
           <div className="flex flex-col items-center gap-6 reveal-hidden">
-             <span className="inline-flex items-center justify-center gap-2.5 text-slate-500 uppercase tracking-[0.2em] font-bold text-[10px] md:text-xs h-7 md:h-8 px-5 border border-slate-200 rounded-full leading-none pt-[1px]">
-                <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse shadow-[0_0_8px_rgba(34,197,94,0.8)]" />
-                ACESSO LIBERADO
-            </span>
             <div className="flex items-center gap-2 select-none">
               <span className="type-label text-brand-deep">PAINEL</span>
                <div 
@@ -79,7 +75,7 @@ export const HeroObrigado: React.FC = () => {
             className="shadow-[0_0_60px_-5px_rgba(139,92,246,0.6)] hover:shadow-[0_0_100px_-5px_rgba(139,92,246,0.9)] transition-all duration-500 py-6 text-xl md:text-2xl px-12 md:px-16"
             onClick={() => window.open('https://app.causi.com.br/register', '_blank')}
           >
-            <span className="font-black text-white px-8">Criar Conta</span>
+            <span className="font-black text-white px-8">Criar conta gratuita</span>
           </Button>
       </div>
 
