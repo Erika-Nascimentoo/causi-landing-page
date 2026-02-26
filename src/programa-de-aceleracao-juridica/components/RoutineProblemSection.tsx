@@ -13,7 +13,7 @@ export const RoutineProblemSection: React.FC = () => {
   ];
 
   return (
-    <section id="routine" ref={sectionRef} className="relative py-20 md:py-32 px-6 bg-bg-page overflow-hidden min-h-[800px] flex items-center">
+    <section id="routine" ref={sectionRef} className="relative pt-[130px] pb-20 md:py-32 px-6 bg-bg-page overflow-hidden min-h-[800px] flex items-center">
       
       {/* Background Image - Header on Mobile / Side on Desktop */}
       <div className="absolute top-0 right-0 w-full lg:w-1/2 lg:h-full z-0 overflow-hidden h-[450px] pointer-events-none">
@@ -23,7 +23,7 @@ export const RoutineProblemSection: React.FC = () => {
         />
         {/* Fades to blend with the dark page bg */}
         <div className="absolute inset-0 bg-gradient-to-b lg:bg-gradient-to-r from-transparent via-bg-page/40 to-bg-page"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-bg-page via-transparent to-bg-page lg:hidden"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-bg-page via-transparent to-transparent lg:hidden"></div>
       </div>
 
       <div className="max-w-7xl mx-auto relative z-10 w-full">
