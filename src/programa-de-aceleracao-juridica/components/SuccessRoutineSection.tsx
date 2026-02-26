@@ -76,7 +76,7 @@ export const SuccessRoutineSection: React.FC = () => {
         <div className="sticky top-0 h-full w-full flex items-center">
           <div className="w-full h-full relative">
             <div 
-              className="w-full h-full bg-cover bg-center bg-no-repeat opacity-50 lg:opacity-100"
+              className="w-full h-full bg-cover bg-center bg-no-repeat opacity-70 lg:opacity-100"
               style={{ 
                 backgroundImage: `url('${import.meta.env.BASE_URL}feliz-atendendo.webp')`
               }}
@@ -88,7 +88,7 @@ export const SuccessRoutineSection: React.FC = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto relative z-10 w-full pt-[260px] pb-20 md:py-32 px-6">
+      <div className="max-w-7xl mx-auto relative z-10 w-full pt-[320px] pb-20 md:pt-32 md:pb-32 px-6">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           
           {/* Empty spacer for the image side on desktop (6 cols = 50%) */}

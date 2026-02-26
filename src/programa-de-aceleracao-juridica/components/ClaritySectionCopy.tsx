@@ -7,12 +7,12 @@ export const ClaritySectionCopy: React.FC = () => {
     const sectionRef = useReveal();
 
     return (
-        <section id="solution" ref={sectionRef} className="relative bg-white pt-[260px] pb-20 md:py-32 px-6 overflow-hidden min-h-[700px] flex items-center">
+        <section id="solution" ref={sectionRef} className="relative bg-white pt-[320px] pb-20 md:pt-32 md:pb-32 px-6 overflow-hidden min-h-[700px] flex items-center">
             
             {/* Background Image - Header on Mobile / Side on Desktop */}
             <div className="absolute top-0 left-0 w-full lg:w-[55%] lg:h-full z-0 overflow-hidden h-[450px] pointer-events-none">
                 <div 
-                    className="w-full h-full bg-cover bg-center bg-no-repeat opacity-50 lg:opacity-100"
+                    className="w-full h-full bg-cover bg-center bg-no-repeat opacity-70 lg:opacity-100"
                     style={{ backgroundImage: `url('${import.meta.env.BASE_URL}advogado-feliz.webp')` }}
                 />
                 {/* Fades to blend with the white bg */}
