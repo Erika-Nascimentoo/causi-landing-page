@@ -3,7 +3,7 @@
 @theme {
     /* --- Typography System --- */
     --font-sans: 'Inter', system-ui, sans-serif;
-    --font-accent: 'IBM Plex Serif', serif;
+    --font-accent: 'Atkinson Hyperlegible', sans-serif;
 
     /* --- Color System (Obsidian - Pure Black & Sharp Contrast) --- */
     /* Backgrounds */
