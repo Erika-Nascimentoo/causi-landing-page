@@ -15,16 +15,15 @@ export const RoutineProblemSection: React.FC = () => {
   return (
     <section id="routine" ref={sectionRef} className="relative py-20 md:py-32 px-6 bg-bg-page overflow-hidden min-h-[800px] flex items-center">
       
-      {/* Background Image - Occupying 50% of the section width on the right */}
-      <div className="absolute top-0 right-0 w-full lg:w-1/2 h-full z-0 overflow-hidden hidden lg:block">
+      {/* Background Image - Header on Mobile / Side on Desktop */}
+      <div className="absolute top-0 right-0 w-full lg:w-1/2 lg:h-full z-0 overflow-hidden h-[450px] pointer-events-none">
         <div 
-          className="w-full h-full bg-cover bg-center bg-no-repeat grayscale"
+          className="w-full h-full bg-cover bg-center bg-no-repeat grayscale opacity-30 lg:opacity-100"
           style={{ backgroundImage: `url('${import.meta.env.BASE_URL}advogado-cansado.webp')` }}
         />
         {/* Fades to blend with the dark page bg */}
-        <div className="absolute inset-0 bg-gradient-to-r from-bg-page via-transparent to-transparent"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-bg-page via-transparent to-bg-page"></div>
-
+        <div className="absolute inset-0 bg-gradient-to-b lg:bg-gradient-to-r from-transparent via-bg-page/40 to-bg-page"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-bg-page via-transparent to-bg-page lg:hidden"></div>
       </div>
 
       <div className="max-w-7xl mx-auto relative z-10 w-full">

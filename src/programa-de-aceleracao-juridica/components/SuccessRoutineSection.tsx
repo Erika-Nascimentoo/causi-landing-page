@@ -71,18 +71,19 @@ export const SuccessRoutineSection: React.FC = () => {
     <section id="outcome" ref={sectionRef} className="relative bg-white">
       
       {/* Sticky Background Image - Occupying 50% of the section width on the left */}
-      <div className="absolute top-0 left-0 bottom-0 w-full lg:w-1/2 z-0 hidden lg:block pointer-events-none">
-        <div className="sticky top-0 h-[100vh] w-full flex items-center">
+      {/* Sticky Background Image - Header on Mobile / Sticky on Desktop */}
+      <div className="absolute top-0 left-0 w-full lg:h-full lg:w-1/2 z-0 h-[450px] pointer-events-none">
+        <div className="sticky top-0 h-full w-full flex items-center">
           <div className="w-full h-full relative">
             <div 
-              className="w-full h-full bg-cover bg-center bg-no-repeat"
+              className="w-full h-full bg-cover bg-center bg-no-repeat opacity-40 lg:opacity-100"
               style={{ 
                 backgroundImage: `url('${import.meta.env.BASE_URL}feliz-atendendo.webp')`
               }}
             />
             {/* Fades to blend with the white bg */}
-            <div className="absolute inset-0 bg-gradient-to-l from-white via-transparent to-transparent"></div>
-            <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-b lg:bg-gradient-to-l from-transparent via-white/20 lg:via-transparent to-white"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent lg:hidden"></div>
           </div>
         </div>
       </div>
