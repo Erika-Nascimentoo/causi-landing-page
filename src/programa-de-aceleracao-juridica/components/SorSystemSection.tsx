@@ -13,10 +13,10 @@ const OfferListItem: React.FC<{ title: React.ReactNode; description?: string; is
         </div>
         
         {/* Bonus Image */}
-        <div className="w-full max-w-[280px] mb-6 rounded-lg overflow-hidden shadow-lg border border-brand-primary/20">
+        <div className="w-full max-w-[320px] mb-6 rounded-lg overflow-hidden shadow-xl border border-brand-primary/20">
           <img 
-            src={`${import.meta.env.BASE_URL}acesso-gratis.png`} 
-            alt="30 dias de acesso grátis" 
+            src={`${import.meta.env.BASE_URL}bonus-dash-causi-v2.png`} 
+            alt="Dashboard da Plataforma Causi" 
             className="w-full h-auto object-cover"
           />
         </div>
