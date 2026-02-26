@@ -41,11 +41,11 @@ export const Hero: React.FC = () => {
           {/* Group 2: Core Message (Title & Subtitle) */}
           <div className="flex flex-col items-center gap-6 md:gap-8 text-center max-w-4xl mx-auto">
 
-            <h1 className="text-[1.8rem] md:text-[2.8rem] font-black leading-[1.2] pb-2 reveal-hidden">
+            <h1 className="text-[1.8rem] md:text-[2.8rem] font-black leading-[1.2] pb-6 reveal-hidden">
               <span className="text-slate-900">
-                Você trabalha muito, mas o <span className="bg-yellow-300 text-slate-900 px-2 py-0.5 rounded-lg inline-block">dinheiro não sobra no final do mês?</span><br/> O problema não é a sua advocacia,
+                Você trabalha muito, mas o <span className="bg-yellow-300 text-slate-900 px-2 py-0.5 rounded-lg box-decoration-clone">dinheiro não sobra no final do mês?</span> O problema não é a sua advocacia,
               </span>
-              <br/>
+              {" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-deep to-brand-primary box-decoration-clone">
                 é a sua Engenharia de Faturamento
               </span>
