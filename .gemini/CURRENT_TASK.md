@@ -1,12 +1,11 @@
 # Objetivo Atual
-Ajustes finos no copy e controle de SEO da página "obrigado".
+Atualizar infraestrutura de links paralelos no repositório `causi-site` (Sitemap e Headers).
 
 # Progresso Atual
-- Excluído o selo promocional superior ("Acesso Liberado") para deixar o título principal `SOLUÇÕES` e a instrução mais "limpos".
-- Alterada a tag `type-label` no header antes da logo de `PAINEL` para `SOLUÇÕES`.
-- Verificado estado do Index para motores de busca (`index.html`). A página já conta com `<meta name="robots" content="noindex, nofollow">` desde sua concepção garantindo que as ferramentas do Google (SEO) ou Facebook não varram, cataloguem ou entreguem ela para usuários em páginas de pesquisa orgânica.
-- O texto do Botão de compração foi substituido na página de Obrigado para `Criar conta gratuita` apontando para o app de registration.
-- Criado commits das reduções e textuais nas áreas visuais com "style(obrigado)...".
+- A rota máster nativa do `vercel.json` no `causi-site` já estava cobrindo a página de obrigado automaticamente devido à regra Wildcard flexível (```"source": "/advogado/solucoes/programa-de-aceleracao-juridica/:path*"```). Portanto o roteamento orgânico em Produção já funciona de prontidão.
+- Implementei nas Regras de Headers do Vercel (`"headers"`) a emissão forçada de um cabeçalho HTTP: `X-Robots-Tag: noindex, nofollow` voltado especificamente a URL `/obrigado`. Isso previne definitivamente qualquer brecha de vazamento e obriga o servidor a derrubar cache e robôs de busca.
+- No arquivo `src/app/sitemap.ts`, inscrevi ativamente a página de vendas raiz (`/advogado/solucoes/programa-de-aceleracao-juridica`) com um grau de prioridade alta (`1.0`) e recorrência de leitura semanal para ganho em ranqueamento e indexação primária. Mantive a aba de `obrigado` isolada.
+- O repositório paralelo (`causi-site`) foi atualizado e "commitado" (`seo: configurar rotas e sitemap.xml bloqueando a pagina de obrigado`).
 
-# Próximo Passo
-Aguardar novo comando para prosseguir.
+# Próximos Passos
+Aguardar validação destas proteções e solicitar proxima tarefa.
