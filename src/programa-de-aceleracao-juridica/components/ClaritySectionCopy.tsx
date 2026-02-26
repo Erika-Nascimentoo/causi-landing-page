@@ -12,9 +12,10 @@ export const ClaritySectionCopy: React.FC = () => {
             {/* Background Image - Header on Mobile / Side on Desktop */}
             <div className="absolute top-0 left-0 w-full lg:w-[55%] lg:h-full z-[1] overflow-hidden h-[400px] pointer-events-none">
                 <div 
-                    className="w-full h-full bg-cover bg-top bg-no-repeat opacity-70 lg:opacity-100"
+                    className="w-full h-full bg-cover bg-no-repeat opacity-70 lg:opacity-100"
                     style={{ 
-                        backgroundImage: `url('${import.meta.env.BASE_URL}advogado-feliz.webp?v=6')`
+                        backgroundImage: `url('${import.meta.env.BASE_URL}advogado-feliz.webp?v=7')`,
+                        backgroundPosition: 'center -50px'
                     }}
                 />
                 {/* Fades to blend with the white bg */}
