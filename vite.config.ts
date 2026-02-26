@@ -22,6 +22,7 @@ export default defineConfig(({ mode }) => {
           estruturacao: path.resolve(__dirname, 'estruturacao-estrategica/index.html'),
           aceleracao: path.resolve(__dirname, 'programa-de-aceleracao-juridica/index.html'),
           obrigado: path.resolve(__dirname, 'programa-de-aceleracao-juridica/obrigado-30091986/index.html'),
+          cadastro: path.resolve(__dirname, 'programa-de-aceleracao-juridica/criar-conta/index.html'),
         }
       }
     }
