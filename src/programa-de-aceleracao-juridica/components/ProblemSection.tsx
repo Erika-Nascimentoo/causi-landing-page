@@ -68,8 +68,8 @@ export const ProblemSection: React.FC = () => {
 
       <div className="max-w-screen-2xl mx-auto">
         <header className="text-center mb-20 px-4 max-w-[960px] mx-auto reveal-hidden">
-          <span className="inline-flex items-center gap-4 text-white uppercase tracking-[0.2em] font-bold text-[10px] md:text-xs px-4 py-1.5 border border-white/20 rounded-full mb-6 leading-none">
-            <span className="w-2 h-2 rounded-full bg-red-600 animate-pulse shadow-[0_0_8px_rgba(220,38,38,0.8)] ml-1" />
+          <span className="inline-flex items-center justify-center gap-2.5 text-white uppercase tracking-[0.2em] font-bold text-[9px] md:text-[10px] h-6 md:h-7 px-4 border border-white/20 rounded-full mb-6 leading-none pt-[1px]">
+            <span className="w-1.5 h-1.5 rounded-full bg-red-600 animate-pulse shadow-[0_0_8px_rgba(220,38,38,0.8)]" />
             Tentativas Frustradas
           </span>
           <h2 className="type-h2 text-center text-text-primary mb-6">
