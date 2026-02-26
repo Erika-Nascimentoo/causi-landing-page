@@ -31,7 +31,7 @@ export const RoutineProblemSection: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           
           {/* Left Side: Content - Occupying the left half */}
-          <div className="lg:col-span-6 flex flex-col gap-10">
+          <div className="lg:col-span-6 flex flex-col gap-6 md:gap-10">
             <div className="reveal-hidden flex flex-col items-center lg:items-start">
               <span className="inline-flex items-center justify-center gap-2.5 text-white uppercase tracking-[0.2em] font-bold text-[10px] md:text-xs h-7 md:h-8 px-5 border border-white/20 rounded-full mb-6 leading-none pt-[1px]">
                 <span className="w-1.5 h-1.5 rounded-full bg-red-600 animate-pulse shadow-[0_0_8px_rgba(220,38,38,0.8)]" />

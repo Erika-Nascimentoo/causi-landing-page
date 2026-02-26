@@ -93,7 +93,7 @@ export const SuccessRoutineSection: React.FC = () => {
           <div className="lg:col-span-6 hidden lg:block" />
 
           {/* Right Side: Content - Occupying 50% (6 cols) */}
-          <div className="lg:col-span-6 flex flex-col gap-12">
+          <div className="lg:col-span-6 flex flex-col gap-8 md:gap-12">
             <div className="reveal-hidden flex flex-col items-center lg:items-start">
               <span className="inline-flex items-center justify-center gap-2.5 text-slate-600 uppercase tracking-[0.2em] font-bold text-[10px] md:text-xs h-7 md:h-8 px-5 border border-slate-200 rounded-full mb-6 leading-none pt-[1px]">
                 <span className="w-1.5 h-1.5 rounded-full bg-brand-primary animate-pulse shadow-[0_0_8px_rgba(139,92,246,0.8)]" />

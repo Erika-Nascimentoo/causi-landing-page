@@ -51,7 +51,7 @@ export const ProblemSection: React.FC = () => {
   ];
 
   return (
-    <section id="problems" ref={sectionRef} className="py-20 md:py-32 px-6 bg-bg-page relative overflow-hidden">
+    <section id="problems" ref={sectionRef} className="py-32 px-6 bg-bg-page relative overflow-hidden">
       {/* Blueprint Grid Overlay */}
       <div
         className="absolute inset-x-0 top-0 bottom-0 opacity-[0.07] pointer-events-none"
@@ -67,7 +67,7 @@ export const ProblemSection: React.FC = () => {
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-red-500/5 blur-[100px] rounded-full pointer-events-none -z-10"></div>
 
       <div className="max-w-screen-2xl mx-auto">
-        <header className="text-center mb-20 px-4 max-w-[960px] mx-auto reveal-hidden">
+        <header className="text-center mb-10 md:mb-20 px-4 max-w-[960px] mx-auto reveal-hidden">
           <span className="inline-flex items-center justify-center gap-2.5 text-white uppercase tracking-[0.2em] font-bold text-[10px] md:text-xs h-7 md:h-8 px-5 border border-white/20 rounded-full mb-6 leading-none pt-[1px]">
             <span className="w-1.5 h-1.5 rounded-full bg-red-600 animate-pulse shadow-[0_0_8px_rgba(220,38,38,0.8)]" />
             Tentativas Frustradas

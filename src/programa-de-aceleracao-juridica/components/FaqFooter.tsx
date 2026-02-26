@@ -37,7 +37,7 @@ export const FaqFooter: React.FC = () => {
 
             {/* FAQ Section */}
             <section ref={sectionRef} className="pb-12 md:pb-24 pt-0 px-6 max-w-4xl mx-auto relative z-10">
-                <header className="text-center mb-20 px-4 max-w-[960px] mx-auto reveal-hidden">
+                <header className="text-center mb-10 md:mb-20 px-4 max-w-[960px] mx-auto reveal-hidden">
                     <h2 className="type-h2 text-center text-text-primary mb-6">
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-glow font-black">Perguntas</span> Frequentes
                     </h2>

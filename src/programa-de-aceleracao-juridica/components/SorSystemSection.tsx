@@ -36,7 +36,7 @@ export const SorSystemSection: React.FC = () => {
     const sectionRef = useReveal();
 
     return (
-        <section id="offer" ref={sectionRef} className="py-20 md:py-32 px-6 bg-bg-page relative overflow-hidden">
+        <section id="offer" ref={sectionRef} className="py-32 px-6 bg-bg-page relative overflow-hidden">
             {/* Blueprint Grid Overlay */}
             <div
                 className="absolute inset-x-0 top-0 bottom-0 opacity-[0.07] pointer-events-none"
@@ -49,7 +49,7 @@ export const SorSystemSection: React.FC = () => {
             />
 
             <div className="max-w-2xl mx-auto relative z-10">
-                <header className="text-center mb-16 px-4 max-w-[960px] mx-auto reveal-hidden">
+                <header className="text-center mb-10 md:mb-16 px-4 max-w-[960px] mx-auto reveal-hidden">
                     <h2 className="type-h2 text-center text-text-primary mb-6">
                         O <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-glow box-decoration-clone font-black">Programa de Aceleração Jurídica</span> não é mais um cursinho para você assistir e esquecer
                     </h2>
