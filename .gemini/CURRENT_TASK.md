@@ -1,16 +1,60 @@
-# Tarefa Atual: Refinamento de Seções e Conteúdo Final da Landing Page
+# Objetivo Atual
 
-## Progresso Atual:
+Remover a gambiarra do UTM forçada nas URLs em todos os projetos do workspace Causi.
 
-- [x] **Rodapé e Informações Legais**: Atualizados com dados da Rino3 (Campo Grande, MS) e links diretos para políticas e termos.
-- [x] **Ajuste de Tags/Labels**: Alinhamento vertical corrigido e fontes recalibradas para público 30+.
-- [x] **Arsenal de Implementação**: Card de bônus atualizado com imagem do dashboard, tamanho e posição refinados (450px de largura, deslocamento para a direita e remoção de zoom no hover).
-- [x] **Fontes de Corpo**: Padronizadas para 18px (Mobile) / 20px (Desktop) para melhor legibilidade.
-- [x] **Mapa de Execução (Jornada)**: Texto atualizado sobre o método na fase de construção.
-- [x] **Card de Preço (Oferta)**: Totalmente formatado para conversão e otimizado visualmente com glow.
-- [x] **FAQ (Perguntas Frequentes)**: Atualizada com a nova cópia comercial.
+# Progresso Atual
 
-## Próximo Passo:
+- Pesquisado por arquivos com as configurações/hacks relacionados a "AutoUTM" em todos os 6 projetos no workspace (`causi-landing-page`, `causi-site`, `causi-hub`, `causi-form`, `causi-blog`, `causi-treinamentos`).
+- Arquivos de hooks/components específicos para "AutoUTM" foram deletados.
+- As referências e usos das funções/components foram removidos de dentro dos principais arquivos de rotas e apps (`main.tsx`, `App.tsx`, `layout.tsx`).
+- Commits das remoções foram criados em cada projeto usando a mensagem: "chore: remover gambiarra de UTM forçada nas URLs" (exceto em `causi-treinamentos` que não é inicializado como git).
 
-- Validar as alterações finais do Arsenal e do Rodapé com o usuário.
-- Verificar se há mais algum ponto de ajuste fino antes da finalização.
+# Arquivos Modificados/Deletados
+
+**causi-landing-page**
+
+- Deletados:
+  - `src/programa-de-aceleracao-juridica/hooks/useAutoUTM.ts`
+  - `src/estruturacao-estrategica/hooks/useAutoUTM.ts`
+- Modificados:
+  - `src/programa-de-aceleracao-juridica/main.tsx`
+  - `src/estruturacao-estrategica/main.tsx`
+
+**causi-site**
+
+- Deletados:
+  - `src/components/AutoUTM.tsx`
+- Modificados:
+  - `src/app/layout.tsx`
+
+**causi-hub**
+
+- Deletados:
+  - `src/hub/hooks/useAutoUTM.ts`
+- Modificados:
+  - `src/hub/App.tsx`
+
+**causi-form**
+
+- Deletados:
+  - `src/hooks/useAutoUTM.ts`
+- Modificados:
+  - `src/App.tsx`
+
+**causi-blog**
+
+- Deletados:
+  - `src/components/Analytics/AutoUTM.tsx`
+- Modificados:
+  - `src/app/(frontend)/layout.tsx`
+
+**causi-treinamentos**
+
+- Deletados:
+  - `src/script-comercial/hooks/useAutoUTM.ts`
+- Modificados:
+  - `src/main.tsx`
+
+# Próximo Passo
+
+Aguardar novas instruções do usuário ou seguir com eventuais refatorações pendentes.
