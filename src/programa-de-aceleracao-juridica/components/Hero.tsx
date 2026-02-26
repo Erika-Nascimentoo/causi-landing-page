@@ -51,7 +51,7 @@ export const Hero: React.FC = () => {
               </span>
             </h1>
 
-            <h2 className="text-lg md:text-xl font-serif leading-[1.6] text-slate-600 reveal-hidden max-w-3xl mx-auto">
+            <h2 className="text-xl md:text-2xl font-serif leading-[1.6] text-slate-600 reveal-hidden max-w-3xl mx-auto">
               Conheça o <span className="text-brand-primary font-bold">Programa de Aceleração Jurídica</span>: o método passo a passo que tapa os furos do seu escritório, afasta quem só quer "tirar dúvida" e coloca <span className="text-brand-primary font-bold">contratos reais na sua mesa</span>.
             </h2>
 
