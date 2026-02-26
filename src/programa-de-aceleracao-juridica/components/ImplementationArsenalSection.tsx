@@ -20,10 +20,10 @@ const ArsenalCard: React.FC<{
     <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(139,92,246,0.15),transparent_70%)] pointer-events-none rounded-2xl z-0" />
     <div className="absolute inset-0 shadow-[inset_0_0_25px_rgba(139,92,246,0.12)] pointer-events-none rounded-2xl z-0" />
     
-    {/* Image Layer - Exact 425x317, moved to the right tip, no padding. Brighter glow applied. */}
+    {/* Image Layer - Refined size and position */}
     {image && isBonus && (
-      <div className="absolute top-12 right-[-40px] w-[425px] h-[317px] pointer-events-none z-10 hidden lg:block">
-        <div className="h-full relative overflow-hidden rounded-tl-[15px] border-l border-t border-white/10 shadow-[0_0_50px_rgba(139,92,246,0.6)]">
+      <div className="absolute top-8 right-[-40px] bottom-0 w-[450px] pointer-events-none z-10 hidden lg:block">
+        <div className="h-full relative overflow-hidden rounded-tl-2xl border-l border-t border-white/20 shadow-[0_0_50px_rgba(139,92,246,0.6)] bg-brand-deep/50">
           <img 
             src={image} 
             alt="Interface da Plataforma" 
