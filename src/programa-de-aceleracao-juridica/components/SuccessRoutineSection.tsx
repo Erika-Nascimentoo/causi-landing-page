@@ -75,14 +75,13 @@ export const SuccessRoutineSection: React.FC = () => {
       <div className="absolute top-0 left-0 w-full lg:h-full lg:w-1/2 z-[1] h-[450px] lg:h-full overflow-hidden pointer-events-none">
         <div className="relative lg:sticky lg:top-0 h-full w-full">
             <div 
-              className="w-full h-full bg-cover bg-center bg-no-repeat opacity-80 lg:opacity-100"
+              className="w-full h-full bg-cover bg-center bg-no-repeat opacity-70 lg:opacity-100"
               style={{ 
-                backgroundImage: `url('${import.meta.env.BASE_URL}feliz-atendendo.webp?v=1')`
+                backgroundImage: `url('${import.meta.env.BASE_URL}feliz-atendendo.webp?v=2')`
               }}
             />
             {/* Fades to blend with the white bg */}
-            <div className="absolute inset-0 bg-gradient-to-b lg:bg-gradient-to-l from-transparent via-white/10 lg:via-transparent to-white"></div>
-            <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-white to-transparent lg:hidden"></div>
+            <div className="absolute inset-0 bg-gradient-to-b lg:bg-gradient-to-l from-transparent to-white"></div>
         </div>
       </div>
 
