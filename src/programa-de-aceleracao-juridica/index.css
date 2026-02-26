@@ -3,8 +3,7 @@
 @theme {
     /* --- Typography System --- */
     --font-sans: 'Inter', system-ui, sans-serif;
-    --font-accent: 'Atkinson Hyperlegible', sans-serif;
-
+    
     /* --- Color System (Obsidian - Pure Black & Sharp Contrast) --- */
     /* Backgrounds */
     --color-bg-page: #020202;
@@ -128,7 +127,7 @@
     }
 
     .type-body-lg {
-        @apply text-lg md:text-xl font-accent font-normal leading-[1.7] text-text-secondary;
+        @apply text-lg md:text-xl font-sans font-normal leading-[1.7] text-text-secondary;
     }
 
     .type-cta {
