@@ -4,6 +4,7 @@
     /* --- Typography System --- */
     --font-sans: 'Inter', system-ui, sans-serif;
     --font-serif: 'Roboto Slab', serif;
+    --font-display: 'Syne', sans-serif;
 
     /* --- Color System (Obsidian - Pure Black & Sharp Contrast) --- */
     /* Backgrounds */
@@ -128,7 +129,7 @@
     }
 
     .type-body-lg {
-        @apply text-lg md:text-xl font-normal leading-[1.7] text-text-secondary;
+        @apply text-lg md:text-xl font-serif font-normal leading-[1.7] text-text-secondary;
     }
 
     .type-cta {

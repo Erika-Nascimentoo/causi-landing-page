@@ -36,7 +36,7 @@ export const ClaritySectionCopy: React.FC = () => {
                              <h2 className="type-h2 mb-4 leading-tight text-left text-slate-900 line-clamp-none">
                                 O <span className="text-brand-primary font-black">Sistema Operacional de Receita</span> é construído em cima de 3 engrenagens. Se uma falha, o seu <span className="text-brand-primary font-black">dinheiro vaza.</span>
                             </h2>
-                            <p className="text-lg md:text-xl text-slate-600 mt-4 max-w-2xl leading-relaxed font-semibold">
+                            <p className="text-lg md:text-xl font-serif text-slate-600 mt-4 max-w-2xl leading-relaxed font-semibold">
                                 O <span className="text-brand-primary font-bold">Programa de Aceleração Jurídica</span> do <span className="text-brand-primary font-bold">Causi</span> vai te entregar o exato passo a passo para instalar essas 3 peças no seu escritório de forma simples:
                             </p>
                         </div>
