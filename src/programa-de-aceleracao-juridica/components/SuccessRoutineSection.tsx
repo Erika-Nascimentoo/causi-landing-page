@@ -72,8 +72,8 @@ export const SuccessRoutineSection: React.FC = () => {
       
       {/* Sticky Background Image - Occupying 50% of the section width on the left */}
       {/* Header Background Image - Simple for Mobile / Sticky for Desktop */}
-      <div className="absolute top-0 left-0 w-full lg:h-full lg:w-1/2 z-[1] h-[400px] lg:h-full overflow-hidden pointer-events-none">
-        <div className="relative lg:sticky lg:top-0 h-full w-full">
+      <div className="absolute top-0 left-0 w-full lg:h-full lg:w-1/2 z-[1] h-[400px] pointer-events-none">
+        <div className="relative w-full h-full lg:sticky lg:top-0 lg:h-screen overflow-hidden">
             <div 
               className="w-full h-full bg-cover bg-no-repeat opacity-70 lg:opacity-100"
               style={{ 
