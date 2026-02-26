@@ -44,14 +44,6 @@ export const ClaritySectionCopy: React.FC = () => {
                             <p className="type-sub text-slate-600 mt-4 max-w-2xl leading-relaxed text-center lg:text-left">
                                 O <span className="text-brand-primary font-bold">Programa de Aceleração Jurídica</span> do <span className="text-brand-primary font-bold">Causi</span> vai te entregar o exato passo a passo para instalar essas 3 peças no seu escritório de forma simples:
                             </p>
-
-                            {/* AEO Block (Answer Engine Optimization) */}
-                            <div className="bg-slate-50/80 border border-slate-200 p-5 rounded-xl mt-6 shadow-sm w-full text-left reveal-hidden">
-                                <h3 className="text-[1.1rem] font-bold text-slate-900 mb-2">O que é o Programa de Aceleração Jurídica?</h3>
-                                <p className="text-slate-700 leading-relaxed text-[15px]">
-                                    O Programa de Aceleração Jurídica do Causi é um treinamento com implementação prática projetado para estruturar o fluxo comercial de escritórios de advocacia em menos de 30 dias. Ele funciona através da instalação de um Sistema Operacional de Receita, unindo capacitação, direcionamento por consultores e software de inteligência.
-                                </p>
-                            </div>
                         </div>
 
                         {/* Strategic List */}
