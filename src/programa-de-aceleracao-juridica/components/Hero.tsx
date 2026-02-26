@@ -41,7 +41,7 @@ export const Hero: React.FC = () => {
           {/* Group 2: Core Message (Title & Subtitle) */}
           <div className="flex flex-col items-center gap-4 md:gap-6 text-center max-w-4xl mx-auto">
 
-            <h1 className="text-[1.8rem] md:text-[2.8rem] font-display font-black leading-[1.2] tracking-tighter pb-6 reveal-hidden">
+            <h1 className="text-[1.8rem] md:text-[2.8rem] font-sans font-black leading-[1.2] pb-6 reveal-hidden">
               <span className="text-slate-900">
                 Você trabalha muito, mas o <span className="bg-yellow-200 text-slate-900 px-2 py-0.5 rounded-lg box-decoration-clone">dinheiro não sobra no final do mês?</span> O problema não é a sua advocacia,
               </span>
@@ -51,7 +51,7 @@ export const Hero: React.FC = () => {
               </span>
             </h1>
 
-            <h2 className="text-xl md:text-2xl font-serif leading-[1.6] text-slate-600 reveal-hidden max-w-3xl mx-auto">
+            <h2 className="text-xl md:text-2xl font-accent font-bold leading-[1.6] text-slate-600 reveal-hidden max-w-3xl mx-auto">
               Conheça o <span className="text-brand-primary font-bold">Programa de Aceleração Jurídica</span>: o método passo a passo que tapa os furos do seu escritório, afasta quem só quer "tirar dúvida" e coloca <span className="text-brand-primary font-bold">contratos reais na sua mesa</span>.
             </h2>
 
