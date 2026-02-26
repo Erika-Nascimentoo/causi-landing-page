@@ -132,7 +132,7 @@ export const SorSystemSection: React.FC = () => {
                                 />
                             </ul>
                             <p className="text-center text-xs text-slate-400 mt-4 italic">
-                                * Acesso de 30 dias grátis no Plano profissional com direito a conexão de 1 número de WhatsApp e 1 usuário.
+                                * Acesso de 30 dias grátis no Plano profissional com direito a conexão de 1 número de WhatsApp e 3 usuários.
                             </p>
                         </div>
 
