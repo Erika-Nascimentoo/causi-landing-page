@@ -78,9 +78,9 @@ export const FaqFooter: React.FC = () => {
                         
                         {/* Legal Links */}
                         <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-[10px] md:text-xs font-bold uppercase tracking-widest text-text-secondary/60">
-                            <a href="https://www.causi.com.br/politica-de-privacidade" target="_blank" rel="noopener noreferrer" className="hover:text-brand-primary transition-colors duration-300 border-b border-transparent hover:border-brand-primary pb-0.5">Política de Privacidade</a>
+                            <a href="https://www.causi.com.br/advogado/politica-privacidade" target="_blank" rel="noopener noreferrer" className="hover:text-brand-primary transition-colors duration-300 border-b border-transparent hover:border-brand-primary pb-0.5">Política de Privacidade</a>
                             <span className="opacity-20 hidden md:inline">|</span>
-                            <a href="https://www.causi.com.br/termos-de-uso" target="_blank" rel="noopener noreferrer" className="hover:text-brand-primary transition-colors duration-300 border-b border-transparent hover:border-brand-primary pb-0.5">Termos de Uso</a>
+                            <a href="https://www.causi.com.br/advogado/termos-uso" target="_blank" rel="noopener noreferrer" className="hover:text-brand-primary transition-colors duration-300 border-b border-transparent hover:border-brand-primary pb-0.5">Termos de Uso</a>
                         </div>
                     </div>
                 </div>
