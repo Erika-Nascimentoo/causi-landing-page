@@ -86,15 +86,15 @@ export const ProblemSection: React.FC = () => {
         {/* Conclusão: Balde Furado */}
         <div className="mt-24 max-w-4xl mx-auto text-center reveal-hidden">
           <div className="flex flex-col gap-8 mb-12">
-            <h4 className="type-h4 text-text-secondary leading-relaxed md:text-2xl font-medium">
+            <h4 className="type-sub text-text-secondary font-medium leading-relaxed">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-rose-500 font-black">A dura realidade:</span> O seu escritório não tem um problema de "falta de clientes". Ele tem um problema de <span className="text-white font-bold">processo.</span>
             </h4>
             
-            <p className="text-text-secondary leading-relaxed md:text-2xl font-medium">
+            <p className="type-sub text-text-secondary font-medium leading-relaxed">
               Contratar agências ou comprar robôs soltos é tentar apagar um incêndio jogando gasolina. Enquanto a sua forma de captar, atender e cobrar não conversar entre si, você vai continuar enxugando gelo. 
             </p>
 
-            <p className="text-text-secondary leading-relaxed md:text-2xl font-medium">
+            <p className="type-sub text-text-secondary font-medium leading-relaxed">
               Você não precisa de mais esforço manual ou de uma nova ferramenta mágica. O que os grandes escritórios usam para crescer em paz é uma única coisa: <br /><span className="text-white font-black">Um Sistema Operacional de Receita.</span>
             </p>
           </div>
