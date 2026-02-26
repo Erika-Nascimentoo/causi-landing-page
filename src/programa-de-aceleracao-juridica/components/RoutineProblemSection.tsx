@@ -24,7 +24,10 @@ export const RoutineProblemSection: React.FC = () => {
           }}
         />
         {/* Fades to blend with the dark page bg */}
-        <div className="absolute inset-0 bg-gradient-to-b lg:bg-gradient-to-r from-transparent to-bg-page"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-bg-page lg:hidden"></div>
+        <div className="absolute inset-0 hidden lg:block bg-gradient-to-r from-bg-page via-bg-page/50 to-transparent"></div>
+        {/* Extra bottom fade for desktop as requested */}
+        <div className="absolute inset-x-0 bottom-0 h-1/2 hidden lg:block bg-gradient-to-t from-bg-page to-transparent"></div>
       </div>
 
       <div className="max-w-7xl mx-auto relative z-10 w-full">

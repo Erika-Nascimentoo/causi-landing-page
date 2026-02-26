@@ -82,7 +82,8 @@ export const SuccessRoutineSection: React.FC = () => {
               }}
             />
             {/* Fades to blend with the white bg */}
-            <div className="absolute inset-0 bg-gradient-to-b lg:bg-gradient-to-l from-transparent to-white"></div>
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white lg:hidden"></div>
+            <div className="absolute inset-0 hidden lg:block bg-gradient-to-r from-transparent via-white/50 to-white"></div>
         </div>
       </div>
 
