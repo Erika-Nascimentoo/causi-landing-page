@@ -1,11 +1,11 @@
 # Objetivo Atual
-Ajustar o redirecionamento do botão de Call To Action na página de Obrigado.
+Ajustar o redirecionamento do botão de Call To Action na página de Obrigado para a URL absoluta de produção.
 
 # Progresso Atual
-- Link do botão "Criar conta gratuita" na página de Obrigado (`HeroObrigado.tsx`) foi alterado.
-- Removido o prefixo dinâmico `BASE_URL`, agora apontando para a string literal: `/programa-de-aceleracao-juridica/criar-conta`.
-- Isso garante que o redirecionamento respeite a estrutura de roteamento global definida no Vercel/Site principal.
-- Commit realizado: `fix(obrigado): ajustar link do botao para rota literal /programa-de-aceleracao-juridica/criar-conta`.
+- Link do botão "Criar conta gratuita" na página de Obrigado (`HeroObrigado.tsx`) foi atualizado.
+- Alterado para a URL absoluta: `https://www.causi.com.br/advogado/solucoes/programa-de-aceleracao-juridica/criar-conta`.
+- Isso garante que o redirecionamento funcione corretamente independentemente do subdomínio ou ambiente em que a landing page é servida pelo Vercel.
+- Commit realizado: `fix(obrigado): atualizar link do CTA para URL absoluta de producao`.
 
 # Próximos Passos
 Aguardar nova diretriz do usuário.

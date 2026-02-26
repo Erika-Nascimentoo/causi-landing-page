@@ -73,7 +73,14 @@ export const HeroObrigado: React.FC = () => {
       <div className="w-full relative z-10 flex flex-col items-center reveal-hidden px-6 mb-12 md:mb-20">
           <Button 
             className="shadow-[0_0_60px_-5px_rgba(139,92,246,0.6)] hover:shadow-[0_0_100px_-5px_rgba(139,92,246,0.9)] transition-all duration-500 py-6 text-xl md:text-2xl px-12 md:px-16"
-            onClick={() => window.location.href = 'https://www.causi.com.br/advogado/solucoes/programa-de-aceleracao-juridica/criar-conta'}
+            onClick={() => {
+              const targetPath = '/programa-de-aceleracao-juridica/criar-conta';
+              if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+                window.location.href = targetPath;
+              } else {
+                window.location.href = `https://www.causi.com.br/advogado/solucoes${targetPath}`;
+              }
+            }}
           >
             <span className="font-black text-white px-8">Criar conta gratuita</span>
           </Button>
