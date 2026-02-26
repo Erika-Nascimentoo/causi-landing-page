@@ -1,14 +1,10 @@
 # Objetivo Atual
-Implementar validação de formulário e integração com a API de cadastro da Causi.
+Ajuste de layout nos campos de nome e escritório na página de Sign Up.
 
 # Progresso Atual
-- Componente `SignUpHero.tsx` atualizado com novos campos: **Nome** (`user_name`) e **Escritório** (`account_name`).
-- Organização visual aprimorada: Nome/Escritório e Senha/Confirmação agora aparecem lado a lado em telas desktop (grid 2 colunas).
-- Implementada validação de Front-end (senhas iguais e mínimo de 6 caracteres).
-- Integrada chamada via `fetch` (POST) para o endpoint `https://causi.com.br/api/signup`.
-- Adicionado tratamento de estados: **Loading** (com spinner Lucide), **Erro** (alerta visual vermelho) e **Sucesso** (tela de confirmação com checkmark verde).
-- O botão principal agora limpa o estado de erro e exibe "Criando conta..." durante o processo.
-- Commit realizado: `feat(cadastro): implementar validacao, novos campos e integracao com API de signup`.
+- Removido o layout de duas colunas para os campos de identificação inicial.
+- Os campos **"Seu Nome"** e **"Escritório"** agora ocupam linhas individuais em todos os dispositivos, melhorando a clareza e o foco no preenchimento.
+- Commit realizado: `style(cadastro): colocar nome e escritorio em linhas separadas`.
 
 # Próximos Passos
-Aguardar testes de integração ou novos ajustes de design.
+Aguardar nova diretriz do usuário.
