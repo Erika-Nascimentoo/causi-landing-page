@@ -32,8 +32,41 @@ const OfferListItem: React.FC<{ title: React.ReactNode; description?: string; is
   );
 };
 
+const getNextImersionDate = (): string => {
+  const now = new Date();
+  
+  const getSecondTuesday = (year: number, month: number) => {
+    let day = 1;
+    let tuesdaysCount = 0;
+    while (tuesdaysCount < 2) {
+      const d = new Date(year, month, day);
+      if (d.getDay() === 2) { // 2 = Tuesday
+        tuesdaysCount++;
+      }
+      if (tuesdaysCount < 2) {
+        day++;
+      }
+    }
+    return new Date(year, month, day, 18, 0, 0); // 18h no fuso local
+  };
+
+  let imersionDate = getSecondTuesday(now.getFullYear(), now.getMonth());
+
+  // Se a data de hoje já passou a data da imersão (segunda terca às 18h) pega o mes seguinte
+  if (now.getTime() > imersionDate.getTime()) {
+    imersionDate = getSecondTuesday(now.getFullYear(), now.getMonth() + 1);
+  }
+
+  const dd = String(imersionDate.getDate()).padStart(2, '0');
+  const mm = String(imersionDate.getMonth() + 1).padStart(2, '0');
+  const yy = String(imersionDate.getFullYear()).slice(-2);
+
+  return `${dd}/${mm}/${yy}`;
+};
+
 export const SorSystemSection: React.FC = () => {
     const sectionRef = useReveal();
+    const nextImersionDate = getNextImersionDate();
 
     return (
         <section id="offer" ref={sectionRef} className="py-32 px-6 bg-bg-page relative overflow-hidden">
@@ -58,7 +91,7 @@ export const SorSystemSection: React.FC = () => {
                     </p>
                     <div className="mt-8 max-w-lg mx-auto text-[15px] md:text-[17px] font-bold text-rose-600 bg-rose-500/10 backdrop-blur-md border border-rose-500/20 py-4 md:py-5 px-5 md:px-6 rounded-2xl flex items-start gap-3 md:gap-4 text-left w-full shadow-lg shadow-rose-500/5">
                         <AlertCircle className="w-6 h-6 md:w-7 md:h-7 shrink-0 mt-0.5" />
-                        <span className="leading-snug">Atenção: A próxima Imersão ao Vivo acontecerá no dia 09/03/26 às 18h de Brasília. As vagas na sala são limitadas para garantirmos a qualidade do diagnóstico.</span>
+                        <span className="leading-snug">Atenção: A próxima Imersão ao Vivo acontecerá no dia {nextImersionDate} às 18h de Brasília. As vagas na sala são limitadas para garantirmos a qualidade do diagnóstico.</span>
                     </div>
                 </header>
 
