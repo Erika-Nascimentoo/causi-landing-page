@@ -30,15 +30,15 @@ export const ClaritySectionCopy: React.FC = () => {
 
                     {/* Content on the Right half - Increased from span-6 to span-7 */}
                     <div className="lg:col-span-7 flex flex-col gap-10">
-                        <div className="reveal-hidden">
+                        <div className="reveal-hidden flex flex-col items-center lg:items-start">
                             <span className="inline-flex items-center justify-center gap-2.5 text-slate-600 uppercase tracking-[0.2em] font-bold text-[10px] md:text-xs h-7 md:h-8 px-5 border border-slate-200 rounded-full mb-4 leading-none pt-[1px]">
                                 <span className="w-1.5 h-1.5 rounded-full bg-brand-primary animate-pulse shadow-[0_0_8px_rgba(139,92,246,0.8)]" />
                                 A ENGENHARIA DA RECEITA
                             </span>
-                             <h2 className="type-h2 mb-4 leading-tight text-left text-slate-900 line-clamp-none">
+                             <h2 className="type-h2 mb-4 leading-tight text-center lg:text-left text-slate-900 line-clamp-none">
                                 O <span className="text-brand-primary font-black">Sistema Operacional de Receita</span> é construído em cima de 3 engrenagens. Se uma falha, o seu <span className="text-brand-primary font-black">dinheiro vaza.</span>
                             </h2>
-                            <p className="type-sub text-slate-600 mt-6 max-w-2xl leading-relaxed">
+                            <p className="type-sub text-slate-600 mt-6 max-w-2xl leading-relaxed text-center lg:text-left">
                                 O <span className="text-brand-primary font-bold">Programa de Aceleração Jurídica</span> do <span className="text-brand-primary font-bold">Causi</span> vai te entregar o exato passo a passo para instalar essas 3 peças no seu escritório de forma simples:
                             </p>
                         </div>
@@ -83,7 +83,7 @@ export const ClaritySectionCopy: React.FC = () => {
                             </li>
                         </ul>
 
-                        <div className="reveal-hidden mt-4">
+                        <div className="reveal-hidden mt-4 flex justify-center lg:justify-start">
                             <Button 
                                 onClick={() => document.getElementById('arsenal')?.scrollIntoView({ behavior: 'smooth' })}
                             >

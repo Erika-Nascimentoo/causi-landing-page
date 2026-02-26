@@ -32,12 +32,12 @@ export const RoutineProblemSection: React.FC = () => {
           
           {/* Left Side: Content - Occupying the left half */}
           <div className="lg:col-span-6 flex flex-col gap-10">
-            <div className="reveal-hidden">
+            <div className="reveal-hidden flex flex-col items-center lg:items-start">
               <span className="inline-flex items-center justify-center gap-2.5 text-white uppercase tracking-[0.2em] font-bold text-[10px] md:text-xs h-7 md:h-8 px-5 border border-white/20 rounded-full mb-6 leading-none pt-[1px]">
                 <span className="w-1.5 h-1.5 rounded-full bg-red-600 animate-pulse shadow-[0_0_8px_rgba(220,38,38,0.8)]" />
                 OS BASTIDORES DA SUA ADVOCACIA
               </span>
-              <h2 className="type-h2 mb-4 leading-tight text-left">
+              <h2 className="type-h2 mb-4 leading-tight text-center lg:text-left">
                 Você estudou muito para ser um <span className="text-white">advogado respeitado</span>, mas a sua rotina hoje parece a de uma <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-rose-500 font-black">secretária:</span>
               </h2>
             </div>
@@ -58,7 +58,7 @@ export const RoutineProblemSection: React.FC = () => {
               ))}
             </div>
 
-            <div className="reveal-hidden mt-4">
+            <div className="reveal-hidden mt-4 flex justify-center lg:justify-start">
               <Button 
                 variant="danger"
                 onClick={() => document.getElementById('problems')?.scrollIntoView({ behavior: 'smooth' })}
