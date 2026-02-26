@@ -62,8 +62,29 @@ export const FaqFooter: React.FC = () => {
                         <img src={`${import.meta.env.BASE_URL}logo.svg`} alt="Logo Causi - Alta Performance Jurídica" className="h-10 md:h-12 w-auto" />
                     </div>
 
-                    {/* Copyright */}
-                    <p className="type-body text-sm text-text-secondary">© 2025 Causi. Todos os direitos reservados.</p>
+                    {/* Legal Information Block */}
+                    <div className="flex flex-col items-center gap-4 text-center max-w-4xl mx-auto">
+                        <div className="flex flex-col gap-2">
+                            <p className="font-bold text-white text-sm md:text-base">
+                                © 2025 Causi. Todos os direitos reservados.
+                            </p>
+                            <p className="text-xs md:text-sm text-text-secondary leading-relaxed">
+                                [Razão Social] — CNPJ: 00.000.000/0000-00 — Endereço Físico, Cidade — Estado
+                            </p>
+                            <p className="text-xs md:text-sm text-text-secondary leading-relaxed">
+                                Contato: <a href="mailto:contato@causi.com.br" className="hover:text-brand-primary transition-colors duration-300">contato@causi.com.br</a> | <span className="hover:text-brand-primary transition-colors duration-300 cursor-default"> Telefone</span>
+                            </p>
+                        </div>
+                        
+                        {/* Legal Links */}
+                        <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-[10px] md:text-xs font-bold uppercase tracking-widest text-text-secondary/60">
+                            <a href="#" className="hover:text-brand-primary transition-colors duration-300 border-b border-transparent hover:border-brand-primary pb-0.5">Política de Privacidade</a>
+                            <span className="opacity-20 hidden md:inline">|</span>
+                            <a href="#" className="hover:text-brand-primary transition-colors duration-300 border-b border-transparent hover:border-brand-primary pb-0.5">Trocas e Devoluções</a>
+                            <span className="opacity-20 hidden md:inline">|</span>
+                            <a href="#" className="hover:text-brand-primary transition-colors duration-300 border-b border-transparent hover:border-brand-primary pb-0.5">Termos de Uso</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </footer>
