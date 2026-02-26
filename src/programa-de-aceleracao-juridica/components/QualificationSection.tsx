@@ -22,7 +22,7 @@ export const QualificationSection: React.FC = () => {
                         <h2 className="type-h2 text-center lg:text-left">
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-glow font-black">Sua Máquina de Fechar Contratos</span> <span className="text-white">está a um passo</span>
                         </h2>
-                        <p className="type-body-lg text-white text-center lg:text-left max-w-xl">
+                        <p className="type-sub text-white text-center lg:text-left max-w-xl">
                             Não trabalhamos com quem busca "milagres". O <strong className="text-brand-primary">Programa de Aceleração Jurídica do Causi</strong> é para advogados que decidiram profissionalizar sua captação e querem nossa equipe instalando ativos de escala nos próximos 30 dias.
                         </p>
                         <Button

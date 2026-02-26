@@ -53,7 +53,7 @@ export const SorSystemSection: React.FC = () => {
                     <h2 className="type-h2 text-center text-text-primary mb-6">
                         O <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-glow box-decoration-clone font-black">Programa de Aceleração Jurídica</span> não é mais um cursinho para você assistir e esquecer
                     </h2>
-                    <p className="type-body-lg text-center text-text-secondary max-w-4xl mx-auto">
+                    <p className="type-sub text-center text-text-secondary max-w-4xl mx-auto mt-4">
                         É a <strong className="text-text-primary font-bold">instalação definitiva</strong> do seu <strong className="text-text-primary font-bold">Sistema Operacional de Receita</strong>.
                     </p>
                 </header>

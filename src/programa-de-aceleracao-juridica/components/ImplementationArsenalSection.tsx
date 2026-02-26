@@ -41,7 +41,7 @@ const ArsenalCard: React.FC<{
       </div>
 
       <div className="flex flex-col gap-4">
-        <h3 className="type-h3 leading-tight text-text-primary transition-colors">
+        <h3 className="type-h3 leading-tight text-text-primary transition-colors font-black">
           {title}
         </h3>
         <p className="type-body text-text-secondary">
@@ -120,7 +120,7 @@ export const ImplementationArsenalSection: React.FC = () => {
                     <h2 className="type-h2 text-center text-text-primary mb-6 leading-tight">
                         Tudo o que você recebe hoje ao destravar o seu acesso ao <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-glow font-black">Programa de Aceleração Jurídica</span>
                     </h2>
-                    <p className="type-body-lg text-center text-text-secondary max-w-4xl mx-auto">
+                    <p className="type-sub text-center text-text-secondary max-w-4xl mx-auto mt-4">
                         Você não está comprando um evento, está recebendo as chaves de um <strong className="text-text-primary">ecossistema completo</strong> para profissionalizar o seu faturamento.
                     </p>
                 </header>

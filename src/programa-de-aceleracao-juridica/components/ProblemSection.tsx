@@ -18,7 +18,7 @@ const ProblemCard: React.FC<FeatureCardProps> = ({ icon: Icon, title, descriptio
         </div>
       )}
       <div className="flex flex-col gap-4">
-        <h3 className="type-h3 leading-tight text-text-primary">{title}</h3>
+        <h3 className="type-h3 leading-tight text-text-primary font-black">{title}</h3>
         <p className="type-body">{description}</p>
       </div>
     </div>
