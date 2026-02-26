@@ -1,5 +1,5 @@
 import React from 'react';
-import { CheckCircle2, Gift, ShieldCheck } from 'lucide-react';
+import { CheckCircle2, Gift, ShieldCheck, AlertCircle } from 'lucide-react';
 import { Button } from './Button';
 import { useReveal } from '../hooks/useReveal';
 
@@ -53,12 +53,10 @@ export const SorSystemSection: React.FC = () => {
                     <h2 className="type-h2 text-center text-text-primary mb-6">
                         O <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-glow box-decoration-clone font-black">Programa de Aceleração Jurídica</span> não é mais um cursinho para você assistir e esquecer
                     </h2>
-                    <p className="type-sub text-center text-text-secondary max-w-4xl mx-auto mt-4">
-                        É a instalação definitiva do seu <strong className="text-text-primary font-bold">Sistema Operacional de Receita</strong>.
-                    </p>
-                    <p className="mt-6 text-sm md:text-base font-bold text-rose-500 bg-rose-500/10 border border-rose-500/20 py-3 px-6 rounded-xl inline-block shadow-sm">
-                        🚨 Atenção: A próxima Imersão ao Vivo acontecerá no dia 09/03/26 às 18h de Brasília. As vagas na sala são limitadas para garantirmos a qualidade do diagnóstico.
-                    </p>
+                    <div className="mt-8 max-w-lg mx-auto text-[13px] md:text-[15px] font-bold text-rose-500 bg-rose-500/5 md:bg-rose-500/10 border border-rose-500/20 py-4 px-5 rounded-xl flex items-start gap-3 text-left w-full shadow-sm">
+                        <AlertCircle className="w-5 h-5 shrink-0 mt-0.5" />
+                        <span>Atenção: A próxima Imersão ao Vivo acontecerá no dia 09/03/26 às 18h de Brasília. As vagas na sala são limitadas para garantirmos a qualidade do diagnóstico.</span>
+                    </div>
                 </header>
 
                 {/* Centralized High Impact Pricing Card */}
