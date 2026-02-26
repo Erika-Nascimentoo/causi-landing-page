@@ -1,11 +1,12 @@
 # Objetivo Atual
-Ajustar o redirecionamento do botão de Call To Action na página de Obrigado para a URL absoluta de produção.
+Corrigir o redirecionamento do botão de CTA para funcionar tanto em localhost quanto em produção (URL absoluta).
 
 # Progresso Atual
-- Link do botão "Criar conta gratuita" na página de Obrigado (`HeroObrigado.tsx`) foi atualizado.
-- Alterado para a URL absoluta: `https://www.causi.com.br/advogado/solucoes/programa-de-aceleracao-juridica/criar-conta`.
-- Isso garante que o redirecionamento funcione corretamente independentemente do subdomínio ou ambiente em que a landing page é servida pelo Vercel.
-- Commit realizado: `fix(obrigado): atualizar link do CTA para URL absoluta de producao`.
+- Implementada uma lógica de verificação de ambiente no `onClick` do botão em `HeroObrigado.tsx`.
+- Se o `hostname` for `localhost`, ele usa a rota relativa (`/programa-de-aceleracao-juridica/criar-conta`), permitindo que você teste localmente sem sair do seu servidor.
+- Caso contrário (em produção), ele força a URL absoluta completa: `https://www.causi.com.br/advogado/solucoes/...`.
+- Isso resolve o problema de o link "quebrar" ou tentar sair do ambiente local durante o desenvolvimento.
+- Commit realizado: `fix(obrigado): implementar lógica de redirecionamento híbrido para localhost e prod`.
 
 # Próximos Passos
-Aguardar nova diretriz do usuário.
+Aguardar validação do usuário sobre o comportamento em localhost.

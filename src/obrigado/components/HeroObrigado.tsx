@@ -74,7 +74,7 @@ export const HeroObrigado: React.FC = () => {
           <Button 
             className="shadow-[0_0_60px_-5px_rgba(139,92,246,0.6)] hover:shadow-[0_0_100px_-5px_rgba(139,92,246,0.9)] transition-all duration-500 py-6 text-xl md:text-2xl px-12 md:px-16"
             onClick={() => {
-              const targetPath = '/programa-de-aceleracao-juridica/criar-conta';
+              const targetPath = '/programa-de-aceleracao-juridica/criar-conta/';
               if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
                 window.location.href = targetPath;
               } else {

@@ -9,7 +9,35 @@ export default defineConfig(({ mode }) => {
       port: 3000,
       host: '0.0.0.0',
     },
-    plugins: [react()],
+    plugins: [
+      react(),
+      {
+        name: 'handle-trailing-slash',
+        configureServer(server) {
+          server.middleware.use((req, res, next) => {
+            const url = req.url?.split('?')[0] || '';
+            const baseUrl = '/advogado/solucoes';
+            
+            const targetPaths = [
+              '/programa-de-aceleracao-juridica/criar-conta',
+              '/programa-de-aceleracao-juridica/obrigado-30091986',
+              '/programa-de-aceleracao-juridica',
+              '/estruturacao-estrategica'
+            ];
+
+            const fullPaths = targetPaths.map(p => baseUrl + p);
+
+            if (fullPaths.includes(url)) {
+              res.statusCode = 301;
+              res.setHeader('Location', url + '/');
+              res.end();
+            } else {
+              next();
+            }
+          });
+        }
+      }
+    ],
     resolve: {
       alias: {
         '@': path.resolve(__dirname, '.'),
