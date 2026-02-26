@@ -123,11 +123,11 @@
     }
 
     .type-sub {
-        @apply text-xl md:text-2xl font-normal leading-[1.6] text-text-secondary;
+        @apply text-lg md:text-xl font-normal leading-[1.6] text-text-secondary;
     }
 
     .type-body-lg {
-        @apply text-[1.15rem] md:text-2xl font-sans font-normal leading-[1.7] text-text-secondary;
+        @apply text-[1.15rem] md:text-xl font-sans font-normal leading-[1.7] text-text-secondary;
     }
 
     .type-cta {
@@ -135,7 +135,7 @@
     }
 
     .type-body {
-        @apply text-[1.1rem] md:text-xl font-normal leading-[1.7] text-text-secondary;
+        @apply text-[1.1rem] md:text-lg font-normal leading-[1.7] text-text-secondary;
     }
 
     .type-label {
