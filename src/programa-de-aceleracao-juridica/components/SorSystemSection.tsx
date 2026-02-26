@@ -13,7 +13,7 @@ const OfferListItem: React.FC<{ title: React.ReactNode; description?: string; is
         </div>
         <div className="text-lg md:text-xl leading-relaxed text-slate-900">
           <span className="font-bold">{title}</span>
-          {description && <span className="text-slate-600 block text-base mt-1">{description}</span>}
+          {description && <span className="text-slate-600 block text-[1.1rem] md:text-lg mt-1">{description}</span>}
         </div>
       </li>
     );
@@ -26,7 +26,7 @@ const OfferListItem: React.FC<{ title: React.ReactNode; description?: string; is
       </div>
       <div className="text-[1.1rem] md:text-xl leading-snug md:leading-snug text-left text-slate-800 flex-1">
         <span className="font-extrabold">{title}</span>
-        {description && <span className="text-slate-500 block text-base mt-1.5 leading-relaxed">{description}</span>}
+        {description && <span className="text-slate-600 block text-[1.1rem] md:text-lg mt-1.5 leading-relaxed">{description}</span>}
       </div>
     </li>
   );
