@@ -5,7 +5,7 @@ import { useReveal } from '../hooks/useReveal';
 
 export const Hero: React.FC = () => {
   return (
-    <section className="relative w-full bg-white overflow-hidden pt-20 pb-20 md:pt-32 md:pb-32 flex items-center justify-center">
+    <section className="relative w-full bg-white overflow-hidden pt-12 pb-16 md:pt-20 md:pb-24 flex items-center justify-center">
       {/* Blueprint Grid Overlay */}
       <div
         className="absolute inset-x-0 top-0 bottom-0 opacity-[0.06] pointer-events-none"
@@ -17,7 +17,7 @@ export const Hero: React.FC = () => {
         }}
       />
       <div className="max-w-4xl mx-auto px-6 relative z-10 w-full">
-        <div className="flex flex-col items-center gap-16 md:gap-20">
+        <div className="flex flex-col items-center gap-10 md:gap-14">
           {/* Group 1: Eyebrow (Logo & Label) */}
           <div className="flex flex-col items-center gap-6 reveal-hidden">
             <div className="flex items-center gap-2 select-none">
