@@ -69,7 +69,7 @@ export const FaqFooter: React.FC = () => {
                                 © 2025 Causi. Todos os direitos reservados.
                             </p>
                             <p className="text-xs md:text-sm text-text-secondary leading-relaxed">
-                                Rino3 Desenvolvimento Web Ltda — CNPJ: 15.309.763/0001-96 — Rua dos Aimorés, 2001, Sala 601 — Belo Horizonte, MG
+                                Rino3 Desenvolvimento Web Ltda — CNPJ: 15.309.763/0001-96 — Rua Quinze de Novembro, 2550 — Jardim dos Estados — Campo Grande, MS
                             </p>
                             <p className="text-xs md:text-sm text-text-secondary leading-relaxed">
                                 Contato: <a href="mailto:contato@causi.com.br" className="hover:text-brand-primary transition-colors duration-300">contato@causi.com.br</a>
