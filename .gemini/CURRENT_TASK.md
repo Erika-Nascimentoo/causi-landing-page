@@ -1,11 +1,11 @@
 # Objetivo Atual
-Corrigir falhas de resolução do caminho em links diretos sem barra oblíqua no final das campanhas de entrada.
+Ajuste finais do Rodapé (Renderização da Logo Branca e Redimensionamento).
 
 # Progresso Atual
-- Analisado o mapeamento de origens ("Rewrites") no Vercel de ambos os repositórios (`causi-site` e `causi-landing-page`).
-- Foi constatado que no repositório `causi-landing-page`, o roteador exigia compulsoriamente a barra inclinada literal no final da URL para entregar o conteúdo (`"source": "/programa-de-aceleracao-juridica/(.*)"`). Essa Regex capturava somente do `/` em diante.
-- Substituídas e aprimoradas as regras dentro do arquivo `vercel.json` na Landing Page. Injetadas regras explícitas espelho que cobrem as subpáginas de raiz cruas (sem a barra informada pelo cliente `"/programa-de-aceleracao-juridica"`).
-- O arquivo e o fix estático foram comitados com `fix(vercel): configurar rewrite para abranger url exata sem trailing slash..`.
+- A Logo Colorida oficial (`logo-dark.svg`) foi importada adequadamente para a pasta `public/` da Landing Page.
+- Em resposta ao feedback e comportamento da imagem no ambiente Vite, ela estava visualmente grande. Remapeamos dinamicamente as classes de TailwindCSS da `img` no componente `FooterObrigado.tsx`.
+- Tamanho reduzido em ~25% do `h-10 / md:h-12` original para valores exatos customizados `h-[30px] / md:h-[36px]`. A proporção está mantida e fina.
+- Todos os arquivos faltantes (`logo-dark.svg`) foram importados ao tracking do git e comitados (`style(obrigado): reduzir em 25% o tamanho base da logo`).
 
 # Próximos Passos
-Aguardar mais inputs e validar roteamento.
+Aguardar nova diretriz do usuário e avaliar o visual atual.

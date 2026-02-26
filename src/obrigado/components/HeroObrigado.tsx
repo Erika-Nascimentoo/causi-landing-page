@@ -70,7 +70,7 @@ export const HeroObrigado: React.FC = () => {
         </div>
       </div>
 
-      <div className="w-full relative z-10 flex flex-col items-center reveal-hidden px-6">
+      <div className="w-full relative z-10 flex flex-col items-center reveal-hidden px-6 mb-12 md:mb-20">
           <Button 
             className="shadow-[0_0_60px_-5px_rgba(139,92,246,0.6)] hover:shadow-[0_0_100px_-5px_rgba(139,92,246,0.9)] transition-all duration-500 py-6 text-xl md:text-2xl px-12 md:px-16"
             onClick={() => window.open('https://app.causi.com.br/register', '_blank')}
