@@ -39,7 +39,7 @@ export const Hero: React.FC = () => {
           </div>
 
           {/* Group 2: Core Message (Title & Subtitle) */}
-          <div className="flex flex-col items-center gap-6 md:gap-8 text-center max-w-4xl mx-auto">
+          <div className="flex flex-col items-center gap-4 md:gap-6 text-center max-w-4xl mx-auto">
 
             <h1 className="text-[1.8rem] md:text-[2.8rem] font-black leading-[1.2] pb-6 reveal-hidden">
               <span className="text-slate-900">
@@ -52,10 +52,10 @@ export const Hero: React.FC = () => {
             </h1>
 
             <h2 className="text-lg md:text-xl font-serif leading-[1.6] text-slate-600 reveal-hidden max-w-3xl mx-auto">
-              Conheça o <span className="text-brand-primary font-bold font-sans">Programa de Aceleração Jurídica</span>: o método passo a passo que tapa os furos do seu escritório, afasta quem só quer "tirar dúvida" e coloca <span className="text-brand-primary font-bold font-sans">contratos reais na sua mesa</span>.
+              Conheça o <span className="text-brand-primary font-bold">Programa de Aceleração Jurídica</span>: o método passo a passo que tapa os furos do seu escritório, afasta quem só quer "tirar dúvida" e coloca <span className="text-brand-primary font-bold">contratos reais na sua mesa</span>.
             </h2>
 
-            <div className="flex flex-col items-center reveal-hidden mt-6 md:mt-8">
+            <div className="flex flex-col items-center reveal-hidden mt-4 md:mt-6">
               <Button onClick={() => document.getElementById('routine')?.scrollIntoView({ behavior: 'smooth' })}>
                 <span className="font-black text-white">Ver como funciona</span>
               </Button>
