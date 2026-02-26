@@ -46,7 +46,7 @@ export const FaqFooter: React.FC = () => {
                 <div className="flex flex-col gap-4 reveal-hidden">
                     {faqs.map((faq, idx) => (
                         <div key={idx} className="bg-brand-card border border-white/10 rounded-xl p-6 hover:border-brand-primary/30 transition-all duration-300 flex flex-col gap-3">
-                            <h3 className="type-h4 text-text-primary">{faq.question}</h3>
+                            <h3 className="type-h3 text-text-primary">{faq.question}</h3>
                             <p className="type-body text-text-secondary">{faq.answer}</p>
                         </div>
                     ))}
