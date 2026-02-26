@@ -6,11 +6,21 @@ import { useReveal } from '../hooks/useReveal';
 const OfferListItem: React.FC<{ title: React.ReactNode; description?: string; isBonus?: boolean }> = ({ title, description, isBonus }) => {
   if (isBonus) {
     return (
-      <li className="relative flex flex-col items-center justify-center p-6 mt-8 border-2 border-brand-primary rounded-2xl group text-center">
+      <li className="relative flex flex-col items-center justify-center p-6 mt-12 border-2 border-brand-primary rounded-2xl group text-center bg-brand-primary/5">
         <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-brand-primary text-white text-[11px] uppercase tracking-widest font-bold h-7 px-5 rounded-full flex items-center justify-center gap-1.5 leading-none pt-[1px]">
           <Gift className="w-3.5 h-3.5" />
           <span>SUPER BÔNUS</span>
         </div>
+        
+        {/* Bonus Image */}
+        <div className="w-full max-w-[280px] mb-6 rounded-lg overflow-hidden shadow-lg border border-brand-primary/20">
+          <img 
+            src={`${import.meta.env.BASE_URL}acesso-gratis.png`} 
+            alt="30 dias de acesso grátis" 
+            className="w-full h-auto object-cover"
+          />
+        </div>
+
         <div className="text-lg md:text-xl leading-relaxed text-slate-900">
           <span className="font-bold">{title}</span>
           {description && <span className="text-slate-600 block text-[1.1rem] md:text-lg mt-1">{description}</span>}
