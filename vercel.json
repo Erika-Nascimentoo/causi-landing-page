@@ -11,8 +11,16 @@
             "destination": "/assets/$2"
         },
         {
+            "source": "/estruturacao-estrategica",
+            "destination": "/estruturacao-estrategica/index.html"
+        },
+        {
             "source": "/estruturacao-estrategica/(.*)",
             "destination": "/estruturacao-estrategica/index.html"
+        },
+        {
+            "source": "/programa-de-aceleracao-juridica",
+            "destination": "/programa-de-aceleracao-juridica/index.html"
         },
         {
             "source": "/programa-de-aceleracao-juridica/(.*)",
