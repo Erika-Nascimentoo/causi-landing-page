@@ -3,6 +3,10 @@
     "framework": "vite",
     "rewrites": [
         {
+            "source": "/advogado/solucoes/(.*)",
+            "destination": "/$1"
+        },
+        {
             "source": "/(.*)/assets/(.*)",
             "destination": "/assets/$2"
         },
