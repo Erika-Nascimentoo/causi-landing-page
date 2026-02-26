@@ -75,9 +75,9 @@ export const SuccessRoutineSection: React.FC = () => {
       <div className="absolute top-0 left-0 w-full lg:h-full lg:w-1/2 z-[1] h-[400px] lg:h-full overflow-hidden pointer-events-none">
         <div className="relative lg:sticky lg:top-0 h-full w-full">
             <div 
-              className="w-full h-full bg-cover bg-center bg-no-repeat opacity-70 lg:opacity-100"
+              className="w-full h-full bg-cover bg-top bg-no-repeat opacity-70 lg:opacity-100"
               style={{ 
-                backgroundImage: `url('${import.meta.env.BASE_URL}feliz-atendendo.webp?v=5')`
+                backgroundImage: `url('${import.meta.env.BASE_URL}feliz-atendendo.webp?v=6')`
               }}
             />
             {/* Fades to blend with the white bg */}
