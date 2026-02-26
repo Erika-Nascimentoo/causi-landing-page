@@ -1,13 +1,11 @@
 # Objetivo Atual
-Alocar a página de `/obrigado` dentro de sua pasta matriz (`/programa-de-aceleracao-juridica/obrigado`).
+Ajustes finos no copy e controle de SEO da página "obrigado".
 
 # Progresso Atual
-- A pasta e seus componentes originais no front-end em Vite não estavam alinhados com o diretório matriz.
-- O arquivo `index.html` da página de obrigado foi movido para o diretório `/programa-de-aceleracao-juridica/obrigado`.
-- Ajustado o arquivo estrutural global `vite.config.ts` apontando o arquivo estático ao novo subdiretório.
-- A TAG HTML interna de `<script>` responsável pelo redirect em servidores Vercel e apontamentos foi atualizada com a nova rota (`/programa-de-aceleracao-juridica/obrigado`).
-- O servidor local de testes já reconhece essa árvore de URLs.
-- Realizado commit (`feat(programa): mover pagina de obrigado para rota subdiretorio do programa-de-aceleracao-juridica`).
+- Excluído o selo promocional superior ("Acesso Liberado") para deixar o título principal `PAINEL` e a instrução mais "limpos".
+- Verificado estado do Index para motores de busca (`index.html`). A página já conta com `<meta name="robots" content="noindex, nofollow">` desde sua concepção garantindo que as ferramentas do Google (SEO) ou Facebook não varram, cataloguem ou entreguem ela para usuários em páginas de pesquisa orgânica.
+- O texto do Botão de compração foi substituido na página de Obrigado para `Criar conta gratuita` apontando para o app de registration.
+- Criado o commit das reduções: `style(obrigado): remover badge acesso liberado do header principal"` e das mudanças textuais e de indexação.
 
 # Próximo Passo
-Aguardar novo comando.
+Aguardar novo comando para prosseguir.

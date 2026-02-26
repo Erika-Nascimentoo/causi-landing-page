@@ -22,7 +22,7 @@ export const HeroObrigado: React.FC = () => {
           {/* Eyebrow Label */}
           <div className="flex flex-col items-center gap-6 reveal-hidden">
             <div className="flex items-center gap-2 select-none">
-              <span className="type-label text-brand-deep">PAINEL</span>
+              <span className="type-label text-brand-deep">SOLUÇÕES</span>
                <div 
                   className="h-10 md:h-12 w-32 bg-brand-deep" 
                   style={{ 
