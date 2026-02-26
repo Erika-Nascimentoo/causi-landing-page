@@ -69,20 +69,18 @@ export const FaqFooter: React.FC = () => {
                                 © 2025 Causi. Todos os direitos reservados.
                             </p>
                             <p className="text-xs md:text-sm text-text-secondary leading-relaxed">
-                                [Razão Social] — CNPJ: 00.000.000/0000-00 — Endereço Físico, Cidade — Estado
+                                Rino3 Desenvolvimento Web Ltda — CNPJ: 15.309.763/0001-96 — Rua dos Aimorés, 2001, Sala 601 — Belo Horizonte, MG
                             </p>
                             <p className="text-xs md:text-sm text-text-secondary leading-relaxed">
-                                Contato: <a href="mailto:contato@causi.com.br" className="hover:text-brand-primary transition-colors duration-300">contato@causi.com.br</a> | <span className="hover:text-brand-primary transition-colors duration-300 cursor-default"> Telefone</span>
+                                Contato: <a href="mailto:contato@causi.com.br" className="hover:text-brand-primary transition-colors duration-300">contato@causi.com.br</a>
                             </p>
                         </div>
                         
                         {/* Legal Links */}
                         <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-[10px] md:text-xs font-bold uppercase tracking-widest text-text-secondary/60">
-                            <a href="#" className="hover:text-brand-primary transition-colors duration-300 border-b border-transparent hover:border-brand-primary pb-0.5">Política de Privacidade</a>
+                            <a href="https://www.causi.com.br/politica-de-privacidade" target="_blank" rel="noopener noreferrer" className="hover:text-brand-primary transition-colors duration-300 border-b border-transparent hover:border-brand-primary pb-0.5">Política de Privacidade</a>
                             <span className="opacity-20 hidden md:inline">|</span>
-                            <a href="#" className="hover:text-brand-primary transition-colors duration-300 border-b border-transparent hover:border-brand-primary pb-0.5">Trocas e Devoluções</a>
-                            <span className="opacity-20 hidden md:inline">|</span>
-                            <a href="#" className="hover:text-brand-primary transition-colors duration-300 border-b border-transparent hover:border-brand-primary pb-0.5">Termos de Uso</a>
+                            <a href="https://www.causi.com.br/termos-de-uso" target="_blank" rel="noopener noreferrer" className="hover:text-brand-primary transition-colors duration-300 border-b border-transparent hover:border-brand-primary pb-0.5">Termos de Uso</a>
                         </div>
                     </div>
                 </div>
