@@ -59,14 +59,14 @@ export const HeroObrigado: React.FC = () => {
       {/* Video Container Area */}
       <div className="w-full max-w-4xl mx-auto px-6 relative z-10 reveal-hidden mb-10">
         <div className="relative w-full aspect-video rounded-3xl overflow-hidden shadow-[0_0_80px_rgba(139,92,246,0.2)] bg-slate-900 border border-slate-200">
-             {/* If you have a youtube/vimeo link, place it here in an iframe instead of this div */}
-            <div className="absolute inset-0 flex items-center justify-center flex-col gap-4 bg-slate-800">
-                 {/* Video Placeholder Content */}
-                 <div className="w-16 h-16 rounded-full bg-brand-primary/20 flex items-center justify-center animate-pulse">
-                     <div className="w-0 h-0 border-t-8 border-t-transparent border-l-[14px] border-l-brand-primary border-b-8 border-b-transparent ml-1" />
-                 </div>
-                 <p className="text-slate-400 font-medium tracking-widest uppercase text-sm">Espaço para seu Vídeo</p>
-            </div>
+            <iframe
+              className="absolute inset-0 w-full h-full"
+              src="https://www.youtube.com/embed/ryblslNSCPI?rel=0"
+              title="Vídeo de agradecimento"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
         </div>
       </div>
 
