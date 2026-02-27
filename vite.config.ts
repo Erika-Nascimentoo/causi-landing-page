@@ -14,7 +14,7 @@ export default defineConfig(({ mode }) => {
       {
         name: 'handle-trailing-slash',
         configureServer(server) {
-          server.middleware.use((req, res, next) => {
+          server.middlewares.use((req, res, next) => {
             const url = req.url?.split('?')[0] || '';
             const baseUrl = '/advogado/solucoes';
             

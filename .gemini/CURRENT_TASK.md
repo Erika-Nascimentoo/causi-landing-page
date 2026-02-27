@@ -1,11 +1,13 @@
 # Objetivo Atual
-Atualizar a imagem de OpenGraph (imagem de compartilhamento social) para a nova versão fornecida.
+
+Alterar o vídeo da página de obrigado do Programa de Aceleração Jurídica.
 
 # Progresso Atual
-- A nova imagem `OPENGRAPH.webp` fornecida na raiz do projeto foi aplicada como a imagem oficial de compartilhamento.
-- Arquivos atualizados em `public/compress-opengraph.webp` e `public/opengraph.webp`.
-- Verificado em todos os arquivos HTML (`index.html`, páginas de obrigado e criar conta) que a referência `og:image` aponta para esta imagem.
-- Commit realizado: `style(seo): atualizar imagem de opengraph (social share)`.
+
+- Localizada a página de obrigado em `src/obrigado`.
+- Substituído o placeholder de vídeo em `src/obrigado/components/HeroObrigado.tsx` pelo iframe do YouTube com o vídeo `https://youtu.be/ryblslNSCPI`.
+- Commit realizado: `feat: atualiza o vídeo da página de obrigado do Programa de Aceleração Jurídica`.
 
 # Próximos Passos
-Aguardar novas instruções do usuário.
+
+- Aguardar novas instruções do usuário.
