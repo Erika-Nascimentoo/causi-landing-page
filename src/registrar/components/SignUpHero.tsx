@@ -69,8 +69,11 @@ export const SignUpHero: React.FC = () => {
             <CheckCircle2 className="w-10 h-10 text-green-500" />
           </div>
           <h2 className="text-3xl font-black text-slate-900">Conta Criada!</h2>
-          <p className="text-slate-600">Sua estrutura na Plataforma Causi está pronta. Vamos te redirecionar para o painel de acesso.</p>
-          <Button onClick={() => window.location.href = 'https://app.causi.com.br'} className="w-full">
+          <p className="text-slate-600">
+            Enviamos um e-mail de confirmação para <strong className="text-slate-900 font-bold">{formData.email}</strong>. 
+            Acesse sua caixa de entrada e clique no botão para confirmar a sua conta. Verifique também a caixa de spam.
+          </p>
+          <Button onClick={() => window.location.href = 'https://app.causi.com.br/login'} className="w-full">
             <span className="font-black text-white">Acessar Painel</span>
           </Button>
         </div>
