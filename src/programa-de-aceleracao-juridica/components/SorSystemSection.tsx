@@ -160,9 +160,11 @@ export const SorSystemSection: React.FC = () => {
                             </div>
                             
                             <div className="flex flex-col items-center select-none mt-2 mb-6">
-                                <span className="text-xl md:text-2xl font-bold text-slate-400 line-through mb-[-10px]">
-                                    De R$ 997 por
-                                </span>
+                                <div className="flex items-center gap-1.5 mb-[-10px]">
+                                    <span className="text-xl md:text-2xl font-bold text-slate-400">De</span>
+                                    <span className="text-xl md:text-2xl font-bold text-slate-400 line-through">R$ 997</span>
+                                    <span className="text-xl md:text-2xl font-bold text-slate-400">por:</span>
+                                </div>
                                 <div className="flex items-start justify-center">
                                     <span className="text-2xl md:text-3xl font-bold mt-4 md:mt-6 text-slate-500 mr-1">R$</span>
                                     <span className="text-[6rem] md:text-[8rem] font-black leading-none tracking-tighter text-transparent bg-clip-text bg-gradient-to-br from-slate-900 to-slate-600">
