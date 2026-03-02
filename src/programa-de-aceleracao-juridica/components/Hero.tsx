@@ -48,7 +48,7 @@ export const Hero: React.FC = () => {
               </span>
               {" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-deep to-brand-primary box-decoration-clone">
-                é a sua Engenharia de Faturamento
+                é a sua estratégia de Faturamento
               </span>
             </h2>
 
