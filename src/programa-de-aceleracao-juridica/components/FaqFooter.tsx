@@ -73,7 +73,7 @@ export const FaqFooter: React.FC = () => {
                                 Rua Quinze de Novembro, 2550 — Jardim dos Estados — Campo Grande, MS
                             </p>
                             <p className="text-xs md:text-sm text-text-secondary leading-relaxed">
-                                Contato: <a href="mailto:contato@causi.com.br" className="hover:text-brand-primary transition-colors duration-300">contato@causi.com.br</a>
+                                <a href="mailto:contato@causi.com.br" className="hover:text-brand-primary transition-colors duration-300">contato@causi.com.br</a>
                             </p>
                         </div>
                         
