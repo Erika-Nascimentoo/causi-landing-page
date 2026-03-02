@@ -31,7 +31,7 @@ export const ProblemSection: React.FC = () => {
     {
       icon: Layout,
       title: <>A Agência <br /> de Posts</>,
-      description: "Você pagou caro para ter um \"feed harmônico\" e artes bonitinhas no Instagram, mas descobriu da pior forma que curtida não paga aluguel e elogio não vira contrato assinado."
+      description: "Você pagou caro para ter um perfil na rede social cheio de panfletos jurídicos, mas o único que ganhou dinheiro fazendo “artes bonitinhas” foi o social media."
     },
     {
       icon: UserX,
@@ -40,8 +40,8 @@ export const ProblemSection: React.FC = () => {
     },
     {
       icon: FileWarning,
-      title: <>A Planilha <br /> Mágica</>,
-      description: "Você comprou o cursinho ou a planilha mágica de algum \"especialista\", tentou aplicar sozinho depois de um dia exaustivo no fórum, e as pastas continuam pegando poeira no seu computador."
+      title: <>O Cursinho <br /> Mágico</>,
+      description: "Você comprou o cursinho de outro advogado (que fatura vendendo curso e não advogando), e mesmo tentando aplicar o que ele ensina, continua sem clientes pagantes."
     },
     {
       icon: Bot,
@@ -87,11 +87,11 @@ export const ProblemSection: React.FC = () => {
         <div className="mt-24 max-w-4xl mx-auto text-center reveal-hidden">
           <div className="flex flex-col gap-8 mb-12">
             <h4 className="type-sub text-text-secondary font-medium leading-relaxed">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-rose-500 font-black">A dura realidade:</span> O seu escritório não tem um problema de "falta de clientes". Ele tem um problema de <span className="text-white font-bold">processo.</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-rose-500 font-black">A dura realidade:</span> O seu escritório não tem um problema de "falta de clientes". Ele tem um problema de <span className="text-white font-bold">gestão.</span>
             </h4>
             
             <p className="type-sub text-text-secondary font-medium leading-relaxed">
-              Contratar agências ou comprar robôs soltos é tentar apagar um incêndio jogando gasolina. Enquanto a sua forma de captar, atender e cobrar não conversar entre si, você vai continuar enxugando gelo. 
+              Contratar agências de marketing ou inteligência artificial para atendimento não vai resolver sua incompetência de gestão. Enquanto a sua forma de prospectar, atender e cobrar não conversar entre si, você vai continuar enxugando gelo. 
             </p>
 
             <p className="type-sub text-text-secondary font-medium leading-relaxed">

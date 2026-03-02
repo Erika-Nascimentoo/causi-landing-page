@@ -39,10 +39,10 @@ export const ClaritySectionCopy: React.FC = () => {
                                 A ENGENHARIA DA RECEITA
                             </span>
                              <h2 className="type-h2 mb-4 leading-tight text-center lg:text-left text-slate-900 line-clamp-none">
-                                O <span className="text-brand-primary font-black">Sistema Operacional de Receita</span> é construído em cima de 3 engrenagens. Se uma falha, o seu <span className="text-brand-primary font-black">dinheiro vaza.</span>
+                                O <span className="text-brand-primary font-black">Sistema Operacional de Receita</span> é construído em cima de 3 pilares. Se uma falha, o seu <span className="text-brand-primary font-black">dinheiro vaza.</span>
                             </h2>
                             <p className="type-sub text-slate-600 mt-4 max-w-2xl leading-relaxed text-center lg:text-left">
-                                O <span className="text-brand-primary font-bold">Programa de Aceleração Jurídica</span> do <span className="text-brand-primary font-bold">Causi</span> vai te entregar o exato passo a passo para instalar essas 3 peças no seu escritório de forma simples:
+                                O <span className="text-brand-primary font-bold">Programa de Aceleração Jurídica</span> do <span className="text-brand-primary font-bold">Causi</span> vai te entregar o exato passo a passo para instalar esses 3 pilares no seu escritório de forma simples:
                             </p>
                         </div>
 
@@ -68,7 +68,7 @@ export const ClaritySectionCopy: React.FC = () => {
                                 </div>
                                 <div className="flex-1 pt-2">
                                     <p className="type-body text-slate-600 leading-relaxed">
-                                        <span className="text-brand-primary font-bold">O Protocolo de Admissão:</span> A trava de segurança que você instala no seu WhatsApp para barrar automaticamente os "curiosos de sábado" e só deixar passar quem tem dinheiro para pagar os seus honorários.
+                                        <span className="text-brand-primary font-bold">Eliminação de Ruídos:</span> Como se posicionar para atrair clientes que pagam acima da média e parar de perder tempo com curiosos que não podem te contratar.
                                     </p>
                                 </div>
                             </li>
@@ -80,7 +80,7 @@ export const ClaritySectionCopy: React.FC = () => {
                                 </div>
                                 <div className="flex-1 pt-2">
                                     <p className="type-body text-slate-600 leading-relaxed">
-                                        <span className="text-brand-primary font-bold">A Manutenção do Lucro:</span> O modelo que grandes escritórios usam para fazer o mesmo cliente comprar de novo ou indicar você ativamente, para você nunca mais ter que começar o mês do zero.
+                                        <span className="text-brand-primary font-bold">Faturamento Inteligente:</span> A trava de segurança que você instala no seu WhatsApp para barrar automaticamente os “curiosos” e o uso de técnicas avançadas de atendimento para transformar rapidamente contatos em contratos!
                                     </p>
                                 </div>
                             </li>

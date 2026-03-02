@@ -118,7 +118,7 @@ export const SorSystemSection: React.FC = () => {
                                     title="O Laudo de Diagnóstico do seu escritório"
                                 />
                                 <OfferListItem 
-                                    title="Acesso ao Cofre Causi"
+                                    title="Treinamentos avançados de vendas e marketing jurídico"
                                 />
                                 <OfferListItem 
                                     title="O Grupo de Networking Exclusivo"

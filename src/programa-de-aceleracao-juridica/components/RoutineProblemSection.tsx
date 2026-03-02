@@ -8,7 +8,7 @@ export const RoutineProblemSection: React.FC = () => {
 
   const points = [
     <> <strong className="text-white">O plantão gratuito:</strong> Seu celular apita no sábado à noite com pessoas querendo "tirar uma dúvida rapidinho" de graça, roubando o tempo da sua família.</>,
-    <> <strong className="text-white">A humilhação do vácuo:</strong> Você gasta energia explicando o caso, envia o valor dos seus honorários e recebe um frio "vou pensar e te aviso" (e a pessoa nunca mais responde).</>,
+    <> <strong className="text-white">A humilhação do vácuo:</strong> Você gasta tempo estudando o caso, envia o valor dos seus honorários e recebe um frio "vou pensar e te aviso" (e a pessoa nunca mais responde).</>,
     <> <strong className="text-white">A roleta russa financeira:</strong> Você olha para a agenda do mês que vem e sente um frio na barriga porque não faz ideia de onde virão os próximos clientes pagantes.</>
   ];
 
