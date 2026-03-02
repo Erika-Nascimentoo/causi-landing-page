@@ -169,7 +169,7 @@ export const SorSystemSection: React.FC = () => {
                                         47
                                     </span>
                                 </div>
-                                <span className="text-[11px] md:text-xs text-brand-primary mt-1">
+                                <span className="text-[11px] md:text-xs text-brand-primary mt-1 italic">
                                     por tempo limitado
                                 </span>
                             </div>
