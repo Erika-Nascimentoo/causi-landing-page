@@ -169,9 +169,6 @@ export const SorSystemSection: React.FC = () => {
                                         47
                                     </span>
                                 </div>
-                                <span className="text-[11px] md:text-xs text-brand-primary mt-1 italic">
-                                    por tempo limitado
-                                </span>
                             </div>
                             <p className="type-body text-slate-600 mb-8 font-medium text-center leading-relaxed">Pagamento único e seguro.<br />Sem surpresas ou mensalidades ocultas</p>
                             
