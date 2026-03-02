@@ -15,8 +15,9 @@ Realizar alterações de texto na página do Programa de Aceleração Jurídica 
     - `FaqFooter.tsx`: Atualizada Razão Social para "Bonafide Digital LTDA", CNPJ para "48.928.294/0001-42", mantido endereço e removido prefixo "Contato: ".
 - Todos os commits realizados.
 
+- Corrigida a URL da API de cadastro de 'https://causi.com.br/api/signup' para 'https://www.causi.com.br/api/signup' em `SignUpHero.tsx`.
+
 # Próximos Passos
 
-- Receber as instruções de alteração de texto do usuário.
-- Aplicar as alterações nos componentes correspondentes.
+- Confirmar com o usuário se há mais ajustes na página de Criar Conta ou no webhook.
 - Realizar o commit das mudanças.

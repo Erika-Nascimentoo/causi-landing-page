@@ -32,7 +32,7 @@ export const SignUpHero: React.FC = () => {
     setLoading(true);
 
     try {
-      const response = await fetch('https://causi.com.br/api/signup', {
+      const response = await fetch('https://www.causi.com.br/api/signup', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
