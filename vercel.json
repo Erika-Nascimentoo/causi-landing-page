@@ -33,6 +33,14 @@
         {
             "source": "/programa-de-aceleracao-juridica/criar-conta/(.*)",
             "destination": "/programa-de-aceleracao-juridica/criar-conta/index.html"
+        },
+        {
+            "source": "/programa-de-aceleracao-juridica/confirmacao-conta",
+            "destination": "/programa-de-aceleracao-juridica/confirmacao-conta/index.html"
+        },
+        {
+            "source": "/programa-de-aceleracao-juridica/confirmacao-conta/(.*)",
+            "destination": "/programa-de-aceleracao-juridica/confirmacao-conta/index.html"
         }
     ]
 }

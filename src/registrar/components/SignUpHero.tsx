@@ -52,34 +52,21 @@ export const SignUpHero: React.FC = () => {
       }
 
       setSuccess(true);
-      // Redirecionar após sucesso se necessário
-      // window.location.href = 'https://app.causi.com.br';
+      
+      const targetPath = '/programa-de-aceleracao-juridica/confirmacao-conta/';
+      const emailParam = `?email=${encodeURIComponent(formData.email)}`;
+      
+      if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' || window.location.port) {
+        window.location.href = targetPath + emailParam;
+      } else {
+        window.location.href = `https://www.causi.com.br/advogado/solucoes${targetPath}${emailParam}`;
+      }
     } catch (err: any) {
       setError(err.message || 'Erro na conexão com o servidor. Tente novamente.');
     } finally {
       setLoading(false);
     }
   };
-
-  if (success) {
-    return (
-      <section className="relative w-full bg-white overflow-hidden min-h-screen py-16 md:py-12 flex flex-col items-center justify-center">
-        <div className="max-w-md mx-auto px-6 relative z-20 text-center flex flex-col items-center gap-6">
-          <div className="w-20 h-20 bg-green-50 rounded-full flex items-center justify-center mb-4 shadow-[0_0_40px_rgba(34,197,94,0.2)]">
-            <CheckCircle2 className="w-10 h-10 text-green-500" />
-          </div>
-          <h2 className="text-3xl font-black text-slate-900">Conta Criada!</h2>
-          <p className="text-slate-600">
-            Enviamos um e-mail de confirmação para <strong className="text-slate-900 font-bold">{formData.email}</strong>. 
-            Acesse sua caixa de entrada e clique no botão para confirmar a sua conta. Verifique também a caixa de spam.
-          </p>
-          <Button onClick={() => window.location.href = 'https://app.causi.com.br/login'} className="w-full">
-            <span className="font-black text-white">Acessar Painel</span>
-          </Button>
-        </div>
-      </section>
-    );
-  }
 
   return (
     <section className="relative w-full bg-white overflow-hidden min-h-screen py-16 md:py-12 flex flex-col items-center justify-center">

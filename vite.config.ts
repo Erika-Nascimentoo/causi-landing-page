@@ -19,6 +19,7 @@ export default defineConfig(({ mode }) => {
             const baseUrl = '/advogado/solucoes';
             
             const targetPaths = [
+              '/programa-de-aceleracao-juridica/confirmacao-conta',
               '/programa-de-aceleracao-juridica/criar-conta',
               '/programa-de-aceleracao-juridica/obrigado-30091986',
               '/programa-de-aceleracao-juridica',
@@ -51,6 +52,7 @@ export default defineConfig(({ mode }) => {
           aceleracao: path.resolve(__dirname, 'programa-de-aceleracao-juridica/index.html'),
           obrigado: path.resolve(__dirname, 'programa-de-aceleracao-juridica/obrigado-30091986/index.html'),
           cadastro: path.resolve(__dirname, 'programa-de-aceleracao-juridica/criar-conta/index.html'),
+          confirmacao: path.resolve(__dirname, 'programa-de-aceleracao-juridica/confirmacao-conta/index.html'),
         }
       }
     }
