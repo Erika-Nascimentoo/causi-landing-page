@@ -159,12 +159,19 @@ export const SorSystemSection: React.FC = () => {
                                 </p>
                             </div>
                             
-                            <div className="flex justify-center items-start mt-2 mb-2 select-none">
-                                <span className="text-2xl md:text-3xl font-bold mt-3 md:mt-4 text-slate-500">R$</span>
-                                <span className="text-[6rem] md:text-[8rem] font-black leading-none tracking-tighter text-transparent bg-clip-text bg-gradient-to-br from-slate-900 to-slate-600">
-                                    47
+                            <div className="flex flex-col items-center select-none mt-2 mb-6">
+                                <span className="text-xl md:text-2xl font-bold text-slate-400 line-through mb-[-10px]">
+                                    De R$ 997 por
                                 </span>
-                                <span className="text-2xl md:text-3xl font-bold mt-3 md:mt-4 text-slate-500">,90</span>
+                                <div className="flex items-start justify-center">
+                                    <span className="text-2xl md:text-3xl font-bold mt-4 md:mt-6 text-slate-500 mr-1">R$</span>
+                                    <span className="text-[6rem] md:text-[8rem] font-black leading-none tracking-tighter text-transparent bg-clip-text bg-gradient-to-br from-slate-900 to-slate-600">
+                                        47
+                                    </span>
+                                </div>
+                                <span className="text-xs md:text-sm font-black text-rose-600 uppercase tracking-[0.2em] mt-2">
+                                    (por tempo limitado)
+                                </span>
                             </div>
                             <p className="type-body text-slate-600 mb-8 font-medium text-center leading-relaxed">Pagamento único e seguro.<br />Sem surpresas ou mensalidades ocultas</p>
                             
