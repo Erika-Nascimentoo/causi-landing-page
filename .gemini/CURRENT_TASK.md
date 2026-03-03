@@ -14,6 +14,7 @@ Realizar alterações de texto na página do Programa de Aceleração Jurídica 
   - `SorSystemSection.tsx`: Redesenho do preço para "De R$ 997 por R$ 47", sem centavos.
     - `FaqFooter.tsx`: Atualizada Razão Social para "Bonafide Digital LTDA", CNPJ para "48.928.294/0001-42", mantido endereço e removido prefixo "Contato: ".
 - Removido o ponto final do título na seção `ClaritySectionCopy`.
+- Atualizada a lista de 3 pilares na `ClaritySectionCopy` com os novos conteúdos: Máquina de Atração, Máquina de Contratos e Máquina do Lucro.
 - Todos os commits realizados.
 
 # Próximos Passos

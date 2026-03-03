@@ -56,7 +56,7 @@ export const ClaritySectionCopy: React.FC = () => {
                                 </div>
                                 <div className="flex-1 pt-2">
                                     <p className="type-body text-slate-600 leading-relaxed">
-                                        <span className="text-brand-primary font-bold">A Máquina de Atração:</span> Como parar de depender de indicações ou da sorte, e criar um canal de contatos previsível (sem precisar virar blogueirinho de Instagram).
+                                        <span className="text-brand-primary font-bold">A Máquina de Atração:</span> Prospecção de clientes qualificados, eliminando os ruídos no seu posicionamento (que acabam atraindo curiosos e espantando clientes que pagam bons honorários), parando de depender apenas de indicações.
                                     </p>
                                 </div>
                             </li>
@@ -68,7 +68,7 @@ export const ClaritySectionCopy: React.FC = () => {
                                 </div>
                                 <div className="flex-1 pt-2">
                                     <p className="type-body text-slate-600 leading-relaxed">
-                                        <span className="text-brand-primary font-bold">Eliminação de Ruídos:</span> Como se posicionar para atrair clientes que pagam acima da média e parar de perder tempo com curiosos que não podem te contratar.
+                                        <span className="text-brand-primary font-bold">A Máquina de Contratos:</span> A trava de segurança que você instala no seu WhatsApp para barrar automaticamente os “curiosos” e o uso de técnicas avançadas de atendimento para transformar rapidamente contatos em contratos!
                                     </p>
                                 </div>
                             </li>
@@ -80,7 +80,7 @@ export const ClaritySectionCopy: React.FC = () => {
                                 </div>
                                 <div className="flex-1 pt-2">
                                     <p className="type-body text-slate-600 leading-relaxed">
-                                        <span className="text-brand-primary font-bold">Faturamento Inteligente:</span> A trava de segurança que você instala no seu WhatsApp para barrar automaticamente os “curiosos” e o uso de técnicas avançadas de atendimento para transformar rapidamente contatos em contratos!
+                                        <span className="text-brand-primary font-bold">A Máquina do Lucro:</span> O método que grandes escritórios usam para fazer o mesmo cliente contratar mais serviços ou indicar você ativamente para novos clientes, zerando o seu custo por aquisição de novos clientes.
                                     </p>
                                 </div>
                             </li>
