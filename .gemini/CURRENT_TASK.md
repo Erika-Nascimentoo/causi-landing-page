@@ -13,13 +13,10 @@ Realizar alterações de texto na página do Programa de Aceleração Jurídica 
   - `SorSystemSection.tsx`: "Acesso ao Cofre Causi" -> "Treinamentos avançados de vendas e marketing jurídico".
   - `SorSystemSection.tsx`: Redesenho do preço para "De R$ 997 por R$ 47", sem centavos.
     - `FaqFooter.tsx`: Atualizada Razão Social para "Bonafide Digital LTDA", CNPJ para "48.928.294/0001-42", mantido endereço e removido prefixo "Contato: ".
+- Removido o ponto final do título na seção `ClaritySectionCopy`.
 - Todos os commits realizados.
-
-- Criada nova página independente para confirmação de conta em `/programa-de-aceleracao-juridica/confirmacao-conta/`.
-- Configurado redirecionamento dinâmico do cadastro para a página de confirmação passando o e-mail via query string.
-- Atualizadas as configurações de build (Vite) e deploy (Vercel) para suportar a nova rota.
 
 # Próximos Passos
 
-- Confirmar com o usuário se há mais ajustes na página de Criar Conta ou no webhook.
+- Aguardar novas instruções de alteração na landing page.
 - Realizar o commit das mudanças.
