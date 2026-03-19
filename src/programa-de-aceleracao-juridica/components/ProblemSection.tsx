@@ -87,11 +87,12 @@ export const ProblemSection: React.FC = () => {
         <div className="mt-24 max-w-4xl mx-auto text-center reveal-hidden">
           <div className="flex flex-col gap-8 mb-12">
             <h4 className="type-sub text-text-secondary font-medium leading-relaxed">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-rose-500 font-black">A dura realidade:</span> O seu escritório não tem um problema de "falta de clientes". Ele tem um problema de <span className="text-white font-bold">gestão.</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-rose-500 font-black">A dura realidade:</span> O seu escritório não tem um problema de "falta de clientes". Tem um problema de <span className="text-white font-bold">sistema.</span> 
             </h4>
             
             <p className="type-sub text-text-secondary font-medium leading-relaxed">
-              Contratar agências de marketing ou inteligência artificial para atendimento não vai resolver sua incompetência de gestão. Enquanto a sua forma de prospectar, atender e cobrar não conversar entre si, você vai continuar enxugando gelo. 
+            Não é falta de capacidade — é que nenhuma ferramenta isolada resolve isso.
+            É que as peças não conversam entre si. Enquanto a sua forma de prospectar, atender e cobrar não estiver conectada num único sistema, você vai continuar enxugando gelo.
             </p>
 
             <p className="type-sub text-text-secondary font-medium leading-relaxed">

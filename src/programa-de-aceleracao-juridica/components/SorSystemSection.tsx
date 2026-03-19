@@ -111,6 +111,9 @@ export const SorSystemSection: React.FC = () => {
                             </h3>
                             
                             <ul className="flex flex-col">
+                            <OfferListItem 
+                                    title="Imersão Gravada e acesso imediato após a compra"
+                                />
                                 <OfferListItem 
                                     title="Ingresso para a Imersão ao Vivo"
                                 />

@@ -22,9 +22,9 @@ export const Hero: React.FC = () => {
           <div className="flex flex-col items-center gap-6 reveal-hidden">
             <div className="flex items-center gap-2 select-none">
               <span className="type-label text-brand-deep">SOLUÇÕES</span>
-              <div 
-                className="h-10 md:h-12 w-32 bg-brand-deep" 
-                style={{ 
+              <div
+                className="h-10 md:h-12 w-32 bg-brand-deep"
+                style={{
                   maskImage: `url('${import.meta.env.BASE_URL}logo.svg')`,
                   WebkitMaskImage: `url('${import.meta.env.BASE_URL}logo.svg')`,
                   maskRepeat: 'no-repeat',
@@ -33,7 +33,7 @@ export const Hero: React.FC = () => {
                   WebkitMaskPosition: 'left center',
                   maskSize: 'contain',
                   WebkitMaskSize: 'contain'
-                }} 
+                }}
               />
             </div>
           </div>
@@ -43,12 +43,16 @@ export const Hero: React.FC = () => {
 
             <h1 className="sr-only">Programa de Aceleração Jurídica: Sistema Operacional de Receita para Advogados</h1>
             <h2 className="text-[1.8rem] md:text-[2.8rem] font-sans font-black leading-[1.2] pb-0 reveal-hidden">
-              <span className="text-slate-900">
-                Você trabalha muito, mas o <span className="bg-yellow-200 text-slate-900 px-2 py-0.5 rounded-lg box-decoration-clone">dinheiro não sobra no final do mês?</span> O problema não é a sua advocacia,
+              <span className="text-slate-900">Os contatos chegam. Os clientes, não. {" "}
+                <span className="bg-yellow-200 text-slate-900 px-2 py-0.5 rounded-lg box-decoration-clone">O problema não é a sua advocacia</span>
+                — é que{" "}
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-deep to-brand-primary box-decoration-clone">
+                  ninguém te ensinou
+                </span>
+                {" "}qual sistema usar para{" "}
               </span>
-              {" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-deep to-brand-primary box-decoration-clone">
-                é a sua estratégia de Faturamento
+              <span className="text-slate-900">
+                transformar um em outro.
               </span>
             </h2>
 
@@ -57,7 +61,7 @@ export const Hero: React.FC = () => {
             </p>
 
             <div className="flex flex-col items-center reveal-hidden mt-4 md:mt-6">
-              <Button 
+              <Button
                 onClick={() => document.getElementById('routine')?.scrollIntoView({ behavior: 'smooth' })}
                 className="shadow-[0_0_60px_-5px_rgba(139,92,246,0.8)] hover:shadow-[0_0_100px_-5px_rgba(139,92,246,1)] transition-all duration-500"
               >

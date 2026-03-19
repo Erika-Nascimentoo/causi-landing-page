@@ -43,7 +43,7 @@ export const SuccessRoutineSection: React.FC = () => {
     {
       step: "01",
       title: "O Acesso Imediato",
-      description: "Assim que confirmar o pagamento, você recebe as instruções em um vídeo explicativo e garante a sua vaga na próxima Imersão ao Vivo. É o fim da dúvida e o início da sua organização. As imersões acontecem todos os meses e você pode participar quantas vezes quiser."
+      description: "Assim que confirmar o pagamento, você recebe acesso imediato à Sala de Aula Causi com a gravação completa da última Imersão. Sua vaga na próxima Imersão ao Vivo também está garantida. As imersões acontecem todos os meses e você pode participar quantas vezes quiser."
     },
     {
       step: "02",

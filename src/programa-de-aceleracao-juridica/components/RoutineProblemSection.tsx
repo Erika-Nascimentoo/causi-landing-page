@@ -14,12 +14,12 @@ export const RoutineProblemSection: React.FC = () => {
 
   return (
     <section id="routine" ref={sectionRef} className="relative pt-[270px] pb-32 md:pt-32 px-6 bg-bg-page overflow-hidden min-h-[800px] block md:flex md:items-center">
-      
+
       {/* Background Image - Header on Mobile / Side on Desktop */}
       <div className="absolute top-0 right-0 w-full lg:w-1/2 lg:h-full z-[1] overflow-hidden h-[400px] pointer-events-none">
-        <div 
+        <div
           className="w-full h-full bg-cover bg-center bg-no-repeat grayscale opacity-70 lg:opacity-100"
-          style={{ 
+          style={{
             backgroundImage: `url('${import.meta.env.BASE_URL}advogado-cansado.webp?v=5')`
           }}
         />
@@ -32,7 +32,7 @@ export const RoutineProblemSection: React.FC = () => {
 
       <div className="max-w-7xl mx-auto relative z-10 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-          
+
           {/* Left Side: Content - Occupying the left half */}
           <div className="lg:col-span-6 flex flex-col gap-6 md:gap-10">
             <div className="reveal-hidden flex flex-col items-center lg:items-start">
@@ -41,7 +41,10 @@ export const RoutineProblemSection: React.FC = () => {
                 OS BASTIDORES DA SUA ADVOCACIA
               </span>
               <h2 className="type-h2 mb-4 leading-tight text-center lg:text-left">
-                Você estudou muito para ser um <span className="text-white">advogado respeitado</span>, mas a sua rotina hoje parece a de uma <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-rose-500 font-black">secretária:</span>
+                Você passou anos construindo expertise jurídica. Mas a maior parte do seu dia vai para tarefas que não exigem{" "}
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-rose-500 font-black">
+                  nada dessa expertise:
+                </span>
               </h2>
             </div>
 
@@ -62,7 +65,7 @@ export const RoutineProblemSection: React.FC = () => {
             </div>
 
             <div className="reveal-hidden mt-4 flex justify-center lg:justify-start">
-              <Button 
+              <Button
                 variant="danger"
                 onClick={() => document.getElementById('problems')?.scrollIntoView({ behavior: 'smooth' })}
               >

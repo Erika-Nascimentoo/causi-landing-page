@@ -1,5 +1,5 @@
 import React from 'react';
-import { Users, Zap, MonitorPlay, MessagesSquare, MessageCircle, Gift, Ticket, ClipboardList, Library, Compass, Bot } from 'lucide-react';
+import { Users, Zap, MonitorPlay, MessagesSquare, MessageCircle, Gift, Video, Ticket, ClipboardList, Library, Compass, Bot } from 'lucide-react';
 import { useReveal } from '../hooks/useReveal';
 import { Button } from './Button';
 
@@ -7,21 +7,22 @@ const ArsenalCard: React.FC<{
     icon: any; 
     title: React.ReactNode; 
     description: string; 
-    isBonus?: boolean; 
+    isBonus?: boolean;
+    wide?: boolean;
     className?: string;
     image?: string;
-}> = ({ icon: Icon, title, description, isBonus, className, image }) => (
+}> = ({ icon: Icon, title, description, isBonus, wide, className, image }) => (
   <div className={`group relative bg-black/40 backdrop-blur-md border rounded-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col reveal-hidden overflow-hidden ${
     isBonus 
-      ? 'border-brand-primary/50 shadow-[0_0_40px_rgba(139,92,246,0.3)] hover:shadow-[0_0_60px_rgba(139,92,246,0.4)] lg:flex-row' 
+      ? `border-brand-primary/50 shadow-[0_0_40px_rgba(139,92,246,0.3)] hover:shadow-[0_0_60px_rgba(139,92,246,0.4)] ${wide ? 'lg:flex-row' : ''}` 
       : 'border-brand-primary/20 hover:border-brand-primary/50 shadow-[0_0_30px_rgba(139,92,246,0.15)] hover:shadow-[0_0_50px_rgba(139,92,246,0.25)]'
   } ${className || ''}`}>
     {/* Internal Purple Glow & Glass Effects */}
     <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(139,92,246,0.15),transparent_70%)] pointer-events-none rounded-2xl z-0" />
     <div className="absolute inset-0 shadow-[inset_0_0_25px_rgba(139,92,246,0.12)] pointer-events-none rounded-2xl z-0" />
     
-    {/* Image Layer - Top aligned with the icon (matching lg:py-12) */}
-    {image && isBonus && (
+    {/* Image Layer - only when wide bonus */}
+    {image && isBonus && wide && (
       <div className="absolute top-12 right-[-40px] bottom-0 w-[450px] pointer-events-none z-10 hidden lg:block">
         <div className="h-full relative overflow-hidden rounded-tl-2xl border-l border-t border-white/20 shadow-[0_0_50px_rgba(139,92,246,0.6)] bg-brand-deep/50">
           <img 
@@ -33,10 +34,10 @@ const ArsenalCard: React.FC<{
       </div>
     )}
 
-    {/* Content Layer - Dynamically sized for 425x317 image with 20px gap */}
-    <div className={`px-8 pb-8 flex flex-col gap-4 relative z-30 pt-10 ${isBonus ? 'lg:w-[calc(100%-405px)] lg:py-12 lg:pr-8' : 'flex-1'}`}>
+    {/* Content Layer */}
+    <div className={`px-8 pb-8 flex flex-col gap-4 relative z-30 pt-10 ${isBonus && wide ? 'lg:w-[calc(100%-405px)] lg:py-12 lg:pr-8' : 'flex-1'}`}>
       {/* Icon */}
-      <div className={`w-14 h-14 rounded-xl flex items-center justify-center border border-brand-primary/20 bg-brand-primary/10 text-brand-primary group-hover:bg-brand-primary/20 transition-all shrink-0`}>
+      <div className="w-14 h-14 rounded-xl flex items-center justify-center border border-brand-primary/20 bg-brand-primary/10 text-brand-primary group-hover:bg-brand-primary/20 transition-all shrink-0">
         <Icon className="w-7 h-7" />
       </div>
 
@@ -69,8 +70,13 @@ export const ImplementationArsenalSection: React.FC = () => {
 
     const arsenalItems = [
         {
+            icon: Video,
+            title: "Imersão Gravada",
+            description: "Acesso no Dia 1: Você não precisa esperar a próxima data. Assim que confirma o pagamento, já recebe acesso à gravação completa da última edição para assistir quando quiser."
+        },
+        {
             icon: Ticket,
-            title: <>Ingresso para a <br /> Imersão ao Vivo <OnlineBadge /></>,
+            title: <>Ingresso para a Imersão <br /> ao Vivo <OnlineBadge /></>,
             description: "O encontro prático (via chamada de vídeo) onde vamos desenhar juntos o plano para o seu escritório parar de vazar dinheiro."
         },
         {
@@ -93,8 +99,7 @@ export const ImplementationArsenalSection: React.FC = () => {
             title: <>30 Dias Grátis da <br /> Plataforma Causi <BonusBadge /></>,
             description: "Não basta ter o método se você tiver que fazer tudo no Excel. Ao entrar hoje, nós vamos liberar e configurar junto com você a nossa inteligência artificial para atender, filtrar e agendar seus clientes 24 horas por dia no seu WhatsApp.",
             isBonus: true,
-            className: "lg:col-span-2",
-            image: `${import.meta.env.BASE_URL}dash-causi-final-v3.png`
+            wide: false
         }
     ];
 
@@ -133,12 +138,11 @@ export const ImplementationArsenalSection: React.FC = () => {
 
                 {/* Conclusão: Fluxo de Resultados */}
                 <div className="mt-20 max-w-4xl mx-auto text-center reveal-hidden">
-
                     <div className="flex justify-center">
                         <Button 
                             onClick={() => document.getElementById('outcome')?.scrollIntoView({ behavior: 'smooth' })}
                         >
-                            LIBERAR MEU ARSENAL POR R$ 47,90
+                            LIBERAR MEU ARSENAL POR R$ 47,00
                         </Button>
                     </div>
                 </div>

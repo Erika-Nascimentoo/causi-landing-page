@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useReveal } from '../hooks/useReveal';
 
 export const FaqFooter: React.FC = () => {
     const sectionRef = useReveal();
+    const [openIndex, setOpenIndex] = useState<number | null>(null);
     const faqs = [
         {
             question: "1. Isso é permitido pela OAB?",
@@ -22,7 +23,7 @@ export const FaqFooter: React.FC = () => {
         },
         {
             question: "5. E se eu não puder participar da Imersão ao vivo?",
-            answer: "Fique tranquilo. O seu ingresso de R$ 47,90 é o seu passaporte para o programa. Se não puder estar presente na próxima data, sua vaga está automaticamente garantida para a Imersão seguinte. Você não perde absolutamente nada."
+            answer: "Fique tranquilo. Assim que você entra, já tem acesso à Imersão gravada — a última edição completa disponível para assistir no seu tempo, no dia que quiser. E seu ingresso é o seu passaporte para todas as edições futuras ao vivo. Você não perde absolutamente nada"
         },
         {
             question: "6. Como funciona o bônus de 30 dias da Plataforma Causi?",
@@ -45,9 +46,42 @@ export const FaqFooter: React.FC = () => {
 
                 <div className="flex flex-col gap-4 reveal-hidden">
                     {faqs.map((faq, idx) => (
-                        <div key={idx} className="bg-brand-card border border-white/10 rounded-xl p-6 hover:border-brand-primary/30 transition-all duration-300 flex flex-col gap-3">
-                            <h3 className="text-lg md:text-xl font-bold leading-snug text-text-primary">{faq.question}</h3>
-                            <p className="type-body text-text-secondary">{faq.answer}</p>
+                        <div
+                            key={idx}
+                            className="bg-brand-card border border-white/10 rounded-xl p-6 hover:border-brand-primary/30 transition-all duration-300"
+                        >
+                            <button
+                                type="button"
+                                className="w-full flex items-start justify-between gap-4 text-left"
+                                aria-expanded={openIndex === idx}
+                                aria-controls={`faq-answer-${idx}`}
+                                onClick={() => setOpenIndex(prev => (prev === idx ? null : idx))}
+                            >
+                                <h3 className="text-lg md:text-xl font-bold leading-snug text-text-primary">
+                                    {faq.question}
+                                </h3>
+
+                                <span
+                                    aria-hidden="true"
+                                    className={`shrink-0 mt-1 transition-transform duration-500 ease-in-out ${openIndex === idx ? 'rotate-45' : 'rotate-0'}`}
+                                >
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 4V16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+                                        <path d="M4 10H16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+                                    </svg>
+                                </span>
+                            </button>
+
+                            <div
+                                id={`faq-answer-${idx}`}
+                                className={`grid transition-[grid-template-rows,opacity] duration-500 ease-in-out min-h-0 ${openIndex === idx ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}
+                            >
+                                <div className="overflow-hidden min-h-0">
+                                    <p className="type-body text-text-secondary mt-3">
+                                        {faq.answer}
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     ))}
                 </div>
